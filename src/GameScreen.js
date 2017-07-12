@@ -15,6 +15,10 @@ export default class GameScreen extends Component {
 
     this.letters = game.problem
     this.answers = game.answers
+    this.absolute = {
+      x: props.x,
+      y: props.y
+    }
   }
 
   render() {
@@ -36,6 +40,7 @@ export default class GameScreen extends Component {
           width={this.props.width}
           height={this.props.height / 2}
           letters={this.letters}
+          absolute={{x: this.absolute.x, y: this.absolute.y + this.props.height / 2}}
         />
       </Group>
     )
