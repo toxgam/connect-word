@@ -21,6 +21,19 @@ export default class GameScreen extends Component {
     }
   }
 
+  update(guess) {
+    const visibilities = this.state.visibilities
+
+    for (let i = 0; i < this.answers.length; i++) {
+      if (guess === this.answers[i]) {
+        visibilities[i] = true
+        break
+      }
+    }
+
+    this.setState({visibilities})
+  }
+
   render() {
     return (
       <Group>
@@ -31,7 +44,7 @@ export default class GameScreen extends Component {
           width={this.props.width}
           height={this.props.height / 2}
           words={this.answers}
-          visibilities={this.visibilities}
+          visibilities={this.state.visibilities}
         />
 
         <Letters
@@ -41,6 +54,7 @@ export default class GameScreen extends Component {
           height={this.props.height / 2}
           letters={this.letters}
           absolute={{x: this.absolute.x, y: this.absolute.y + this.props.height / 2}}
+          update={this.update.bind(this)}
         />
       </Group>
     )

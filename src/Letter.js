@@ -10,6 +10,10 @@ export default class Letter extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({visible: nextProps.visible})
+  }
+
   render() {
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.size} height={this.props.size}>

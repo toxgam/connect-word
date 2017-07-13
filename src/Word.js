@@ -15,11 +15,14 @@ export default class Word extends Component {
     this.n = props.letters.length
     this.cellSize = this.props.width / ((3 * maxWordLength + 1) / 2)
     this.vertivalMargin = (this.props.height - this.cellSize) / 4
-    // console.log(this.props.width, this.cellSize)
-    // console.log(this.props.height, this.cellSize, this.vertivalMargin)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({visible: nextProps.visible})
   }
 
   render() {
+    //console.log(this.props.letters)
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>
         {Array.prototype.map.call(this.props.letters, ((e, i) => <Letter 

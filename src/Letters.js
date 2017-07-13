@@ -95,7 +95,7 @@ export default class Letters extends Component {
   }
 
   onMouseUp(e) {
-    console.log(this.state.result)
+    this.props.update(this.state.result.map(e => this.props.letters[e]).join(''))
 
     this.setState({points: undefined, result: undefined})
   }

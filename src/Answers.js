@@ -20,6 +20,10 @@ export default class Answers extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({visibilities: nextProps.visibilities})
+  }
+
   render() {
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>
