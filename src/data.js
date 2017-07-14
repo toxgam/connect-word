@@ -10,5 +10,5 @@
 //   ]
 // }
 
-export const maxWord = 8
+export const maxWord = 2
 export const maxWordLength = 5

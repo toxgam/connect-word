@@ -46,6 +46,8 @@ export default class GameScreen extends Component {
   }
 
   init = ((props) => {
+    alert("You Won")
+
     const rawGame = games[Math.floor(Math.random() * games.length)]
     const game = select(rawGame)
 
@@ -75,8 +77,6 @@ export default class GameScreen extends Component {
     }
     
     this.setState({visibilities})
-
-    this.checkEndGame()
   }
 
   render() {
@@ -90,6 +90,7 @@ export default class GameScreen extends Component {
           height={this.props.height / 2}
           words={this.state.answers}
           visibilities={this.state.visibilities}
+          checkEndGame={this.checkEndGame.bind(this)}
         />
 
         <Letters
