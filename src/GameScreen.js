@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Group, Rect} from 'react-konva'
 
 import {game} from './data'
+import wordList from './wordList'
 import Answers from './Answers'
 import Letters from './Letters'
 
@@ -30,7 +31,7 @@ export default class GameScreen extends Component {
         break
       }
     }
-
+    
     this.setState({visibilities})
   }
 
