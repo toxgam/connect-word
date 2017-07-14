@@ -8,6 +8,15 @@ const distance = ((a, b) => {
   return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
 })
 
+const convertEvent = (event) => {
+  const e = event
+  if (e.evt.x === undefined) {
+    e.evt.x = e.evt.changedTouches[0].clientX
+    e.evt.y = e.evt.changedTouches[0].clientY
+  }
+  return e
+}
+
 export default class Letters extends Component {
   constructor(props) {
     super(props)
@@ -47,7 +56,9 @@ export default class Letters extends Component {
     return -1
   }
 
-  onMouseDown(e) {
+  drawBegin(event) {
+    const e = convertEvent(event)
+
     const points = []
     this.result.length = 0
     this.available.fill(true)
@@ -71,7 +82,10 @@ export default class Letters extends Component {
     this.setState({points})
   }
 
-  onMouseMove(e) {
+  drawMove(event) {
+    const e = convertEvent(event)
+    console.log(e)
+
     if (this.state.points === undefined) {
       return
     }
@@ -105,7 +119,9 @@ export default class Letters extends Component {
     this.setState({points})
   }
 
-  onMouseUp(e) {
+  drawEnd(event) {
+    const e = convertEvent(event)
+
     if (this.result.length > 0) {
       this.props.update(this.result.map(e => this.props.letters[e]).join(''))
     }
@@ -157,9 +173,15 @@ export default class Letters extends Component {
         <Rect
           width={this.size + this.r}
           height={this.size + this.r}
-          onMouseDown={this.onMouseDown.bind(this)}
-          onMouseUp={this.onMouseUp.bind(this)}
-          onMouseMove={this.onMouseMove.bind(this)}
+          
+          onMouseDown={this.drawBegin.bind(this)}
+          onTouchStart={this.drawBegin.bind(this)}
+
+          onMouseUp={this.drawEnd.bind(this)}
+          onTouchEnd={this.drawEnd.bind(this)}
+          
+          onMouseMove={this.drawMove.bind(this)}
+          onTouchMove={this.drawMove.bind(this)}
         />
       </Group>
     )
