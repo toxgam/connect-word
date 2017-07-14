@@ -1,4 +1,4 @@
-export const game = [{
+export const games = [{
   problem: "IIALA",
   answers: [
     "AA",

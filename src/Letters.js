@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Group, Rect, Line} from 'react-konva'
 
 import Piece from './Piece'
+import {maxWordLength} from './data'
 
 const distance = ((a, b) => {
   return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
@@ -28,10 +29,12 @@ export default class Letters extends Component {
       {x: this.r + s2, y: this.r + c2, letter: props.letters[3]},
       {x: this.r + s1, y: this.r - c1, letter: props.letters[4]}
     ]
+
+    this.available = Array(maxWordLength).fill(true)
+    this.result = []
     
     this.state = {
-      points: undefined,
-      result: undefined
+      points: undefined
     }
   }
 
@@ -47,7 +50,8 @@ export default class Letters extends Component {
 
   onMouseDown(e) {
     const points = []
-    const result = []
+    this.result.length = 0
+    this.available.fill(true)
 
     const x = (e.evt.x - this.props.absolute.x - (this.props.width - this.size) / 2) / 2
     const y = (e.evt.y - this.props.absolute.y - (this.props.height - this.size) / 2) / 2
@@ -59,12 +63,13 @@ export default class Letters extends Component {
 
     points.push(this.vertices[piece].x * 2 + this.r / 4)
     points.push(this.vertices[piece].y * 2 + this.r / 4)
-    result.push(piece)
+    this.result.push(piece)
+    this.available[piece] = false
 
     points.push(x * 2)
     points.push(y * 2)
 
-    this.setState({points, result})
+    this.setState({points})
   }
 
   onMouseMove(e) {
@@ -73,7 +78,6 @@ export default class Letters extends Component {
     }
 
     const points = this.state.points
-    const result = this.state.result
 
     points.pop()
     points.pop()
@@ -82,32 +86,44 @@ export default class Letters extends Component {
     const y = (e.evt.y - this.props.absolute.y - (this.props.height - this.size) / 2) / 2
     
     const piece = this.pieceNumber(x, y)
-    if (piece !== -1 && piece !== result[result.length - 1]) {
-      points.push(this.vertices[piece].x * 2 + this.r / 4)
-      points.push(this.vertices[piece].y * 2 + this.r / 4)
-      result.push(piece)
+    if (piece !== -1 && piece !== this.result[this.result.length - 1]) {
+      if (this.result.length > 1 && piece === this.result[this.result.length - 2]) {
+        points.pop()
+        points.pop()
+        this.available[this.result[this.result.length - 1]] = true
+        this.result.pop()
+      } else if (this.available[piece]) {
+        points.push(this.vertices[piece].x * 2 + this.r / 4)
+        points.push(this.vertices[piece].y * 2 + this.r / 4)
+        this.result.push(piece)
+        this.available[piece] = false
+      }
     }
 
     points.push(x * 2)
     points.push(y * 2)
     
-    this.setState({points, result})
+    this.setState({points})
   }
 
   onMouseUp(e) {
-    this.props.update(this.state.result.map(e => this.props.letters[e]).join(''))
-
+    if (this.result.length > 0) {
+      this.props.update(this.result.map(e => this.props.letters[e]).join(''))
+    }
     this.setState({points: undefined, result: undefined})
   }
 
   render() {
+    // Weird bug: need to copy points out, otherwise lines are not rendered correctly
+    const points = this.state.points ? this.state.points.slice() : []
+
     return (
       <Group x={this.x} y={this.y} width={this.size} height={this.size}>
         
         <Line
-          points={this.state.points}
-          stroke="brown"
-          strokeWidth={3}
+          points={points}
+          stroke="red"
+          strokeWidth={10}
           lineCap="round"
           lineJoin="round"
         />

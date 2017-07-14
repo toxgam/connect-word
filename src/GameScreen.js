@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 import {Group, Rect} from 'react-konva'
 
 import {game} from './data'
-import wordList from './wordList'
 import Answers from './Answers'
 import Letters from './Letters'
 
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
+
+    // const game = games[Math.floor(Math.random() * games.length)]
 
     this.state = {
       visibilities: game.answers.map(e => false)
