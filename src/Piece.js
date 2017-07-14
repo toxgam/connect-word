@@ -6,8 +6,13 @@ export default class Piece extends Component {
     super(props)
 
     this.state = {
-      visible: props.visible
+      visible: props.visible,
+      letter: props.letter
     }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({visible: nextProps.visible,letter: nextProps.letter})
   }
 
   render() {
@@ -25,7 +30,7 @@ export default class Piece extends Component {
         <Text
           x={this.props.x}
           y={this.props.y}
-          text={this.props.letter}
+          text={this.state.letter}
           fontStyle="bold"
           padding={this.props.size / 5}
           visible={this.state.visible}

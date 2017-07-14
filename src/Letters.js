@@ -22,25 +22,24 @@ export default class Letters extends Component {
     const s1 = 0.951 * this.r //0.951 = sin(2π / 5)
     const s2 = 0.588 * this.r //0.588 = sin(4π / 5)
 
-    this.vertices = [
-      {x: this.r, y: 0, letter: props.letters[0]},
-      {x: this.r - s1, y: this.r - c1, letter: props.letters[1]},
-      {x: this.r - s2, y: this.r + c2, letter: props.letters[2]},
-      {x: this.r + s2, y: this.r + c2, letter: props.letters[3]},
-      {x: this.r + s1, y: this.r - c1, letter: props.letters[4]}
-    ]
-
     this.available = Array(maxWordLength).fill(true)
     this.result = []
     
     this.state = {
-      points: undefined
+      points: undefined,
+      vertices: [
+        {x: this.r, y: 0, letter: props.letters[0]},
+        {x: this.r - s1, y: this.r - c1, letter: props.letters[1]},
+        {x: this.r - s2, y: this.r + c2, letter: props.letters[2]},
+        {x: this.r + s2, y: this.r + c2, letter: props.letters[3]},
+        {x: this.r + s1, y: this.r - c1, letter: props.letters[4]}
+      ]
     }
   }
 
   pieceNumber(x, y) {
-    for (let i = 0; i < this.vertices.length; i++) {
-      if (distance(this.vertices[i], {x, y}) <= this.r / 4) {
+    for (let i = 0; i < this.state.vertices.length; i++) {
+      if (distance(this.state.vertices[i], {x, y}) <= this.r / 4) {
         return i
       }
     }
@@ -61,8 +60,8 @@ export default class Letters extends Component {
       return
     }
 
-    points.push(this.vertices[piece].x * 2 + this.r / 4)
-    points.push(this.vertices[piece].y * 2 + this.r / 4)
+    points.push(this.state.vertices[piece].x * 2 + this.r / 4)
+    points.push(this.state.vertices[piece].y * 2 + this.r / 4)
     this.result.push(piece)
     this.available[piece] = false
 
@@ -93,8 +92,8 @@ export default class Letters extends Component {
         this.available[this.result[this.result.length - 1]] = true
         this.result.pop()
       } else if (this.available[piece]) {
-        points.push(this.vertices[piece].x * 2 + this.r / 4)
-        points.push(this.vertices[piece].y * 2 + this.r / 4)
+        points.push(this.state.vertices[piece].x * 2 + this.r / 4)
+        points.push(this.state.vertices[piece].y * 2 + this.r / 4)
         this.result.push(piece)
         this.available[piece] = false
       }
@@ -113,6 +112,24 @@ export default class Letters extends Component {
     this.setState({points: undefined, result: undefined})
   }
 
+  componentWillReceiveProps(nextProps) {
+    const c1 = 0.309 * this.r //0.309 = cos(2π / 5)
+    const c2 = 0.809 * this.r //0.809 = cos(π / 5)
+    const s1 = 0.951 * this.r //0.951 = sin(2π / 5)
+    const s2 = 0.588 * this.r //0.588 = sin(4π / 5)
+
+    this.state = {
+      points: undefined,
+      vertices: [
+        {x: this.r, y: 0, letter: nextProps.letters[0]},
+        {x: this.r - s1, y: this.r - c1, letter: nextProps.letters[1]},
+        {x: this.r - s2, y: this.r + c2, letter: nextProps.letters[2]},
+        {x: this.r + s2, y: this.r + c2, letter: nextProps.letters[3]},
+        {x: this.r + s1, y: this.r - c1, letter: nextProps.letters[4]}
+      ]
+    }
+  }
+
   render() {
     // Weird bug: need to copy points out, otherwise lines are not rendered correctly
     const points = this.state.points ? this.state.points.slice() : []
@@ -128,7 +145,7 @@ export default class Letters extends Component {
           lineJoin="round"
         />
 
-        {this.vertices.map((e, i) => <Piece 
+        {this.state.vertices.map((e, i) => <Piece 
           key={i}
           visible={true}
           x={e.x}
@@ -138,8 +155,8 @@ export default class Letters extends Component {
         />)}
 
         <Rect
-          width={this.size}
-          height={this.size}
+          width={this.size + this.r}
+          height={this.size + this.r}
           onMouseDown={this.onMouseDown.bind(this)}
           onMouseUp={this.onMouseUp.bind(this)}
           onMouseMove={this.onMouseMove.bind(this)}
