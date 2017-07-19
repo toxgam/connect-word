@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Group, Rect, Line} from 'react-konva'
 
 import Piece from './Piece'
-import {maxWordLength} from './data'
+import {maxWordLength, lineColor} from './data'
 
 const distance = ((a, b) => {
   return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
@@ -71,8 +71,8 @@ export default class Letters extends Component {
       return
     }
 
-    points.push(this.state.vertices[piece].x * 2 + this.r / 4)
-    points.push(this.state.vertices[piece].y * 2 + this.r / 4)
+    points.push(this.state.vertices[piece].x * 2)
+    points.push(this.state.vertices[piece].y * 2)
     this.result.push(piece)
     this.available[piece] = false
 
@@ -84,7 +84,7 @@ export default class Letters extends Component {
 
   drawMove(event) {
     const e = convertEvent(event)
-    console.log(e)
+    //console.log(e)
 
     if (this.state.points === undefined) {
       return
@@ -106,8 +106,8 @@ export default class Letters extends Component {
         this.available[this.result[this.result.length - 1]] = true
         this.result.pop()
       } else if (this.available[piece]) {
-        points.push(this.state.vertices[piece].x * 2 + this.r / 4)
-        points.push(this.state.vertices[piece].y * 2 + this.r / 4)
+        points.push(this.state.vertices[piece].x * 2)
+        points.push(this.state.vertices[piece].y * 2)
         this.result.push(piece)
         this.available[piece] = false
       }
@@ -155,10 +155,20 @@ export default class Letters extends Component {
         
         <Line
           points={points}
-          stroke="red"
-          strokeWidth={10}
+          tension={0.4}
           lineCap="round"
           lineJoin="round"
+          strokeWidth={10}
+          stroke={lineColor}
+          // fillLinearGradientStartPoint={{
+          //   x: 0, 
+          //   y: 0
+          // }}
+          // fillLinearGradientEndPoint={{
+          //   x: 100, 
+          //   y: 100
+          // }}
+          // fillLinearGradientColorStops={[0, lineColorStart, 1, lineColorEnd]}
         />
 
         {this.state.vertices.map((e, i) => <Piece 

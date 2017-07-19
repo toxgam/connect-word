@@ -12,7 +12,8 @@ export default class Answers extends Component {
     super(props)
 
     this.cellWidth = props.width / col
-    this.cellHeight = props.height / row
+    this.cellHeight = props.height / row / 1.5
+    this.addY = props.height / 3
 
     this.n = props.words.length
     this.state = {
@@ -30,12 +31,11 @@ export default class Answers extends Component {
 
   render() {
     return (
-      <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>
-        <Rect width={this.props.width} height={this.props.height} stroke='navy' strokeWidth={1} />
+      <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>       
         {this.props.words.map((e, i) => <Word
           key={i}
           x={(i < row) ? 0 : this.cellWidth}
-          y={(i % row) * this.cellHeight}
+          y={(i % row) * this.cellHeight + this.addY}
           width={this.cellWidth}
           height={this.cellHeight}
           visible={this.state.visibilities[i]}

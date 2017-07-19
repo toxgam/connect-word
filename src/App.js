@@ -5,10 +5,10 @@ import GameScreen from './GameScreen'
 
 class App extends Component {
   render() {
-    const x = window.innerWidth * 0.1
-    const y = window.innerHeight * 0.1
-    const width = window.innerWidth * 0.8
-    const height = window.innerHeight * 0.8
+    const x = 0
+    const y = 0
+    const width = window.innerWidth
+    const height = window.innerHeight
 
     return (
       <Stage width={window.innerWidth} height={window.innerHeight}>

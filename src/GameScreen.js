@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Group, Rect} from 'react-konva'
 
-import {maxWord} from './data'
+import {maxWord, backgroundColor} from './data'
 import Answers from './Answers'
 import Letters from './Letters'
 import {games} from './games'
@@ -82,7 +82,12 @@ export default class GameScreen extends Component {
   render() {
     return (
       <Group>
-        <Rect width={this.props.width} height={this.props.height} stroke='blue' strokeWidth={1} />
+        <Rect 
+          fill={backgroundColor}
+          width={this.props.width} 
+          height={this.props.height} 
+        />
+
         <Answers
           x={0}
           y={0}
