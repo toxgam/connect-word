@@ -181,8 +181,10 @@ export default class Letters extends Component {
         />)}
 
         <Rect
-          width={this.size + this.r}
-          height={this.size + this.r}
+          x={-this.x}
+          y={-this.y}
+          width={this.props.width}
+          height={this.props.height * 2}
           
           onMouseDown={this.drawBegin.bind(this)}
           onTouchStart={this.drawBegin.bind(this)}
