@@ -4,7 +4,7 @@ import {Group, Rect} from 'react-konva'
 import {maxWord, backgroundColor} from './data'
 import Answers from './Answers'
 import Letters from './Letters'
-import {games} from './games'
+import {games} from './gamesKinde'
 
 const select = (rawGame => {
   const game = rawGame

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Circle, Text, Group} from 'react-konva'
+import {Text, Group} from 'react-konva'
 
 import {textColor, font} from './data'
 

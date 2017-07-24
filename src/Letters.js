@@ -120,7 +120,7 @@ export default class Letters extends Component {
   }
 
   drawEnd(event) {
-    const e = convertEvent(event)
+    //const e = convertEvent(event)
 
     if (this.result.length > 0) {
       this.props.update(this.result.map(e => this.props.letters[e]).join(''))

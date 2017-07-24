@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Group, Rect} from 'react-konva'
+import {Group} from 'react-konva'
 
 import {maxWord} from './data'
 import Word from './Word'

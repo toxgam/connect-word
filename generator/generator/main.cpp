@@ -20,7 +20,7 @@ vector<string> wordList;
 int n;
 
 void readWordList(vector<string> &wordList) {
-    ifstream iFile("wordList.txt");
+    ifstream iFile("wordListKinde.txt");
     
     string tmp;
     
@@ -30,6 +30,20 @@ void readWordList(vector<string> &wordList) {
         
         wordList.push_back(tmp);
     }
+}
+
+vector<string> clean(vector<string> wordList) {
+    vector<string> result;
+    
+    result.push_back(wordList[0]);
+    n = (int)wordList.size();
+    for (int i = 1; i < n; i++) {
+        if (wordList[i] != wordList[i - 1]) {
+            result.push_back(wordList[i]);
+        }
+    }
+    
+    return result;
 }
 
 int getID(string s) {
@@ -77,6 +91,8 @@ void tries(string answer, int n, map<char, int> &count, vector<int> &ans) {
 
 int main(int argc, const char * argv[]) {
     readWordList(wordList);
+    sort(wordList.begin(), wordList.end());
+    wordList = clean(wordList);
     n = (int)wordList.size();
     
     vector<bool> notAvailable(n);
