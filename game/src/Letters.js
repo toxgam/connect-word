@@ -26,23 +26,16 @@ export default class Letters extends Component {
     this.y = this.props.y + (props.height - this.size) /2
     this.r = this.size / 4
 
-    const c1 = 0.309 * this.r //0.309 = cos(2π / 5)
-    const c2 = 0.809 * this.r //0.809 = cos(π / 5)
-    const s1 = 0.951 * this.r //0.951 = sin(2π / 5)
-    const s2 = 0.588 * this.r //0.588 = sin(4π / 5)
-
     this.available = Array(maxWordLength).fill(true)
     this.result = []
-    
+
     this.state = {
       points: undefined,
-      vertices: [
-        {x: this.r, y: 0, letter: props.letters[0]},
-        {x: this.r - s1, y: this.r - c1, letter: props.letters[1]},
-        {x: this.r - s2, y: this.r + c2, letter: props.letters[2]},
-        {x: this.r + s2, y: this.r + c2, letter: props.letters[3]},
-        {x: this.r + s1, y: this.r - c1, letter: props.letters[4]}
-      ]
+      vertices: props.letters.split("").map((e, i) => {return {
+        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        letter: e
+      }})
     }
   }
 
@@ -129,20 +122,13 @@ export default class Letters extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const c1 = 0.309 * this.r //0.309 = cos(2π / 5)
-    const c2 = 0.809 * this.r //0.809 = cos(π / 5)
-    const s1 = 0.951 * this.r //0.951 = sin(2π / 5)
-    const s2 = 0.588 * this.r //0.588 = sin(4π / 5)
-
     this.state = {
       points: undefined,
-      vertices: [
-        {x: this.r, y: 0, letter: nextProps.letters[0]},
-        {x: this.r - s1, y: this.r - c1, letter: nextProps.letters[1]},
-        {x: this.r - s2, y: this.r + c2, letter: nextProps.letters[2]},
-        {x: this.r + s2, y: this.r + c2, letter: nextProps.letters[3]},
-        {x: this.r + s1, y: this.r - c1, letter: nextProps.letters[4]}
-      ]
+      vertices: nextProps.letters.split("").map((e, i) => {return {
+        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        letter: e
+      }})
     }
   }
 
@@ -160,15 +146,6 @@ export default class Letters extends Component {
           lineJoin="round"
           strokeWidth={10}
           stroke={lineColor}
-          // fillLinearGradientStartPoint={{
-          //   x: 0, 
-          //   y: 0
-          // }}
-          // fillLinearGradientEndPoint={{
-          //   x: 100, 
-          //   y: 100
-          // }}
-          // fillLinearGradientColorStops={[0, lineColorStart, 1, lineColorEnd]}
         />
 
         {this.state.vertices.map((e, i) => <Piece 

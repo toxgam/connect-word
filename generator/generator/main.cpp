@@ -132,5 +132,13 @@ int main(int argc, const char * argv[]) {
     
     oFile << "]";
     
+    ofstream oFile1("list.txt");
+    
+    for (int i = 0; i < n; i++) {
+        if (notAvailable[i]) {
+            oFile1 << wordList[i] << "\n";
+        }
+    }
+    
     return 0;
 }
