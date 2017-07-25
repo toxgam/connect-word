@@ -14,7 +14,9 @@
 
 using namespace std;
 
-const int maxLength = 5;
+const int maxLength = 6;
+const int minAns = 6;
+const string outputname = "gameLength6.js";
 
 vector<string> wordList;
 int n;
@@ -90,16 +92,19 @@ void tries(string answer, int n, map<char, int> &count, vector<int> &ans) {
 }
 
 int main(int argc, const char * argv[]) {
+    //preprocessing
     readWordList(wordList);
     sort(wordList.begin(), wordList.end());
     wordList = clean(wordList);
     n = (int)wordList.size();
     
+    //retrieve world
     vector<bool> notAvailable(n);
     
-    ofstream oFile("games.txt");
+    ofstream oFile(outputname);
     
-    oFile << "export const game = [";
+    oFile << "export const games = [";
+    int c = 0;
     
     for (int i = 0; i < n; i++) {
         if (wordList[i].length() == maxLength && !notAvailable[i]) {
@@ -115,7 +120,7 @@ int main(int argc, const char * argv[]) {
             
             tries("", maxLength, count, ans);
             
-            if (ans.size() >= 6) {
+            if (ans.size() >= minAns) {
                 oFile << "{\n";
                 oFile << "  problem: \"" << shuffle << "\",\n";
                 oFile << "  answers: [\n";
@@ -126,19 +131,22 @@ int main(int argc, const char * argv[]) {
                 }
                 
                 oFile << "  ]}, ";
+                
+                c++;
             }
         }
     }
     
     oFile << "]";
+    cout << c;
     
-    ofstream oFile1("list.txt");
-    
-    for (int i = 0; i < n; i++) {
-        if (notAvailable[i]) {
-            oFile1 << wordList[i] << "\n";
-        }
-    }
+//    ofstream oFile1("list.txt");
+//    
+//    for (int i = 0; i < n; i++) {
+//        if (notAvailable[i]) {
+//            oFile1 << wordList[i] << "\n";
+//        }
+//    }
     
     return 0;
 }

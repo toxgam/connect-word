@@ -1,20 +1,29 @@
 import React, {Component} from 'react'
 import {Group} from 'react-konva'
 
-import {maxWordLength} from './data'
 import Letter from './Letter'
+import {margin} from './data'
 
 export default class Word extends Component {
   constructor(props) {
     super(props)
 
+    const size = props.size
+
+    this.verticalMargin = (props.height - size) / 2
+    this.outMargin = (props.centerAlign) ? 
+      (props.width - size * props.letters.length - size * margin * (props.letters.length)) / 2:
+      size * margin
+
     this.state = {
+      x: props.x,
+      y: props.y,
+      size: size,
+      width: props.width,
+      height: props.height,
+      letters: props.letters,
       visible: props.visible
     }
-
-    this.n = props.letters.length
-    this.cellSize = this.props.width / ((3 * maxWordLength + 1) / 2)
-    this.vertivalMargin = (this.props.height - this.cellSize) / 4
   }
 
   componentWillReceiveProps(nextProps) {
@@ -22,15 +31,16 @@ export default class Word extends Component {
   }
 
   render() {
-    //console.log(this.props.letters)
+    console.log("Word")
+    console.log(this.verticalMargin, this.outMargin)
     return (
-      <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>
-        {Array.prototype.map.call(this.props.letters, ((e, i) => <Letter 
+      <Group x={this.state.x} y={this.state.y} width={this.state.width} height={this.state.height}>
+        {Array.prototype.map.call(this.state.letters, ((e, i) => <Letter 
           key={i}
           visible={this.state.visible}
-          x={this.cellSize / 4 + this.cellSize * i * 3 / 4}
-          y={this.vertivalMargin}
-          size={this.cellSize}
+          x={this.outMargin + i * this.state.size * (1 + margin)}
+          y={this.verticalMargin}
+          size={this.state.size}
           letter={e}
         />))}
       </Group>

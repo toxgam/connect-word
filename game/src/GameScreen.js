@@ -4,7 +4,11 @@ import {Group, Rect} from 'react-konva'
 import {maxWord, backgroundColor} from './data'
 import Answers from './Answers'
 import Letters from './Letters'
-import {games} from './gamesKinde'
+import {games as games2} from './gameLength2'
+import {games as games3} from './gameLength3'
+import {games as games4} from './gameLength4'
+import {games as games5} from './gameLength5'
+import {games as games6} from './gameLength6'
 
 const select = (rawGame => {
   const game = rawGame
@@ -23,6 +27,8 @@ const select = (rawGame => {
 
   return game
 })
+
+let games = games3
 
 export default class GameScreen extends Component {
   constructor(props) {
@@ -90,12 +96,13 @@ export default class GameScreen extends Component {
 
         <Answers
           x={0}
-          y={0}
+          y={this.props.height / 6}
           width={this.props.width}
-          height={this.props.height / 2}
+          height={this.props.height / 3}
           words={this.state.answers}
           visibilities={this.state.visibilities}
           checkEndGame={this.checkEndGame.bind(this)}
+          maxWordLength={this.state.letters.length}
         />
 
         <Letters

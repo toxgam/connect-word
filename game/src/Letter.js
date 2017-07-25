@@ -8,6 +8,10 @@ export default class Letter extends Component {
     super(props)
 
     this.state = {
+      letter: props.letter,
+      x: props.x,
+      y: props.y,
+      size: props.size,
       visible: props.visible
     }
   }
@@ -17,28 +21,29 @@ export default class Letter extends Component {
   }
 
   render() {
+    // console.log(this.state.x, this.state.y)
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.size} height={this.props.size}>
         <Rect
-          x={this.props.x}
-          y={this.props.y}
-          width={this.props.size}
-          height={this.props.size}
+          x={0}
+          y={0}
+          width={this.state.size}
+          height={this.state.size}
           fill={backgroundTextColor}
           stroke={0}
           visible={!this.state.visible}
         />
 
         <Text
-          x={this.props.x}
-          y={this.props.y}
+          x={0}
+          y={0}
           align="center"
-          text={this.props.letter}
+          text={this.state.letter}
           fontFamily={font}
           fontStyle="bold"
-          fontSize={this.props.size * 1.3}
+          fontSize={this.state.size}
           fill={textColor}
-          padding={this.props.size / 5}
+          padding={this.state.size / 5}
           visible={this.state.visible}
         />
       </Group>

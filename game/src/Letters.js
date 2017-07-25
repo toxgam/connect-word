@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Group, Rect, Line} from 'react-konva'
 
 import Piece from './Piece'
-import {maxWordLength, lineColor} from './data'
+import {lineColor} from './data'
 
 const distance = ((a, b) => {
   return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2))
@@ -25,15 +25,16 @@ export default class Letters extends Component {
     this.x = this.props.x + (props.width - this.size) / 2
     this.y = this.props.y + (props.height - this.size) /2
     this.r = this.size / 4
+    this.length = this.props.letters.length
 
-    this.available = Array(maxWordLength).fill(true)
+    this.available = Array(this.length).fill(true)
     this.result = []
 
     this.state = {
       points: undefined,
       vertices: props.letters.split("").map((e, i) => {return {
-        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
-        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / this.length)),
+        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / this.length)),
         letter: e
       }})
     }
@@ -125,8 +126,8 @@ export default class Letters extends Component {
     this.state = {
       points: undefined,
       vertices: nextProps.letters.split("").map((e, i) => {return {
-        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
-        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / maxWordLength)),
+        x: this.r * (1 + Math.cos(Math.PI / 2 + 2 * Math.PI * i / this.length)),
+        y: this.r * (1 - Math.sin(Math.PI / 2 + 2 * Math.PI * i / this.length)),
         letter: e
       }})
     }
