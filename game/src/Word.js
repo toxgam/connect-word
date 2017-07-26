@@ -8,17 +8,12 @@ export default class Word extends Component {
   constructor(props) {
     super(props)
 
-    const size = props.size
-
-    this.verticalMargin = (props.height - size) / 2
-    this.outMargin = (props.centerAlign) ? 
-      (props.width - size * props.letters.length - size * margin * (props.letters.length)) / 2:
-      size * margin
+    this.calculate(props)
 
     this.state = {
       x: props.x,
       y: props.y,
-      size: size,
+      size: props.size,
       width: props.width,
       height: props.height,
       letters: props.letters,
@@ -26,8 +21,31 @@ export default class Word extends Component {
     }
   }
 
+  calculate(props) {
+    const size = props.size
+
+    this.verticalMargin = (props.height - size) / 2
+    this.outMargin = (props.centerAlign) ? 
+      (props.width - size * props.letters.length - size * margin * (props.letters.length)) / 2:
+      size * margin
+  }
+
   componentWillReceiveProps(nextProps) {
-    this.setState({visible: nextProps.visible})
+    if (nextProps.letters === this.state.letter) {
+      this.setState({visible: nextProps.visible})
+    } else {
+      this.calculate(nextProps)
+
+      this.setState({
+        x: nextProps.x,
+        y: nextProps.y,
+        size: nextProps.size,
+        width: nextProps.width,
+        height: nextProps.height,
+        letters: nextProps.letters,
+        visible: nextProps.visible
+      })
+    }
   }
 
   render() {

@@ -8,6 +8,23 @@ export default class Answers extends Component {
   constructor(props) {
     super(props)
 
+    let size1, size2, size, heights, widths, xs, ys
+
+    [size1, size2, size, heights, widths, xs, ys] = this.init(props)
+
+    this.state = {
+      visibilities: props.words.map(e => false),
+      centerAlign: (size1 > size2),
+      words: props.words,
+      size: size,
+      heights: heights,
+      widths: widths,
+      xs: xs,
+      ys: ys
+    }
+  }
+
+  init(props) {
     const n = props.words.length
     const lengths = props.words.map(e => e.length)
     const middleLength = lengths[Math.floor((lengths.length - 1) / 2)]
@@ -58,20 +75,28 @@ export default class Answers extends Component {
       }
     }
 
-    this.state = {
-      visibilities: props.words.map(e => false),
-      centerAlign: (size1 > size2),
-      words: props.words,
-      size: size,
-      heights: heights,
-      widths: widths,
-      xs: xs,
-      ys: ys
-    }
+    return [size1, size2, size, heights, widths, xs, ys]
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({visibilities: nextProps.visibilities})
+    if (nextProps.words === this.state.words) {
+      this.setState({visibilities: nextProps.visibilities})
+    } else {
+      let size1, size2, size, heights, widths, xs, ys
+
+      [size1, size2, size, heights, widths, xs, ys] = this.init(nextProps)
+
+      this.setState({
+        visibilities: nextProps.words.map(e => false),
+        centerAlign: (size1 > size2),
+        words: nextProps.words,
+        size: size,
+        heights: heights,
+        widths: widths,
+        xs: xs,
+        ys: ys
+      })
+    }
   }
 
   componentDidUpdate() {

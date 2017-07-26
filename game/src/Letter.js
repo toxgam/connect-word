@@ -17,7 +17,17 @@ export default class Letter extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({visible: nextProps.visible})
+    if (nextProps.letter === this.state.letter) {
+      this.setState({visible: nextProps.visible})
+    } else {
+      this.setState({
+        letter: nextProps.letter,
+        x: nextProps.x,
+        y: nextProps.y,
+        size: nextProps.size,
+        visible: nextProps.visible
+      })
+    }
   }
 
   render() {

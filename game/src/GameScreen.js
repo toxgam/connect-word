@@ -28,7 +28,7 @@ const select = (rawGame => {
   return game
 })
 
-let games = games3
+let games = games4
 
 export default class GameScreen extends Component {
   constructor(props) {
