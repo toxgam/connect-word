@@ -49,8 +49,8 @@ export default class Word extends Component {
   }
 
   render() {
-    console.log("Word")
-    console.log(this.verticalMargin, this.outMargin)
+    // console.log("Word")
+    // console.log(this.verticalMargin, this.outMargin)
     return (
       <Group x={this.state.x} y={this.state.y} width={this.state.width} height={this.state.height}>
         {Array.prototype.map.call(this.state.letters, ((e, i) => <Letter 

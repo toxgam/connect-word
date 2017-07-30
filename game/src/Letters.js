@@ -123,6 +123,8 @@ export default class Letters extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    this.length = nextProps.letters.length
+
     this.state = {
       points: undefined,
       vertices: nextProps.letters.split("").map((e, i) => {return {
@@ -139,7 +141,6 @@ export default class Letters extends Component {
 
     return (
       <Group x={this.x} y={this.y} width={this.size} height={this.size}>
-        
         <Line
           points={points}
           tension={0.4}

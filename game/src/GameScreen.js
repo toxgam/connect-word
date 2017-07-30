@@ -1,14 +1,20 @@
 import React, {Component} from 'react'
 import {Group, Rect} from 'react-konva'
 
-import {maxWord, backgroundColor} from './data'
+//inport views
 import Answers from './Answers'
 import Letters from './Letters'
+import Panel from './Panel'
+
+//import data
+import {maxWord, backgroundColor} from './data'
 import {games as games2} from './gameLength2'
 import {games as games3} from './gameLength3'
 import {games as games4} from './gameLength4'
 import {games as games5} from './gameLength5'
 import {games as games6} from './gameLength6'
+
+const games = [games2, games3, games4, games4, games5, games6]
 
 const select = (rawGame => {
   const game = rawGame
@@ -28,13 +34,83 @@ const select = (rawGame => {
   return game
 })
 
-let games = games4
+const random = (n, notAvallable) => {
+  let count = Math.floor(Math.random() * (n - notAvallable.length))
+
+  const binarySearch = (array, e) => {
+    let l = 0, r = array.length - 1, result = -1
+
+    while (l <= r) {
+      const p = Math.floor((l + r) / 2)
+
+      if (array[p] === e) {
+        result = p
+        break
+      } else if (array[p] < e) {
+        l = p + 1
+      } else {
+        r = p - 1
+      }
+    }
+
+    return result
+  }
+
+  let result = 0
+  while (count > 0) {
+    if (binarySearch(notAvallable, result) === -1) {
+      count--
+    }
+    result++
+  }
+
+  return --result
+}
+
+const levelInit = () => {
+  if (localStorage.getItem("level") === null || localStorage.getItem("level") === "NaN") {
+    localStorage.setItem("level", 0)
+    localStorage.setItem("gamePlayed", JSON.stringify([]))
+  }
+
+  let level = JSON.parse(localStorage.getItem("level"))
+  let gamePlayed = JSON.parse(localStorage.getItem("gamePlayed"))
+
+  if (gamePlayed.length === games[level].length) {
+    localStorage.setItem("level", (level + 1))
+    level++
+
+    localStorage.setItem("gamePlayed", JSON.stringify([]))
+    gamePlayed = []
+  }
+
+  const gameNumber = random(games[level].length, gamePlayed)
+  for (let i = gamePlayed.length - 1; i >= -1; i--) {
+    if (i === -1) {
+      gamePlayed[0] = gameNumber
+      break
+    }
+
+    if (gamePlayed[i] > gameNumber) {
+      gamePlayed[i + 1] = gamePlayed[i]
+    } else {
+      gamePlayed[i] = gameNumber
+      break
+    }
+  }
+  localStorage.setItem("gamePlayed", JSON.stringify(gamePlayed))
+
+  return [level, gameNumber]
+}
 
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
 
-    const rawGame = games[Math.floor(Math.random() * games.length)]
+    let level, gameNumber
+    [level, gameNumber] = levelInit()
+
+    const rawGame = games[level][gameNumber]
     const game = select(rawGame)
 
     console.log(game)
@@ -54,7 +130,10 @@ export default class GameScreen extends Component {
   init = ((props) => {
     alert("You Won")
 
-    const rawGame = games[Math.floor(Math.random() * games.length)]
+    let level, gameNumber
+    [level, gameNumber] = levelInit()
+
+    const rawGame = games[level][gameNumber]
     const game = select(rawGame)
 
     console.log(game)
@@ -87,7 +166,7 @@ export default class GameScreen extends Component {
 
   render() {
     return (
-      <Group>
+      <Group>      
         <Rect 
           fill={backgroundColor}
           width={this.props.width} 
@@ -113,6 +192,13 @@ export default class GameScreen extends Component {
           letters={this.state.letters}
           absolute={{x: this.absolute.x, y: this.absolute.y + this.props.height / 2}}
           update={this.update.bind(this)}
+        />
+
+        <Panel
+          x={0}
+          y={0}
+          width={this.props.width}
+          height={this.props.height / 6}
         />
       </Group>
     )

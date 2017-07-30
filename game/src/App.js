@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
-import {Layer, Stage} from 'react-konva'
+import {BrowserRouter as Router} from 'react-router-dom'
 
-import GameScreen from './GameScreen'
+import MainScreen from './MainScreen'
+import StartScreen from './StartScreen'
 
 class App extends Component {
   render() {
-    const x = 0
-    const y = 0
-    const width = window.innerWidth
-    const height = window.innerHeight
-
     return (
-      <Stage width={window.innerWidth} height={window.innerHeight}>
-        <Layer x={x} y={y}>
-          <GameScreen  x={x} y={y} width={width} height={height} />
-        </Layer>
-      </Stage>
+      <Router>
+        <div>
+          {StartScreen.route}
+          {MainScreen.route}
+        </div>
+      </Router>
     );
   }
 }
