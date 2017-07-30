@@ -57,7 +57,7 @@ const random = (n, notAvallable) => {
   }
 
   let result = 0
-  while (count > 0) {
+  while (count >= 0) {
     if (binarySearch(notAvallable, result) === -1) {
       count--
     }
