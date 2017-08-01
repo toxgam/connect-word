@@ -14,15 +14,17 @@
 
 using namespace std;
 
-const int maxLength = 6;
-const int minAns = 6;
-const string outputname = "gameLength6.js";
+//const int maxLength = 2;
+//const int minAns = 2;
+//const string outputname = "gameLength2.js";
+int maxLength;
+int minAns;
 
 vector<string> wordList;
 int n;
 
 void readWordList(vector<string> &wordList) {
-    ifstream iFile("wordListKinde.txt");
+    ifstream iFile("wordListHighSchool.txt");
     
     string tmp;
     
@@ -101,44 +103,50 @@ int main(int argc, const char * argv[]) {
     //retrieve world
     vector<bool> notAvailable(n);
     
-    ofstream oFile(outputname);
+    ofstream oFile("gameHighSchool.js");
     
     oFile << "export const games = [";
-    int c = 0;
-    
-    for (int i = 0; i < n; i++) {
-        if (wordList[i].length() == maxLength && !notAvailable[i]) {
-            vector<int> ans;
-            map<char, int> count;
-            
-            string shuffle = wordList[i];
-            random_shuffle(shuffle.begin(), shuffle.end());
-            
-            for (char e: wordList[i]) {
-                count[e]++;
-            }
-            
-            tries("", maxLength, count, ans);
-            
-            if (ans.size() >= minAns) {
-                oFile << "{\n";
-                oFile << "  problem: \"" << shuffle << "\",\n";
-                oFile << "  answers: [\n";
+    for (maxLength = 2; maxLength <= 6; maxLength++) {
+        int c = 0;
+        minAns = maxLength;
+        
+        oFile << "[";
+        for (int i = 0; i < n; i++) {
+            if (wordList[i].length() == maxLength && !notAvailable[i]) {
+                vector<int> ans;
+                map<char, int> count;
                 
-                for (int i : ans) {
-                    notAvailable[i] = true;
-                    oFile << "    \"" << wordList[i] << "\",\n";
+                string shuffle = wordList[i];
+                random_shuffle(shuffle.begin(), shuffle.end());
+                
+                for (char e: wordList[i]) {
+                    count[e]++;
                 }
                 
-                oFile << "  ]}, ";
+                tries("", maxLength, count, ans);
                 
-                c++;
+                if (ans.size() >= minAns) {
+                    oFile << "{\n";
+                    oFile << "  problem: \"" << shuffle << "\",\n";
+                    oFile << "  answers: [\n";
+                    
+                    for (int i : ans) {
+                        notAvailable[i] = true;
+                        oFile << "    \"" << wordList[i] << "\",\n";
+                    }
+                    
+                    oFile << "  ]}, ";
+                    
+                    c++;
+                }
             }
         }
+        
+        oFile << "], ";
+        cout << c << "\n";
     }
     
     oFile << "]";
-    cout << c;
     
 //    ofstream oFile1("list.txt");
 //    

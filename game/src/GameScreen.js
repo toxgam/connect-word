@@ -7,14 +7,19 @@ import Letters from './Letters'
 import Panel from './Panel'
 
 //import data
-import {maxWord, backgroundColor} from './data'
-import {games as games2} from './gameLength2'
-import {games as games3} from './gameLength3'
-import {games as games4} from './gameLength4'
-import {games as games5} from './gameLength5'
-import {games as games6} from './gameLength6'
+import {packages, maxWord, backgroundColor} from './data'
+import {games as games0} from './gameKindergartern'
+import {games as games1} from './gameGrade1'
+import {games as games2} from './gameGrade2'
+import {games as games3} from './gameGrade3'
+import {games as games4} from './gameGrade4'
+import {games as games5} from './gameGrade5'
+import {games as games6} from './gameGrade6'
+import {games as games7} from './gameGrade7'
+import {games as games8} from './gameGrade8'
+import {games as games9} from './gameHighSchool'
 
-const games = [games2, games3, games4, games4, games5, games6]
+const games = [games0, games1, games2, games3, games4, games4, games5, games6, games7, games8, games9]
 
 const select = (rawGame => {
   const game = rawGame
@@ -67,58 +72,80 @@ const random = (n, notAvallable) => {
   return --result
 }
 
-const levelInit = () => {
-  if (localStorage.getItem("level") === null || localStorage.getItem("level") === "NaN") {
-    localStorage.setItem("level", 0)
-    localStorage.setItem("gamePlayed", JSON.stringify([]))
+const levelInit = (id) => {
+  if (localStorage.getItem("dataCW") === null) {
+    localStorage.setItem("dataCW", JSON.stringify([]))
   }
 
-  let level = JSON.parse(localStorage.getItem("level"))
-  let gamePlayed = JSON.parse(localStorage.getItem("gamePlayed"))
+  const dataCW = JSON.parse(localStorage.getItem("dataCW"))
 
-  if (gamePlayed.length === games[level].length) {
-    localStorage.setItem("level", (level + 1))
+  if (dataCW[id] === undefined || dataCW[id] === null) {
+    dataCW[id] = {
+      level: 0,
+      gamePlayed: []
+    }
+  }
+
+  let level = dataCW[id].level
+  let gamePlayed = dataCW[id].gamePlayed
+  // console.log(id)
+  // console.log(dataCW)
+  while (gamePlayed.length === games[id][level].length) {
     level++
-
-    localStorage.setItem("gamePlayed", JSON.stringify([]))
     gamePlayed = []
   }
 
-  const gameNumber = random(games[level].length, gamePlayed)
+  const gameNumber = random(games[id][level].length, gamePlayed)
+
+  dataCW[id].level = level
+  dataCW[id].gamePlayed = gamePlayed
+  localStorage.setItem("dataCW", JSON.stringify(dataCW))
+
+  return [level, gameNumber, gamePlayed.length]
+}
+
+const endGame = (id, gameNumber) => {
+  const dataCW = JSON.parse(localStorage.getItem("dataCW"))
+  const gamePlayed = dataCW[id].gamePlayed
+
   for (let i = gamePlayed.length - 1; i >= -1; i--) {
     if (i === -1) {
       gamePlayed[0] = gameNumber
-      break
-    }
-
-    if (gamePlayed[i] > gameNumber) {
+    } else if (gamePlayed[i] > gameNumber) {
       gamePlayed[i + 1] = gamePlayed[i]
+    } else if (gamePlayed[i] === gameNumber) {
+      console.log("Err")
     } else {
       gamePlayed[i] = gameNumber
       break
     }
   }
-  localStorage.setItem("gamePlayed", JSON.stringify(gamePlayed))
 
-  return [level, gameNumber]
+  dataCW[id].gamePlayed = gamePlayed
+  localStorage.setItem("dataCW", JSON.stringify(dataCW))
 }
 
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
 
-    let level, gameNumber
-    [level, gameNumber] = levelInit()
+    let level, gameNumber, gameNum
+    [level, gameNumber, gameNum] = levelInit(props.id)
+    // console.log(games)
 
-    const rawGame = games[level][gameNumber]
+    const rawGame = games[props.id][level][gameNumber]
     const game = select(rawGame)
 
-    console.log(game)
+    // console.log(game)
 
     this.state = {
       visibilities: game.answers.map(e => false),
       letters: game.problem,
-      answers: game.answers
+      answers: game.answers,
+      level: level,
+      gameNumber: gameNumber,
+      gameNum: gameNum,
+      maxGameNumber: games[level].length
     }
 
     this.absolute = {
@@ -128,25 +155,30 @@ export default class GameScreen extends Component {
   }
 
   init = ((props) => {
-    alert("You Won")
+    // alert("You Won")
 
-    let level, gameNumber
-    [level, gameNumber] = levelInit()
+    let level, gameNumber, gameNum
+    [level, gameNumber, gameNum] = levelInit(props.id)
 
-    const rawGame = games[level][gameNumber]
+    const rawGame = games[props.id][level][gameNumber]
     const game = select(rawGame)
 
-    console.log(game)
+    // console.log(game)
 
     this.setState({
       visibilities: game.answers.map(e => false),
       letters: game.problem,
-      answers: game.answers
+      answers: game.answers,
+      level: level,
+      gameNumber: gameNumber,
+      gameNum: gameNum,
+      maxGameNumber: games[level].length
     })
   })
 
   checkEndGame = (() => {
     if (this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
+      endGame(this.props.id, this.state.gameNumber)
       this.init(this.props)
     }
   })
@@ -197,6 +229,12 @@ export default class GameScreen extends Component {
         <Panel
           x={0}
           y={0}
+          id={this.props.id}
+          level={this.state.level + 1}
+          maxLevel={games.length}
+          package={packages[this.props.id]}
+          gameNumber={this.state.gameNum + 1}
+          maxGameNumber={this.state.maxGameNumber}
           width={this.props.width}
           height={this.props.height / 6}
         />
