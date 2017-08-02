@@ -20,7 +20,8 @@ export default class Answers extends Component {
       heights: heights,
       widths: widths,
       xs: xs,
-      ys: ys
+      ys: ys,
+      changed: props.changed
     }
   }
 
@@ -79,8 +80,8 @@ export default class Answers extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.words === this.state.words) {
-      this.setState({visibilities: nextProps.visibilities})
+    if (!nextProps.changed) {
+      this.setState({visibilities: nextProps.visibilities, changed: nextProps.changed})
     } else {
       let size1, size2, size, heights, widths, xs, ys
 
@@ -94,7 +95,8 @@ export default class Answers extends Component {
         heights: heights,
         widths: widths,
         xs: xs,
-        ys: ys
+        ys: ys,
+        changed: nextProps.changed
       })
     }
   }
@@ -121,6 +123,7 @@ export default class Answers extends Component {
           height={this.state.heights[i]}
           visible={this.state.visibilities[i]}
           letters={this.state.words[i]}
+          changed={this.state.changed}
         />)}
       </Group>
     )

@@ -172,7 +172,8 @@ export default class GameScreen extends Component {
       level: level,
       gameNumber: gameNumber,
       gameNum: gameNum,
-      maxGameNumber: games[level].length
+      maxGameNumber: games[level].length,
+      changed: true
     })
   })
 
@@ -193,7 +194,7 @@ export default class GameScreen extends Component {
       }
     }
     
-    this.setState({visibilities})
+    this.setState({visibilities, changed: false})
   }
 
   render() {
@@ -214,6 +215,7 @@ export default class GameScreen extends Component {
           visibilities={this.state.visibilities}
           checkEndGame={this.checkEndGame.bind(this)}
           maxWordLength={this.state.letters.length}
+          changed={this.state.changed}
         />
 
         <Letters

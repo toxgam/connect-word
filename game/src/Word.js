@@ -17,7 +17,8 @@ export default class Word extends Component {
       width: props.width,
       height: props.height,
       letters: props.letters,
-      visible: props.visible
+      visible: props.visible,
+      changed:props.changed
     }
   }
 
@@ -31,8 +32,8 @@ export default class Word extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.letters === this.state.letter) {
-      this.setState({visible: nextProps.visible})
+    if (!nextProps.changed) {
+      this.setState({visible: nextProps.visible, changed: nextProps.changed})
     } else {
       this.calculate(nextProps)
 
@@ -43,7 +44,8 @@ export default class Word extends Component {
         width: nextProps.width,
         height: nextProps.height,
         letters: nextProps.letters,
-        visible: nextProps.visible
+        visible: nextProps.visible,
+        changed: nextProps.changed
       })
     }
   }
@@ -60,6 +62,7 @@ export default class Word extends Component {
           y={this.verticalMargin}
           size={this.state.size}
           letter={e}
+          changed={this.state.changed}
         />))}
       </Group>
     )

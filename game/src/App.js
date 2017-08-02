@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter as Router} from 'react-router-dom'
 
 import MainScreen from './MainScreen'
 import StartScreen from './StartScreen'

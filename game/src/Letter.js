@@ -17,7 +17,7 @@ export default class Letter extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.letter === this.state.letter) {
+    if (!nextProps.changed) {
       this.setState({visible: nextProps.visible})
     } else {
       this.setState({
@@ -25,7 +25,7 @@ export default class Letter extends Component {
         x: nextProps.x,
         y: nextProps.y,
         size: nextProps.size,
-        visible: nextProps.visible
+        visible: nextProps.visible,
       })
     }
   }
