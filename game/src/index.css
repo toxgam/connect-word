@@ -16,7 +16,6 @@ body {
 .package {
   text-align: center;
   margin: 20px auto;
-  width: 30%;
-  height: 25px;
+  width: 50%;
   border: 2px solid black;
 }
