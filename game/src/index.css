@@ -11,7 +11,7 @@ body {
 }
 
 .start_screen .header {
-  height: 100px;
+  height: 0px;
   color: white;
 }
 
@@ -19,5 +19,7 @@ body {
   text-align: center;
   margin: 20px auto;
   width: 50%;
-  border: 2px solid white;
+  height: 1.8em;
+  padding-top: 0.8em;
+  border: 1px solid white;
 }
