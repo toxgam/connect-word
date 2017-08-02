@@ -23,10 +23,10 @@ import {games as games9} from './gameHighSchool'
 
 export const games = [games0, games1, games2, games3, games4, games4, games5, games6, games7, games8, games9]
 
-export const packages = ["Kindergarten", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade8 ", "High School"]
+export const packages = ["Kindergarten", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8 ", "High School"]
 export const maxWord = 8
 export const margin = 1 / 4
-export const backgroundColor = "#242426"
+export const backgroundColor = "black"//"#242426"
 export const backgroundTextColor = "#4040ce" //"#5a5c60"
 export const textColor = "white"
 export const font = "Comic Sans MS"
