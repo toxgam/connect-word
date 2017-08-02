@@ -112,7 +112,7 @@ export default class GameScreen extends Component {
   checkEndGame = (() => {
     if (this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
       endGame(this.props.packageId, this.state.gameId)
-      this.init(this.props)
+      setTimeout(() => {this.init(this.props)}, 1000)
     }
   })
 
