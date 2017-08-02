@@ -7,21 +7,10 @@ import Letters from './Letters'
 import Panel from './Panel'
 
 //import data
-import {packages, maxWord, backgroundColor} from './data'
-import {games as games0} from './gameKindergartern'
-import {games as games1} from './gameGrade1'
-import {games as games2} from './gameGrade2'
-import {games as games3} from './gameGrade3'
-import {games as games4} from './gameGrade4'
-import {games as games5} from './gameGrade5'
-import {games as games6} from './gameGrade6'
-import {games as games7} from './gameGrade7'
-import {games as games8} from './gameGrade8'
-import {games as games9} from './gameHighSchool'
+import {packages, maxWord, backgroundColor, games} from './data'
+import {levelInit} from './levelRoute'
 
-const games = [games0, games1, games2, games3, games4, games4, games5, games6, games7, games8, games9]
-
-const select = (rawGame => {
+const selectGame = (rawGame => {
   const game = rawGame
 
   const n = game.answers.length
@@ -38,71 +27,6 @@ const select = (rawGame => {
 
   return game
 })
-
-const random = (n, notAvallable) => {
-  let count = Math.floor(Math.random() * (n - notAvallable.length))
-
-  const binarySearch = (array, e) => {
-    let l = 0, r = array.length - 1, result = -1
-
-    while (l <= r) {
-      const p = Math.floor((l + r) / 2)
-
-      if (array[p] === e) {
-        result = p
-        break
-      } else if (array[p] < e) {
-        l = p + 1
-      } else {
-        r = p - 1
-      }
-    }
-
-    return result
-  }
-
-  let result = 0
-  while (count >= 0) {
-    if (binarySearch(notAvallable, result) === -1) {
-      count--
-    }
-    result++
-  }
-
-  return --result
-}
-
-const levelInit = (id) => {
-  if (localStorage.getItem("dataCW") === null) {
-    localStorage.setItem("dataCW", JSON.stringify([]))
-  }
-
-  const dataCW = JSON.parse(localStorage.getItem("dataCW"))
-
-  if (dataCW[id] === undefined || dataCW[id] === null) {
-    dataCW[id] = {
-      level: 0,
-      gamePlayed: []
-    }
-  }
-
-  let level = dataCW[id].level
-  let gamePlayed = dataCW[id].gamePlayed
-  // console.log(id)
-  // console.log(dataCW)
-  while (gamePlayed.length === games[id][level].length) {
-    level++
-    gamePlayed = []
-  }
-
-  const gameNumber = random(games[id][level].length, gamePlayed)
-
-  dataCW[id].level = level
-  dataCW[id].gamePlayed = gamePlayed
-  localStorage.setItem("dataCW", JSON.stringify(dataCW))
-
-  return [level, gameNumber, gamePlayed.length]
-}
 
 const endGame = (id, gameNumber) => {
   const dataCW = JSON.parse(localStorage.getItem("dataCW"))
@@ -128,24 +52,18 @@ const endGame = (id, gameNumber) => {
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
-
-    let level, gameNumber, gameNum
-    [level, gameNumber, gameNum] = levelInit(props.id)
-    // console.log(games)
-
-    const rawGame = games[props.id][level][gameNumber]
-    const game = select(rawGame)
-
-    // console.log(game)
+    console.log(props.packageId)
+    const rawGame = games[props.packageId][props.levelId][props.gameId]
+    const game = selectGame(rawGame)
 
     this.state = {
       visibilities: game.answers.map(e => false),
       letters: game.problem,
       answers: game.answers,
-      level: level,
-      gameNumber: gameNumber,
-      gameNum: gameNum,
-      maxGameNumber: games[level].length
+      level: props.levelId,
+      gameNumber: props.gameId,
+      gameNum: props.gameNum,
+      maxGameNumber: games[props.levelId].length
     }
 
     this.absolute = {
@@ -154,14 +72,28 @@ export default class GameScreen extends Component {
     }
   }
 
+  stateFromProps = (props) => {
+    return {
+      level: props.levelId,
+      gameNumber: props.gameId,
+      gameNum: props.gameNum,
+      maxGameNumber: games[props.levelId].length
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.init(nextProps)
+    this.setState(this.stateFromProps(nextProps))
+  }
+
   init = ((props) => {
     // alert("You Won")
 
-    let level, gameNumber, gameNum
-    [level, gameNumber, gameNum] = levelInit(props.id)
+    let levelId, gameId, gameNum
+    [levelId, gameId, gameNum] = levelInit(props.packageId)
 
-    const rawGame = games[props.id][level][gameNumber]
-    const game = select(rawGame)
+    const rawGame = games[props.packageId][levelId][gameId]
+    const game = selectGame(rawGame)
 
     // console.log(game)
 
@@ -169,17 +101,17 @@ export default class GameScreen extends Component {
       visibilities: game.answers.map(e => false),
       letters: game.problem,
       answers: game.answers,
-      level: level,
-      gameNumber: gameNumber,
+      level: levelId,
+      gameNumber: gameId,
       gameNum: gameNum,
-      maxGameNumber: games[level].length,
+      maxGameNumber: games[levelId].length,
       changed: true
     })
   })
 
   checkEndGame = (() => {
     if (this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
-      endGame(this.props.id, this.state.gameNumber)
+      endGame(this.props.packageId, this.state.gameId)
       this.init(this.props)
     }
   })
@@ -234,7 +166,8 @@ export default class GameScreen extends Component {
           id={this.props.id}
           level={this.state.level + 1}
           maxLevel={games.length}
-          package={packages[this.props.id]}
+          packageName={packages[this.props.packageId]}
+          packageId={this.props.packageId}
           gameNumber={this.state.gameNum + 1}
           maxGameNumber={this.state.maxGameNumber}
           width={this.props.width}
