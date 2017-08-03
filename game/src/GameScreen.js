@@ -52,7 +52,7 @@ const endGame = (id, gameNumber) => {
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
-    console.log(props.packageId)
+    // console.log(props.packageId)
     const rawGame = games[props.packageId][props.levelId][props.gameId]
     const game = selectGame(rawGame)
 

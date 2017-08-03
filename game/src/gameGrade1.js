@@ -10,74 +10,87 @@ export const games = [[{
     "ANT",
     "AT",
   ]}, {
+  problem: "TRA",
+  answers: [
+    "ART",
+    "AT",
+    "RAT",
+  ]}, {
   problem: "ETA",
   answers: [
     "AT",
     "ATE",
     "EAT",
+    "TEA",
   ]}, {
-  problem: "ODG",
+  problem: "GOD",
   answers: [
     "DO",
     "DOG",
     "GO",
     "GOD",
   ]}, {
-  problem: "ODT",
+  problem: "TDO",
   answers: [
     "DO",
     "DOT",
     "TO",
   ]}, {
-  problem: "IFN",
+  problem: "FNI",
   answers: [
     "FIN",
     "IF",
     "IN",
   ]}, {
-  problem: "TFI",
+  problem: "IFT",
   answers: [
     "FIT",
     "IF",
     "IT",
   ]}, {
-  problem: "FGO",
+  problem: "FOG",
   answers: [
     "FOG",
     "GO",
     "OF",
   ]}, {
-  problem: "OFR",
+  problem: "RFO",
   answers: [
     "FOR",
     "OF",
     "OR",
   ]}, {
-  problem: "OFX",
+  problem: "FOX",
   answers: [
     "FOX",
     "OF",
     "OX",
   ]}, {
-  problem: "GOT",
+  problem: "GTO",
   answers: [
     "GO",
     "GOT",
     "TO",
   ]}, {
-  problem: "OHG",
+  problem: "HEO",
+  answers: [
+    "HE",
+    "HOE",
+    "OH",
+  ]}, {
+  problem: "HOG",
   answers: [
     "GO",
     "HOG",
     "OH",
   ]}, {
-  problem: "HTO",
+  problem: "THO",
   answers: [
     "HOT",
     "OH",
     "TO",
   ]}, {
-  problem: "HWO",
+  problem: "WOH",
   answers: [
     "HOW",
     "OH",
@@ -90,19 +103,19 @@ export const games = [[{
     "ITS",
     "SIT",
   ]}, {
-  problem: "MAN",
+  problem: "ANM",
   answers: [
     "AM",
     "AN",
     "MAN",
   ]}, {
-  problem: "MTA",
+  problem: "MAT",
   answers: [
     "AM",
     "AT",
     "MAT",
   ]}, {
-  problem: "MYA",
+  problem: "YAM",
   answers: [
     "AM",
     "MAY",
@@ -114,7 +127,7 @@ export const games = [[{
     "NAP",
     "PAN",
   ]}, {
-  problem: "OTN",
+  problem: "TNO",
   answers: [
     "NO",
     "NOT",
@@ -129,7 +142,7 @@ export const games = [[{
     "OWN",
     "WON",
   ]}, {
-  problem: "ATO",
+  problem: "OAT",
   answers: [
     "AT",
     "OAT",
@@ -141,7 +154,7 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "ATP",
+  problem: "TAP",
   answers: [
     "AT",
     "PAT",
@@ -153,19 +166,26 @@ export const games = [[{
     "TO",
     "TOP",
   ]}, {
+  problem: "ORT",
+  answers: [
+    "OR",
+    "ROT",
+    "TO",
+  ]}, {
   problem: "SAM",
   answers: [
     "AM",
     "AS",
     "SAM",
+    "SM",
   ]}, {
-  problem: "SAT",
+  problem: "TSA",
   answers: [
     "AS",
     "AT",
     "SAT",
   ]}, {
-  problem: "WSA",
+  problem: "WAS",
   answers: [
     "AS",
     "SAW",
@@ -178,7 +198,13 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "OWT",
+  problem: "SUM",
+  answers: [
+    "SM",
+    "SUM",
+    "US",
+  ]}, {
+  problem: "OTW",
   answers: [
     "TO",
     "TOW",
@@ -190,7 +216,7 @@ export const games = [[{
     "WE",
     "WEB",
   ]}, ], [{
-  problem: "TMAO",
+  problem: "MAOT",
   answers: [
     "AM",
     "AT",
@@ -199,7 +225,7 @@ export const games = [[{
     "OAT",
     "TO",
   ]}, {
-  problem: "UTNA",
+  problem: "UANT",
   answers: [
     "AN",
     "ANT",
@@ -207,7 +233,7 @@ export const games = [[{
     "AUNT",
     "NUT",
   ]}, {
-  problem: "ARBE",
+  problem: "AEBR",
   answers: [
     "ARE",
     "BAR",
@@ -215,21 +241,21 @@ export const games = [[{
     "BE",
     "BEAR",
   ]}, {
-  problem: "ARBN",
+  problem: "ANRB",
   answers: [
     "AN",
     "BAR",
     "BARN",
     "RAN",
   ]}, {
-  problem: "BHAT",
+  problem: "THBA",
   answers: [
     "AT",
     "BAT",
     "BATH",
     "HAT",
   ]}, {
-  problem: "TAEB",
+  problem: "TABE",
   answers: [
     "AT",
     "ATE",
@@ -237,15 +263,16 @@ export const games = [[{
     "BE",
     "BEAT",
     "EAT",
+    "TEA",
   ]}, {
-  problem: "EBES",
+  problem: "SEBE",
   answers: [
     "BE",
     "BEE",
     "BEES",
     "SEE",
   ]}, {
-  problem: "DNBE",
+  problem: "NEDB",
   answers: [
     "BE",
     "BED",
@@ -253,21 +280,21 @@ export const games = [[{
     "DEN",
     "END",
   ]}, {
-  problem: "NTBE",
+  problem: "NETB",
   answers: [
     "BE",
     "BENT",
     "NET",
     "TEN",
   ]}, {
-  problem: "WEBL",
+  problem: "BELW",
   answers: [
     "BE",
     "BLEW",
     "WE",
     "WEB",
   ]}, {
-  problem: "OLWB",
+  problem: "OWBL",
   answers: [
     "BLOW",
     "BOW",
@@ -275,7 +302,7 @@ export const games = [[{
     "LOW",
     "OWL",
   ]}, {
-  problem: "BTOA",
+  problem: "AOBT",
   answers: [
     "AT",
     "BAT",
@@ -283,14 +310,14 @@ export const games = [[{
     "OAT",
     "TO",
   ]}, {
-  problem: "DBYO",
+  problem: "DOYB",
   answers: [
     "BODY",
     "BOY",
     "BY",
     "DO",
   ]}, {
-  problem: "OEBN",
+  problem: "ENBO",
   answers: [
     "BE",
     "BONE",
@@ -298,35 +325,49 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "RNBO",
+  problem: "ONRB",
   answers: [
     "BORN",
     "NO",
     "ON",
     "OR",
   ]}, {
-  problem: "BOHT",
+  problem: "HOBT",
   answers: [
     "BOTH",
     "HOT",
     "OH",
     "TO",
   ]}, {
-  problem: "OBYS",
+  problem: "OYSB",
   answers: [
     "BOY",
     "BOYS",
     "BY",
     "SO",
   ]}, {
-  problem: "SBUG",
+  problem: "BARG",
+  answers: [
+    "BAG",
+    "BAR",
+    "BRAG",
+    "GRAB",
+  ]}, {
+  problem: "SUGB",
   answers: [
     "BUG",
     "BUGS",
     "BUS",
     "US",
   ]}, {
-  problem: "BUYS",
+  problem: "URBN",
+  answers: [
+    "BUN",
+    "BURN",
+    "RUB",
+    "RUN",
+  ]}, {
+  problem: "SUYB",
   answers: [
     "BUS",
     "BUSY",
@@ -334,15 +375,23 @@ export const games = [[{
     "BY",
     "US",
   ]}, {
-  problem: "RACT",
+  problem: "MAPC",
+  answers: [
+    "AM",
+    "CAMP",
+    "CAP",
+    "MAP",
+  ]}, {
+  problem: "TACR",
   answers: [
     "ART",
     "AT",
     "CAR",
     "CART",
     "CAT",
+    "RAT",
   ]}, {
-  problem: "SATC",
+  problem: "TACS",
   answers: [
     "AS",
     "AT",
@@ -351,29 +400,30 @@ export const games = [[{
     "CATS",
     "SAT",
   ]}, {
-  problem: "CTHA",
+  problem: "HACT",
   answers: [
     "AT",
     "CAT",
     "CHAT",
     "HAT",
   ]}, {
-  problem: "OCTA",
+  problem: "TOAC",
   answers: [
     "AT",
     "CAT",
     "COAT",
+    "COT",
     "OAT",
     "TO",
   ]}, {
-  problem: "ONCI",
+  problem: "NCIO",
   answers: [
     "COIN",
     "IN",
     "NO",
     "ON",
   ]}, {
-  problem: "CEON",
+  problem: "CENO",
   answers: [
     "CONE",
     "NO",
@@ -381,35 +431,50 @@ export const games = [[{
     "ONCE",
     "ONE",
   ]}, {
-  problem: "NOCR",
+  problem: "RNCO",
   answers: [
     "CORN",
     "NO",
     "ON",
     "OR",
   ]}, {
-  problem: "RACM",
+  problem: "OTSC",
+  answers: [
+    "COST",
+    "COT",
+    "SO",
+    "TO",
+  ]}, {
+  problem: "CARM",
   answers: [
     "AM",
     "ARM",
     "CAR",
     "CRAM",
   ]}, {
-  problem: "CWRO",
+  problem: "OCRW",
   answers: [
     "COW",
     "CROW",
     "OR",
     "ROW",
   ]}, {
-  problem: "APMD",
+  problem: "MAPD",
   answers: [
     "AM",
     "DAMP",
     "MAD",
     "MAP",
+    "PAD",
   ]}, {
-  problem: "ASHD",
+  problem: "ADRT",
+  answers: [
+    "ART",
+    "AT",
+    "DART",
+    "RAT",
+  ]}, {
+  problem: "HSDA",
   answers: [
     "AS",
     "DASH",
@@ -417,21 +482,36 @@ export const games = [[{
     "HAS",
     "SAD",
   ]}, {
-  problem: "DARE",
+  problem: "TEAD",
+  answers: [
+    "AT",
+    "ATE",
+    "DATE",
+    "EAT",
+    "TEA",
+  ]}, {
+  problem: "EDAL",
+  answers: [
+    "DEAL",
+    "LAD",
+    "LEAD",
+    "LED",
+  ]}, {
+  problem: "ARED",
   answers: [
     "ARE",
     "DEAR",
     "READ",
     "RED",
   ]}, {
-  problem: "DEIN",
+  problem: "NEID",
   answers: [
     "DEN",
     "DINE",
     "END",
     "IN",
   ]}, {
-  problem: "ENOD",
+  problem: "ENDO",
   answers: [
     "DEN",
     "DO",
@@ -441,14 +521,14 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "ORDO",
+  problem: "RDOO",
   answers: [
     "DO",
     "DOOR",
     "ODOR",
     "OR",
   ]}, {
-  problem: "DWON",
+  problem: "ODWN",
   answers: [
     "DO",
     "DOWN",
@@ -458,14 +538,21 @@ export const games = [[{
     "OWN",
     "WON",
   ]}, {
-  problem: "DREW",
+  problem: "EWRD",
   answers: [
     "DEW",
     "DREW",
     "RED",
     "WE",
   ]}, {
-  problem: "ANER",
+  problem: "OPDR",
+  answers: [
+    "DO",
+    "DROP",
+    "OR",
+    "POD",
+  ]}, {
+  problem: "ERAN",
   answers: [
     "AN",
     "ARE",
@@ -473,14 +560,14 @@ export const games = [[{
     "NEAR",
     "RAN",
   ]}, {
-  problem: "AERS",
+  problem: "SERA",
   answers: [
     "ARE",
     "AS",
     "EARS",
     "SEA",
   ]}, {
-  problem: "TSEA",
+  problem: "TASE",
   answers: [
     "AS",
     "AT",
@@ -490,43 +577,45 @@ export const games = [[{
     "SAT",
     "SEA",
     "SEAT",
+    "TEA",
   ]}, {
-  problem: "SYAE",
+  problem: "AEYS",
   answers: [
     "AS",
     "EASY",
+    "SAY",
     "SEA",
     "YES",
   ]}, {
-  problem: "ESYE",
+  problem: "EYES",
   answers: [
     "EYE",
     "EYES",
     "SEE",
     "YES",
   ]}, {
-  problem: "FCAT",
+  problem: "CTFA",
   answers: [
     "AT",
     "CAT",
     "FACT",
     "FAT",
   ]}, {
-  problem: "RIFA",
+  problem: "ARIF",
   answers: [
     "AIR",
     "FAIR",
     "FAR",
     "IF",
   ]}, {
-  problem: "ARFM",
+  problem: "FMRA",
   answers: [
     "AM",
     "ARM",
     "FAR",
     "FARM",
   ]}, {
-  problem: "STAF",
+  problem: "TSAF",
   answers: [
     "AS",
     "AT",
@@ -534,7 +623,7 @@ export const games = [[{
     "FAT",
     "SAT",
   ]}, {
-  problem: "EFLI",
+  problem: "ILEF",
   answers: [
     "ELF",
     "FILE",
@@ -542,28 +631,28 @@ export const games = [[{
     "LIE",
     "LIFE",
   ]}, {
-  problem: "IFND",
+  problem: "IFDN",
   answers: [
     "FIN",
     "FIND",
     "IF",
     "IN",
   ]}, {
-  problem: "EFIN",
+  problem: "IFNE",
   answers: [
     "FIN",
     "FINE",
     "IF",
     "IN",
   ]}, {
-  problem: "HIFS",
+  problem: "FHIS",
   answers: [
     "FISH",
     "HIS",
     "IF",
     "IS",
   ]}, {
-  problem: "TSFI",
+  problem: "STFI",
   answers: [
     "FIT",
     "FITS",
@@ -573,14 +662,14 @@ export const games = [[{
     "ITS",
     "SIT",
   ]}, {
-  problem: "ELFW",
+  problem: "WFLE",
   answers: [
     "ELF",
     "FEW",
     "FLEW",
     "WE",
   ]}, {
-  problem: "LFWO",
+  problem: "LWFO",
   answers: [
     "FLOW",
     "FOWL",
@@ -589,22 +678,30 @@ export const games = [[{
     "OWL",
     "WOLF",
   ]}, {
-  problem: "TOOF",
+  problem: "LODF",
+  answers: [
+    "DO",
+    "FOLD",
+    "OF",
+    "OLD",
+  ]}, {
+  problem: "OTOF",
   answers: [
     "FOOT",
     "OF",
     "TO",
     "TOO",
   ]}, {
-  problem: "OFTR",
+  problem: "TFOR",
   answers: [
     "FOR",
     "FORT",
     "OF",
     "OR",
+    "ROT",
     "TO",
   ]}, {
-  problem: "FURO",
+  problem: "UOFR",
   answers: [
     "FOR",
     "FOUR",
@@ -613,7 +710,7 @@ export const games = [[{
     "OR",
     "OUR",
   ]}, {
-  problem: "GORF",
+  problem: "ORGF",
   answers: [
     "FOG",
     "FOR",
@@ -622,21 +719,21 @@ export const games = [[{
     "OF",
     "OR",
   ]}, {
-  problem: "MOFR",
+  problem: "OMRF",
   answers: [
     "FOR",
     "FROM",
     "OF",
     "OR",
   ]}, {
-  problem: "AEMG",
+  problem: "AEGM",
   answers: [
     "AGE",
     "AM",
     "GAME",
     "ME",
   ]}, {
-  problem: "AEGT",
+  problem: "ETAG",
   answers: [
     "AGE",
     "AT",
@@ -644,22 +741,23 @@ export const games = [[{
     "EAT",
     "GATE",
     "GET",
+    "TEA",
   ]}, {
-  problem: "TLEG",
+  problem: "LGTE",
   answers: [
     "GELT",
     "GET",
     "LEG",
     "LET",
   ]}, {
-  problem: "GFTI",
+  problem: "GFIT",
   answers: [
     "FIT",
     "GIFT",
     "IF",
     "IT",
   ]}, {
-  problem: "OWGL",
+  problem: "LWGO",
   answers: [
     "GLOW",
     "GO",
@@ -667,14 +765,14 @@ export const games = [[{
     "LOW",
     "OWL",
   ]}, {
-  problem: "NATG",
+  problem: "NGAT",
   answers: [
     "AN",
     "ANT",
     "AT",
     "GNAT",
   ]}, {
-  problem: "OGTA",
+  problem: "AGTO",
   answers: [
     "AGO",
     "AT",
@@ -684,7 +782,7 @@ export const games = [[{
     "OAT",
     "TO",
   ]}, {
-  problem: "GOLD",
+  problem: "DOLG",
   answers: [
     "DO",
     "DOG",
@@ -694,7 +792,7 @@ export const games = [[{
     "LOG",
     "OLD",
   ]}, {
-  problem: "LOGF",
+  problem: "OFLG",
   answers: [
     "FOG",
     "GO",
@@ -702,7 +800,7 @@ export const games = [[{
     "LOG",
     "OF",
   ]}, {
-  problem: "GEON",
+  problem: "OEGN",
   answers: [
     "GO",
     "GONE",
@@ -718,7 +816,7 @@ export const games = [[{
     "GOD",
     "GOOD",
   ]}, {
-  problem: "ONGW",
+  problem: "GONW",
   answers: [
     "GO",
     "GOWN",
@@ -728,35 +826,35 @@ export const games = [[{
     "OWN",
     "WON",
   ]}, {
-  problem: "RWGO",
+  problem: "GOWR",
   answers: [
     "GO",
     "GROW",
     "OR",
     "ROW",
   ]}, {
-  problem: "ADNH",
+  problem: "NDHA",
   answers: [
     "AN",
     "AND",
     "HAD",
     "HAND",
   ]}, {
-  problem: "HRMA",
+  problem: "RMAH",
   answers: [
     "AM",
     "ARM",
     "HAM",
     "HARM",
   ]}, {
-  problem: "AERH",
+  problem: "HRAE",
   answers: [
     "ARE",
     "HE",
     "HEAR",
     "HER",
   ]}, {
-  problem: "ATEH",
+  problem: "EAHT",
   answers: [
     "AT",
     "ATE",
@@ -764,24 +862,26 @@ export const games = [[{
     "HAT",
     "HE",
     "HEAT",
+    "TEA",
     "THE",
   ]}, {
-  problem: "RDHE",
+  problem: "HRED",
   answers: [
     "HE",
     "HER",
     "HERD",
     "RED",
   ]}, {
-  problem: "OEHR",
+  problem: "OHER",
   answers: [
     "HE",
     "HER",
     "HERO",
+    "HOE",
     "OH",
     "OR",
   ]}, {
-  problem: "HINT",
+  problem: "TINH",
   answers: [
     "HINT",
     "HIT",
@@ -789,7 +889,7 @@ export const games = [[{
     "IT",
     "THIN",
   ]}, {
-  problem: "THSI",
+  problem: "TSIH",
   answers: [
     "HIS",
     "HIT",
@@ -800,35 +900,44 @@ export const games = [[{
     "SIT",
     "THIS",
   ]}, {
-  problem: "OLDH",
+  problem: "DLHO",
   answers: [
     "DO",
     "HOLD",
     "OH",
     "OLD",
   ]}, {
-  problem: "HOEM",
+  problem: "LEHO",
   answers: [
     "HE",
+    "HOE",
+    "HOLE",
+    "OH",
+  ]}, {
+  problem: "OHEM",
+  answers: [
+    "HE",
+    "HOE",
     "HOME",
     "ME",
     "OH",
   ]}, {
-  problem: "HEOP",
+  problem: "HPEO",
   answers: [
     "HE",
+    "HOE",
     "HOP",
     "HOPE",
     "OH",
   ]}, {
-  problem: "AORH",
+  problem: "AHOR",
   answers: [
     "HORA",
     "OAR",
     "OH",
     "OR",
   ]}, {
-  problem: "ONRH",
+  problem: "RNHO",
   answers: [
     "HORN",
     "NO",
@@ -836,23 +945,24 @@ export const games = [[{
     "ON",
     "OR",
   ]}, {
-  problem: "OEHS",
+  problem: "HEOS",
   answers: [
     "HE",
+    "HOE",
     "HOSE",
     "OH",
     "SHE",
     "SHOE",
     "SO",
   ]}, {
-  problem: "ROHU",
+  problem: "ORUH",
   answers: [
     "HOUR",
     "OH",
     "OR",
     "OUR",
   ]}, {
-  problem: "OITN",
+  problem: "NTOI",
   answers: [
     "IN",
     "INTO",
@@ -862,7 +972,7 @@ export const games = [[{
     "ON",
     "TO",
   ]}, {
-  problem: "ONIR",
+  problem: "ORNI",
   answers: [
     "IN",
     "IRON",
@@ -870,7 +980,7 @@ export const games = [[{
     "ON",
     "OR",
   ]}, {
-  problem: "I'TS",
+  problem: "T'IS",
   answers: [
     "IS",
     "IT",
@@ -878,14 +988,21 @@ export const games = [[{
     "ITS",
     "SIT",
   ]}, {
-  problem: "NOIJ",
+  problem: "OJNI",
   answers: [
     "IN",
     "JOIN",
     "NO",
     "ON",
   ]}, {
-  problem: "KNOW",
+  problem: "IEKT",
+  answers: [
+    "IT",
+    "KIT",
+    "KITE",
+    "TIE",
+  ]}, {
+  problem: "WNKO",
   answers: [
     "KNOW",
     "NO",
@@ -894,7 +1011,14 @@ export const games = [[{
     "OWN",
     "WON",
   ]}, {
-  problem: "TSLA",
+  problem: "NLAD",
+  answers: [
+    "AN",
+    "AND",
+    "LAD",
+    "LAND",
+  ]}, {
+  problem: "ATLS",
   answers: [
     "AS",
     "AT",
@@ -902,7 +1026,7 @@ export const games = [[{
     "SALT",
     "SAT",
   ]}, {
-  problem: "TELA",
+  problem: "EALT",
   answers: [
     "AT",
     "ATE",
@@ -910,22 +1034,23 @@ export const games = [[{
     "LATE",
     "LET",
     "TALE",
+    "TEA",
   ]}, {
-  problem: "LDEN",
+  problem: "DLNE",
   answers: [
     "DEN",
     "END",
     "LED",
     "LEND",
   ]}, {
-  problem: "LIEM",
+  problem: "ILEM",
   answers: [
     "LIE",
     "LIME",
     "ME",
     "MILE",
   ]}, {
-  problem: "NIOL",
+  problem: "ONLI",
   answers: [
     "IN",
     "LION",
@@ -933,13 +1058,34 @@ export const games = [[{
     "OIL",
     "ON",
   ]}, {
-  problem: "ONGL",
+  problem: "ADLO",
+  answers: [
+    "DO",
+    "LAD",
+    "LOAD",
+    "OLD",
+  ]}, {
+  problem: "LNGO",
   answers: [
     "GO",
     "LOG",
     "LONG",
     "NO",
     "ON",
+  ]}, {
+  problem: "SOLT",
+  answers: [
+    "LOT",
+    "LOTS",
+    "SO",
+    "TO",
+  ]}, {
+  problem: "OLUD",
+  answers: [
+    "DO",
+    "DUO",
+    "LOUD",
+    "OLD",
   ]}, {
   problem: "MAED",
   answers: [
@@ -948,14 +1094,14 @@ export const games = [[{
     "MADE",
     "ME",
   ]}, {
-  problem: "AMDI",
+  problem: "DMAI",
   answers: [
     "AIM",
     "AM",
     "MAD",
     "MAID",
   ]}, {
-  problem: "MANI",
+  problem: "ANIM",
   answers: [
     "AIM",
     "AM",
@@ -964,7 +1110,7 @@ export const games = [[{
     "MAIN",
     "MAN",
   ]}, {
-  problem: "ENAM",
+  problem: "MEAN",
   answers: [
     "AM",
     "AN",
@@ -975,7 +1121,7 @@ export const games = [[{
     "MEN",
     "NAME",
   ]}, {
-  problem: "MAYN",
+  problem: "YNAM",
   answers: [
     "AM",
     "AN",
@@ -992,6 +1138,7 @@ export const games = [[{
     "ASK",
     "MASK",
     "SAM",
+    "SM",
   ]}, {
   problem: "ASSM",
   answers: [
@@ -999,8 +1146,9 @@ export const games = [[{
     "AS",
     "MASS",
     "SAM",
+    "SM",
   ]}, {
-  problem: "MTAH",
+  problem: "MTHA",
   answers: [
     "AM",
     "AT",
@@ -1009,7 +1157,7 @@ export const games = [[{
     "MAT",
     "MATH",
   ]}, {
-  problem: "ETMA",
+  problem: "TMEA",
   answers: [
     "AM",
     "AT",
@@ -1019,16 +1167,38 @@ export const games = [[{
     "ME",
     "MEAT",
     "TAME",
+    "TEA",
     "TEAM",
   ]}, {
-  problem: "MNIE",
+  problem: "EIMN",
   answers: [
     "IN",
     "ME",
     "MEN",
     "MINE",
   ]}, {
-  problem: "PSNA",
+  problem: "TOSM",
+  answers: [
+    "MOST",
+    "SM",
+    "SO",
+    "TO",
+  ]}, {
+  problem: "MOTH",
+  answers: [
+    "HOT",
+    "MOTH",
+    "OH",
+    "TO",
+  ]}, {
+  problem: "TUSM",
+  answers: [
+    "MUST",
+    "SM",
+    "SUM",
+    "US",
+  ]}, {
+  problem: "SPAN",
   answers: [
     "AN",
     "AS",
@@ -1036,8 +1206,9 @@ export const games = [[{
     "NAPS",
     "PAN",
     "SNAP",
+    "SPAN",
   ]}, {
-  problem: "TNEA",
+  problem: "TNAE",
   answers: [
     "AN",
     "ANT",
@@ -1046,9 +1217,10 @@ export const games = [[{
     "EAT",
     "NEAT",
     "NET",
+    "TEA",
     "TEN",
   ]}, {
-  problem: "SETN",
+  problem: "TSEN",
   answers: [
     "NEST",
     "NET",
@@ -1056,14 +1228,21 @@ export const games = [[{
     "TEN",
     "TENS",
   ]}, {
-  problem: "OENN",
+  problem: "EWNS",
+  answers: [
+    "NEW",
+    "NEWS",
+    "SEW",
+    "WE",
+  ]}, {
+  problem: "ONNE",
   answers: [
     "NO",
     "NONE",
     "ON",
     "ONE",
   ]}, {
-  problem: "OESN",
+  problem: "ONES",
   answers: [
     "NO",
     "NOSE",
@@ -1073,7 +1252,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "TENO",
+  problem: "TNOE",
   answers: [
     "NET",
     "NO",
@@ -1085,14 +1264,31 @@ export const games = [[{
     "TO",
     "TOE",
   ]}, {
-  problem: "KNIO",
+  problem: "UNON",
+  answers: [
+    "NO",
+    "NOUN",
+    "NUN",
+    "ON",
+  ]}, {
+  problem: "OKIN",
   answers: [
     "IN",
+    "INK",
     "NO",
     "OINK",
     "ON",
   ]}, {
-  problem: "OPEN",
+  problem: "ONOT",
+  answers: [
+    "NO",
+    "NOT",
+    "ON",
+    "ONTO",
+    "TO",
+    "TOO",
+  ]}, {
+  problem: "PONE",
   answers: [
     "NO",
     "ON",
@@ -1100,7 +1296,7 @@ export const games = [[{
     "OPEN",
     "PEN",
   ]}, {
-  problem: "IPNA",
+  problem: "NPIA",
   answers: [
     "AN",
     "IN",
@@ -1109,16 +1305,17 @@ export const games = [[{
     "PAN",
     "PIN",
   ]}, {
-  problem: "TPAR",
+  problem: "ATPR",
   answers: [
     "ART",
     "AT",
     "PART",
     "PAT",
+    "RAT",
     "TAP",
     "TRAP",
   ]}, {
-  problem: "ATSP",
+  problem: "STPA",
   answers: [
     "AS",
     "AT",
@@ -1127,7 +1324,7 @@ export const games = [[{
     "SAT",
     "TAP",
   ]}, {
-  problem: "TAPH",
+  problem: "HTAP",
   answers: [
     "AT",
     "HAT",
@@ -1135,19 +1332,27 @@ export const games = [[{
     "PATH",
     "TAP",
   ]}, {
-  problem: "TSEP",
+  problem: "SETP",
   answers: [
     "PEST",
     "PET",
     "PETS",
     "STEP",
   ]}, {
-  problem: "IPTN",
+  problem: "IPNK",
+  answers: [
+    "IN",
+    "INK",
+    "PIN",
+    "PINK",
+  ]}, {
+  problem: "NITP",
   answers: [
     "IN",
     "IT",
     "PIN",
     "PINT",
+    "TIP",
   ]}, {
   problem: "NLAP",
   answers: [
@@ -1156,14 +1361,22 @@ export const games = [[{
     "PAN",
     "PLAN",
   ]}, {
-  problem: "DNOP",
+  problem: "PDLO",
+  answers: [
+    "DO",
+    "OLD",
+    "PLOD",
+    "POD",
+  ]}, {
+  problem: "NDOP",
   answers: [
     "DO",
     "NO",
     "ON",
+    "POD",
     "POND",
   ]}, {
-  problem: "RAIN",
+  problem: "RIAN",
   answers: [
     "AIR",
     "AN",
@@ -1171,24 +1384,32 @@ export const games = [[{
     "RAIN",
     "RAN",
   ]}, {
-  problem: "OADR",
+  problem: "ARYS",
+  answers: [
+    "AS",
+    "RAY",
+    "RAYS",
+    "SAY",
+  ]}, {
+  problem: "ORDA",
   answers: [
     "DO",
     "OAR",
     "OR",
     "ROAD",
   ]}, {
-  problem: "REOD",
+  problem: "REDO",
   answers: [
     "DO",
     "OR",
     "RED",
     "RODE",
   ]}, {
-  problem: "TORO",
+  problem: "ROOT",
   answers: [
     "OR",
     "ROOT",
+    "ROT",
     "TO",
     "TOO",
   ]}, {
@@ -1199,14 +1420,14 @@ export const games = [[{
     "SAD",
     "SAID",
   ]}, {
-  problem: "LEAS",
+  problem: "LSEA",
   answers: [
     "AS",
     "SALE",
     "SEA",
     "SEAL",
   ]}, {
-  problem: "MESA",
+  problem: "EMAS",
   answers: [
     "AM",
     "AS",
@@ -1214,8 +1435,9 @@ export const games = [[{
     "SAM",
     "SAME",
     "SEA",
+    "SM",
   ]}, {
-  problem: "DNAS",
+  problem: "DANS",
   answers: [
     "AN",
     "AND",
@@ -1223,28 +1445,28 @@ export const games = [[{
     "SAD",
     "SAND",
   ]}, {
-  problem: "SNAG",
+  problem: "ASNG",
   answers: [
     "AN",
     "AS",
     "GAS",
     "SANG",
   ]}, {
-  problem: "KANS",
+  problem: "SKNA",
   answers: [
     "AN",
     "AS",
     "ASK",
     "SANK",
   ]}, {
-  problem: "PSHO",
+  problem: "HOSP",
   answers: [
     "HOP",
     "OH",
     "SHOP",
     "SO",
   ]}, {
-  problem: "SWHO",
+  problem: "WOSH",
   answers: [
     "HOW",
     "OH",
@@ -1252,21 +1474,22 @@ export const games = [[{
     "SO",
     "WHO",
   ]}, {
-  problem: "GISN",
+  problem: "NGIS",
   answers: [
     "IN",
     "IS",
     "SIGN",
     "SING",
   ]}, {
-  problem: "KNSI",
+  problem: "NSIK",
   answers: [
     "IN",
+    "INK",
     "IS",
     "SINK",
     "SKIN",
   ]}, {
-  problem: "TISS",
+  problem: "SSTI",
   answers: [
     "IS",
     "IT",
@@ -1274,14 +1497,21 @@ export const games = [[{
     "SIT",
     "SITS",
   ]}, {
-  problem: "SLWO",
+  problem: "OLWS",
   answers: [
     "LOW",
     "OWL",
     "SLOW",
     "SO",
   ]}, {
-  problem: "WONS",
+  problem: "MOGS",
+  answers: [
+    "GO",
+    "SM",
+    "SMOG",
+    "SO",
+  ]}, {
+  problem: "WSON",
   answers: [
     "NO",
     "NOW",
@@ -1292,14 +1522,15 @@ export const games = [[{
     "SON",
     "WON",
   ]}, {
-  problem: "UNSG",
+  problem: "GUNS",
   answers: [
     "GNU",
+    "GUN",
     "SNUG",
     "SUN",
     "US",
   ]}, {
-  problem: "OSAR",
+  problem: "ASOR",
   answers: [
     "AS",
     "OAR",
@@ -1307,28 +1538,35 @@ export const games = [[{
     "SO",
     "SOAR",
   ]}, {
-  problem: "STOF",
+  problem: "OTSF",
   answers: [
     "OF",
     "SO",
     "SOFT",
     "TO",
   ]}, {
-  problem: "LSIO",
+  problem: "SLIO",
   answers: [
     "IS",
     "OIL",
     "SO",
     "SOIL",
   ]}, {
-  problem: "OSLD",
+  problem: "DLOS",
   answers: [
     "DO",
     "OLD",
     "SO",
     "SOLD",
   ]}, {
-  problem: "OSNO",
+  problem: "MESO",
+  answers: [
+    "ME",
+    "SM",
+    "SO",
+    "SOME",
+  ]}, {
+  problem: "SOON",
   answers: [
     "NO",
     "ON",
@@ -1336,9 +1574,17 @@ export const games = [[{
     "SON",
     "SOON",
   ]}, {
-  problem: "RTSO",
+  problem: "TOSO",
+  answers: [
+    "SO",
+    "SOOT",
+    "TO",
+    "TOO",
+  ]}, {
+  problem: "TROS",
   answers: [
     "OR",
+    "ROT",
     "SO",
     "SORT",
     "TO",
@@ -1350,7 +1596,7 @@ export const games = [[{
     "UP",
     "US",
   ]}, {
-  problem: "USRO",
+  problem: "RUSO",
   answers: [
     "OR",
     "OUR",
@@ -1358,37 +1604,40 @@ export const games = [[{
     "SOUR",
     "US",
   ]}, {
-  problem: "SNPI",
+  problem: "NISP",
   answers: [
     "IN",
     "IS",
     "PIN",
     "SPIN",
   ]}, {
-  problem: "TPIS",
+  problem: "SPIT",
   answers: [
     "IS",
     "IT",
     "ITS",
     "SIT",
     "SPIT",
+    "TIP",
   ]}, {
-  problem: "TSRA",
+  problem: "RTSA",
   answers: [
     "ART",
     "AS",
     "AT",
+    "RAT",
     "SAT",
     "STAR",
   ]}, {
-  problem: "YTSA",
+  problem: "TAYS",
   answers: [
     "AS",
     "AT",
     "SAT",
+    "SAY",
     "STAY",
   ]}, {
-  problem: "TSWE",
+  problem: "TWSE",
   answers: [
     "SEW",
     "STEW",
@@ -1396,7 +1645,7 @@ export const games = [[{
     "WEST",
     "WET",
   ]}, {
-  problem: "SRIT",
+  problem: "ITSR",
   answers: [
     "IS",
     "IT",
@@ -1405,7 +1654,7 @@ export const games = [[{
     "SIT",
     "STIR",
   ]}, {
-  problem: "TPOS",
+  problem: "STPO",
   answers: [
     "POT",
     "SO",
@@ -1422,7 +1671,7 @@ export const games = [[{
     "TUB",
     "US",
   ]}, {
-  problem: "SNAW",
+  problem: "SANW",
   answers: [
     "AN",
     "AS",
@@ -1430,21 +1679,22 @@ export const games = [[{
     "SWAN",
     "WAS",
   ]}, {
-  problem: "AETK",
+  problem: "AEKT",
   answers: [
     "AT",
     "ATE",
     "EAT",
     "TAKE",
+    "TEA",
   ]}, {
-  problem: "TKAN",
+  problem: "ANKT",
   answers: [
     "AN",
     "ANT",
     "AT",
     "TANK",
   ]}, {
-  problem: "APET",
+  problem: "TEPA",
   answers: [
     "AT",
     "ATE",
@@ -1453,8 +1703,9 @@ export const games = [[{
     "PET",
     "TAP",
     "TAPE",
+    "TEA",
   ]}, {
-  problem: "STKA",
+  problem: "SKTA",
   answers: [
     "AS",
     "ASK",
@@ -1462,16 +1713,18 @@ export const games = [[{
     "SAT",
     "TASK",
   ]}, {
-  problem: "RAET",
+  problem: "REAT",
   answers: [
     "ARE",
     "ART",
     "AT",
     "ATE",
     "EAT",
+    "RAT",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "NHTA",
+  problem: "ATHN",
   answers: [
     "AN",
     "ANT",
@@ -1479,21 +1732,21 @@ export const games = [[{
     "HAT",
     "THAN",
   ]}, {
-  problem: "WHAT",
+  problem: "WTAH",
   answers: [
     "AT",
     "HAT",
     "THAW",
     "WHAT",
   ]}, {
-  problem: "MEHT",
+  problem: "HTME",
   answers: [
     "HE",
     "ME",
     "THE",
     "THEM",
   ]}, {
-  problem: "HENT",
+  problem: "ETNH",
   answers: [
     "HE",
     "HEN",
@@ -1502,7 +1755,7 @@ export const games = [[{
     "THE",
     "THEN",
   ]}, {
-  problem: "TYHE",
+  problem: "THEY",
   answers: [
     "HE",
     "HEY",
@@ -1510,14 +1763,14 @@ export const games = [[{
     "THEY",
     "YET",
   ]}, {
-  problem: "EITM",
+  problem: "IEMT",
   answers: [
     "IT",
     "ME",
     "TIE",
     "TIME",
   ]}, {
-  problem: "AODT",
+  problem: "TAOD",
   answers: [
     "AT",
     "DO",
@@ -1526,7 +1779,7 @@ export const games = [[{
     "TO",
     "TOAD",
   ]}, {
-  problem: "OLTD",
+  problem: "ODLT",
   answers: [
     "DO",
     "DOT",
@@ -1535,15 +1788,16 @@ export const games = [[{
     "TO",
     "TOLD",
   ]}, {
-  problem: "RUOT",
+  problem: "UROT",
   answers: [
     "OR",
     "OUR",
     "OUT",
+    "ROT",
     "TO",
     "TOUR",
   ]}, {
-  problem: "WTON",
+  problem: "WTNO",
   answers: [
     "NO",
     "NOT",
@@ -1556,12 +1810,27 @@ export const games = [[{
     "TWO",
     "WON",
   ]}, {
-  problem: "STYO",
+  problem: "TOSY",
   answers: [
     "SO",
     "TO",
     "TOY",
     "TOYS",
+  ]}, {
+  problem: "OTIR",
+  answers: [
+    "IT",
+    "OR",
+    "ROT",
+    "TO",
+    "TRIO",
+  ]}, {
+  problem: "TIPR",
+  answers: [
+    "IT",
+    "RIP",
+    "TIP",
+    "TRIP",
   ]}, {
   problem: "TBUE",
   answers: [
@@ -1570,21 +1839,22 @@ export const games = [[{
     "TUB",
     "TUBE",
   ]}, {
-  problem: "EUTN",
+  problem: "TUNE",
   answers: [
     "NET",
     "NUT",
     "TEN",
     "TUNE",
   ]}, {
-  problem: "DUON",
+  problem: "ODNU",
   answers: [
     "DO",
+    "DUO",
     "NO",
     "ON",
     "UNDO",
   ]}, {
-  problem: "INTU",
+  problem: "UNIT",
   answers: [
     "IN",
     "IT",
@@ -1598,14 +1868,28 @@ export const games = [[{
     "UP",
     "UPON",
   ]}, {
-  problem: "TAWN",
+  problem: "VEOT",
+  answers: [
+    "TO",
+    "TOE",
+    "VET",
+    "VOTE",
+  ]}, {
+  problem: "WGEA",
+  answers: [
+    "AGE",
+    "WAG",
+    "WAGE",
+    "WE",
+  ]}, {
+  problem: "NTAW",
   answers: [
     "AN",
     "ANT",
     "AT",
     "WANT",
   ]}, {
-  problem: "HSWA",
+  problem: "SAWH",
   answers: [
     "AS",
     "HAS",
@@ -1613,7 +1897,7 @@ export const games = [[{
     "WAS",
     "WASH",
   ]}, {
-  problem: "NEWT",
+  problem: "TENW",
   answers: [
     "NET",
     "NEW",
@@ -1622,7 +1906,7 @@ export const games = [[{
     "WENT",
     "WET",
   ]}, {
-  problem: "WHEN",
+  problem: "EWNH",
   answers: [
     "HE",
     "HEN",
@@ -1630,35 +1914,42 @@ export const games = [[{
     "WE",
     "WHEN",
   ]}, {
-  problem: "WNGI",
+  problem: "INWG",
   answers: [
     "IN",
     "WIG",
     "WIN",
     "WING",
   ]}, {
-  problem: "ISNW",
+  problem: "NKWI",
+  answers: [
+    "IN",
+    "INK",
+    "WIN",
+    "WINK",
+  ]}, {
+  problem: "NWIS",
   answers: [
     "IN",
     "IS",
     "WIN",
     "WINS",
   ]}, {
-  problem: "DORW",
+  problem: "RODW",
   answers: [
     "DO",
     "OR",
     "ROW",
     "WORD",
   ]}, {
-  problem: "YARD",
+  problem: "RDYA",
   answers: [
     "DAY",
     "DRY",
     "RAY",
     "YARD",
   ]}, {
-  problem: "NARY",
+  problem: "NRAY",
   answers: [
     "AN",
     "ANY",
@@ -1666,28 +1957,28 @@ export const games = [[{
     "RAY",
     "YARN",
   ]}, {
-  problem: "WYAN",
+  problem: "WNAY",
   answers: [
     "AN",
     "ANY",
     "WAY",
     "YAWN",
   ]}, {
-  problem: "UYRO",
+  problem: "UOYR",
   answers: [
     "OR",
     "OUR",
     "YOU",
     "YOUR",
   ]}, {
-  problem: "ZOEN",
+  problem: "NZOE",
   answers: [
     "NO",
     "ON",
     "ONE",
     "ZONE",
   ]}, ], [{
-  problem: "ATUBO",
+  problem: "ATUOB",
   answers: [
     "ABOUT",
     "AT",
@@ -1699,15 +1990,16 @@ export const games = [[{
     "TO",
     "TUB",
   ]}, {
-  problem: "APTDA",
+  problem: "AAPTD",
   answers: [
     "ADAPT",
     "AT",
     "DATA",
+    "PAD",
     "PAT",
     "TAP",
   ]}, {
-  problem: "AFERT",
+  problem: "EAFTR",
   answers: [
     "AFTER",
     "ARE",
@@ -1717,9 +2009,20 @@ export const games = [[{
     "EAT",
     "FAR",
     "FAT",
+    "RAT",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "AOGNL",
+  problem: "LEONA",
+  answers: [
+    "ALONE",
+    "AN",
+    "LEAN",
+    "NO",
+    "ON",
+    "ONE",
+  ]}, {
+  problem: "NGLOA",
   answers: [
     "AGO",
     "ALONG",
@@ -1730,7 +2033,7 @@ export const games = [[{
     "NO",
     "ON",
   ]}, {
-  problem: "ELRTA",
+  problem: "TLREA",
   answers: [
     "ALTER",
     "ARE",
@@ -1740,10 +2043,12 @@ export const games = [[{
     "EAT",
     "LATE",
     "LET",
+    "RAT",
     "TALE",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "AMNGO",
+  problem: "ONGAM",
   answers: [
     "AGO",
     "AM",
@@ -1754,7 +2059,7 @@ export const games = [[{
     "NO",
     "ON",
   ]}, {
-  problem: "LEAPM",
+  problem: "EPAML",
   answers: [
     "AM",
     "AMPLE",
@@ -1764,7 +2069,18 @@ export const games = [[{
     "ME",
     "MEAL",
   ]}, {
-  problem: "ENAGL",
+  problem: "RNAGE",
+  answers: [
+    "AGE",
+    "AN",
+    "ANGER",
+    "ARE",
+    "EARN",
+    "NEAR",
+    "RAN",
+    "RANG",
+  ]}, {
+  problem: "GANLE",
   answers: [
     "AGE",
     "AN",
@@ -1772,17 +2088,34 @@ export const games = [[{
     "LEAN",
     "LEG",
   ]}, {
-  problem: "RAATP",
+  problem: "AATPR",
   answers: [
     "APART",
     "ART",
     "AT",
     "PART",
     "PAT",
+    "RAT",
     "TAP",
     "TRAP",
   ]}, {
-  problem: "KSEAD",
+  problem: "ALRPI",
+  answers: [
+    "AIR",
+    "APRIL",
+    "LIP",
+    "PAIR",
+    "RIP",
+  ]}, {
+  problem: "OAWRR",
+  answers: [
+    "ARROW",
+    "OAR",
+    "OR",
+    "ROAR",
+    "ROW",
+  ]}, {
+  problem: "ASDKE",
   answers: [
     "AS",
     "ASK",
@@ -1790,7 +2123,7 @@ export const games = [[{
     "SAD",
     "SEA",
   ]}, {
-  problem: "UNAST",
+  problem: "NUSTA",
   answers: [
     "AN",
     "ANT",
@@ -1803,33 +2136,47 @@ export const games = [[{
     "SUN",
     "US",
   ]}, {
-  problem: "AEXLS",
+  problem: "EASXL",
   answers: [
     "AS",
+    "AXE",
     "AXLES",
     "SALE",
     "SEA",
     "SEAL",
   ]}, {
-  problem: "EBNAG",
+  problem: "BEADG",
+  answers: [
+    "AGE",
+    "BAD",
+    "BADGE",
+    "BAG",
+    "BE",
+    "BED",
+    "BEG",
+  ]}, {
+  problem: "BNGAE",
   answers: [
     "AGE",
     "AN",
+    "BAG",
     "BANG",
     "BE",
+    "BEAN",
     "BEG",
     "BEGAN",
   ]}, {
-  problem: "NEBIG",
+  problem: "NBGEI",
   answers: [
     "BE",
     "BEG",
     "BEGIN",
     "BEING",
     "BIG",
+    "BIN",
     "IN",
   ]}, {
-  problem: "ELWBO",
+  problem: "BLEWO",
   answers: [
     "BE",
     "BELOW",
@@ -1837,12 +2184,13 @@ export const games = [[{
     "BLOW",
     "BOW",
     "BOWL",
+    "ELBOW",
     "LOW",
     "OWL",
     "WE",
     "WEB",
   ]}, {
-  problem: "OTBAS",
+  problem: "OSABT",
   answers: [
     "AS",
     "AT",
@@ -1854,7 +2202,7 @@ export const games = [[{
     "SO",
     "TO",
   ]}, {
-  problem: "OSEBN",
+  problem: "NOBSE",
   answers: [
     "BE",
     "BONE",
@@ -1867,7 +2215,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "XOESB",
+  problem: "SOEXB",
   answers: [
     "BE",
     "BOX",
@@ -1875,7 +2223,7 @@ export const games = [[{
     "OX",
     "SO",
   ]}, {
-  problem: "'OYBS",
+  problem: "B'SOY",
   answers: [
     "BOY",
     "BOY'S",
@@ -1884,18 +2232,19 @@ export const games = [[{
     "BY",
     "SO",
   ]}, {
-  problem: "NBIRA",
+  problem: "ANIRB",
   answers: [
     "AIR",
     "AN",
     "BAR",
     "BARN",
+    "BIN",
     "BRAIN",
     "IN",
     "RAIN",
     "RAN",
   ]}, {
-  problem: "RAEVB",
+  problem: "VEBRA",
   answers: [
     "ARE",
     "BAR",
@@ -1905,7 +2254,7 @@ export const games = [[{
     "BRAVE",
     "VERB",
   ]}, {
-  problem: "EARBD",
+  problem: "BDRAE",
   answers: [
     "ARE",
     "BAD",
@@ -1919,15 +2268,25 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "BRGIN",
+  problem: "RIBDE",
+  answers: [
+    "BE",
+    "BED",
+    "BIRD",
+    "BRIDE",
+    "RED",
+    "RIDE",
+  ]}, {
+  problem: "GRBIN",
   answers: [
     "BIG",
+    "BIN",
     "BRING",
     "GRIN",
     "IN",
     "RING",
   ]}, {
-  problem: "ORNWB",
+  problem: "WRBON",
   answers: [
     "BORN",
     "BOW",
@@ -1940,7 +2299,7 @@ export const games = [[{
     "ROW",
     "WON",
   ]}, {
-  problem: "TUBIL",
+  problem: "BILUT",
   answers: [
     "BIT",
     "BUILT",
@@ -1948,7 +2307,7 @@ export const games = [[{
     "IT",
     "TUB",
   ]}, {
-  problem: "MPUBY",
+  problem: "YPMBU",
   answers: [
     "BUMP",
     "BUMPY",
@@ -1957,7 +2316,15 @@ export const games = [[{
     "MY",
     "UP",
   ]}, {
-  problem: "SUSBE",
+  problem: "BNNUY",
+  answers: [
+    "BUN",
+    "BUNNY",
+    "BUY",
+    "BY",
+    "NUN",
+  ]}, {
+  problem: "BESUS",
   answers: [
     "BE",
     "BUS",
@@ -1965,7 +2332,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "YUREB",
+  problem: "BYRUE",
   answers: [
     "BE",
     "BUY",
@@ -1973,7 +2340,7 @@ export const games = [[{
     "BY",
     "RUB",
   ]}, {
-  problem: "KCSAE",
+  problem: "ESAKC",
   answers: [
     "AS",
     "ASK",
@@ -1983,7 +2350,17 @@ export const games = [[{
     "SACK",
     "SEA",
   ]}, {
-  problem: "CT'NA",
+  problem: "ACLME",
+  answers: [
+    "AM",
+    "CAME",
+    "CAMEL",
+    "CLAM",
+    "LACE",
+    "ME",
+    "MEAL",
+  ]}, {
+  problem: "NTC'A",
   answers: [
     "AN",
     "ANT",
@@ -1992,7 +2369,7 @@ export const games = [[{
     "CAN'T",
     "CAT",
   ]}, {
-  problem: "CTCHA",
+  problem: "ATHCC",
   answers: [
     "AT",
     "CAT",
@@ -2000,7 +2377,7 @@ export const games = [[{
     "CHAT",
     "HAT",
   ]}, {
-  problem: "EUASC",
+  problem: "ASEUC",
   answers: [
     "AS",
     "CASE",
@@ -2009,7 +2386,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "ICHAN",
+  problem: "IHNCA",
   answers: [
     "AN",
     "CAN",
@@ -2018,7 +2395,7 @@ export const games = [[{
     "IN",
     "INCH",
   ]}, {
-  problem: "HTCAR",
+  problem: "HRCTA",
   answers: [
     "ART",
     "AT",
@@ -2028,44 +2405,49 @@ export const games = [[{
     "CHART",
     "CHAT",
     "HAT",
+    "RAT",
   ]}, {
-  problem: "OSECH",
+  problem: "HOSEC",
   answers: [
     "CHOSE",
     "HE",
+    "HOE",
     "HOSE",
     "OH",
     "SHE",
     "SHOE",
     "SO",
   ]}, {
-  problem: "NLCEA",
+  problem: "ACENL",
   answers: [
     "AN",
     "CAN",
     "CANE",
     "CLAN",
     "CLEAN",
+    "LACE",
     "LEAN",
   ]}, {
-  problem: "CHOLT",
+  problem: "THOLC",
   answers: [
     "CLOTH",
+    "COT",
     "HOT",
     "LOT",
     "OH",
     "TO",
   ]}, {
-  problem: "UCDOL",
+  problem: "DCLOU",
   answers: [
     "CLOUD",
     "COLD",
     "COULD",
     "DO",
+    "DUO",
     "LOUD",
     "OLD",
   ]}, {
-  problem: "CLNOW",
+  problem: "LONWC",
   answers: [
     "CLOWN",
     "COW",
@@ -2077,8 +2459,9 @@ export const games = [[{
     "OWN",
     "WON",
   ]}, {
-  problem: "CTOUN",
+  problem: "CTUON",
   answers: [
+    "COT",
     "COUNT",
     "CUT",
     "NO",
@@ -2088,7 +2471,7 @@ export const games = [[{
     "OUT",
     "TO",
   ]}, {
-  problem: "ECNAR",
+  problem: "CNAER",
   answers: [
     "AN",
     "ARE",
@@ -2098,9 +2481,10 @@ export const games = [[{
     "CRANE",
     "EARN",
     "NEAR",
+    "RACE",
     "RAN",
   ]}, {
-  problem: "CERMA",
+  problem: "EARMC",
   answers: [
     "AM",
     "ARE",
@@ -2110,16 +2494,18 @@ export const games = [[{
     "CRAM",
     "CREAM",
     "ME",
+    "RACE",
   ]}, {
-  problem: "IRCDE",
+  problem: "DEIRC",
   answers: [
     "CRIED",
+    "DICE",
     "ICE",
     "RED",
     "RICE",
     "RIDE",
   ]}, {
-  problem: "CWDRO",
+  problem: "WDRCO",
   answers: [
     "COW",
     "CROW",
@@ -2129,7 +2515,7 @@ export const games = [[{
     "ROW",
     "WORD",
   ]}, {
-  problem: "RWNCO",
+  problem: "RNOCW",
   answers: [
     "CORN",
     "COW",
@@ -2143,7 +2529,7 @@ export const games = [[{
     "ROW",
     "WON",
   ]}, {
-  problem: "EACND",
+  problem: "DNCAE",
   answers: [
     "AN",
     "AND",
@@ -2153,7 +2539,7 @@ export const games = [[{
     "DEN",
     "END",
   ]}, {
-  problem: "DEGOD",
+  problem: "DGDEO",
   answers: [
     "DO",
     "DODGE",
@@ -2162,7 +2548,7 @@ export const games = [[{
     "GOD",
     "ODD",
   ]}, {
-  problem: "'TDON",
+  problem: "TNDO'",
   answers: [
     "DO",
     "DON'T",
@@ -2172,7 +2558,7 @@ export const games = [[{
     "ON",
     "TO",
   ]}, {
-  problem: "DDRAE",
+  problem: "DAEDR",
   answers: [
     "ADD",
     "ARE",
@@ -2183,7 +2569,7 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "RMADE",
+  problem: "DREAM",
   answers: [
     "AM",
     "ARE",
@@ -2196,7 +2582,15 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "ERLAY",
+  problem: "DKNRI",
+  answers: [
+    "DRINK",
+    "IN",
+    "INK",
+    "KIND",
+    "RINK",
+  ]}, {
+  problem: "YLRAE",
   answers: [
     "ARE",
     "EARLY",
@@ -2204,7 +2598,7 @@ export const games = [[{
     "RELAY",
     "YEAR",
   ]}, {
-  problem: "HTREA",
+  problem: "AEHTR",
   answers: [
     "ARE",
     "ART",
@@ -2218,10 +2612,25 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THE",
   ]}, {
-  problem: "EHGIT",
+  problem: "ETAEN",
+  answers: [
+    "AN",
+    "ANT",
+    "AT",
+    "ATE",
+    "EAT",
+    "EATEN",
+    "NEAT",
+    "NET",
+    "TEA",
+    "TEN",
+  ]}, {
+  problem: "THEGI",
   answers: [
     "EIGHT",
     "GET",
@@ -2231,7 +2640,15 @@ export const games = [[{
     "THE",
     "TIE",
   ]}, {
-  problem: "EOYNJ",
+  problem: "YEPTM",
+  answers: [
+    "EMPTY",
+    "ME",
+    "MY",
+    "PET",
+    "YET",
+  ]}, {
+  problem: "NOYJE",
   answers: [
     "ENJOY",
     "JOY",
@@ -2239,7 +2656,33 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "AVRFO",
+  problem: "ETVEN",
+  answers: [
+    "EVEN",
+    "EVENT",
+    "NET",
+    "TEN",
+    "VET",
+  ]}, {
+  problem: "RAIFY",
+  answers: [
+    "AIR",
+    "FAIR",
+    "FAIRY",
+    "FAR",
+    "FRY",
+    "IF",
+    "RAY",
+  ]}, {
+  problem: "NAYFC",
+  answers: [
+    "AN",
+    "ANY",
+    "CAN",
+    "FAN",
+    "FANCY",
+  ]}, {
+  problem: "OVAFR",
   answers: [
     "FAR",
     "FAVOR",
@@ -2248,7 +2691,7 @@ export const games = [[{
     "OF",
     "OR",
   ]}, {
-  problem: "ESTAF",
+  problem: "SFTEA",
   answers: [
     "AS",
     "AT",
@@ -2262,8 +2705,17 @@ export const games = [[{
     "SAT",
     "SEA",
     "SEAT",
+    "TEA",
   ]}, {
-  problem: "IDLEF",
+  problem: "REWEF",
+  answers: [
+    "FEW",
+    "FEWER",
+    "FREE",
+    "WE",
+    "WERE",
+  ]}, {
+  problem: "DLEFI",
   answers: [
     "ELF",
     "FED",
@@ -2271,19 +2723,21 @@ export const games = [[{
     "FILE",
     "IF",
     "LED",
+    "LID",
     "LIE",
     "LIFE",
   ]}, {
-  problem: "LIFNA",
+  problem: "LIANF",
   answers: [
     "AN",
+    "FAN",
     "FIN",
     "FINAL",
     "IF",
     "IN",
     "NAIL",
   ]}, {
-  problem: "ISFTR",
+  problem: "FIRST",
   answers: [
     "FIRST",
     "FIT",
@@ -2296,7 +2750,7 @@ export const games = [[{
     "SIT",
     "STIR",
   ]}, {
-  problem: "ISFEX",
+  problem: "IXESF",
   answers: [
     "FIX",
     "FIXES",
@@ -2304,7 +2758,7 @@ export const games = [[{
     "IS",
     "SIX",
   ]}, {
-  problem: "FLTAO",
+  problem: "TAFLO",
   answers: [
     "AT",
     "FAT",
@@ -2316,16 +2770,17 @@ export const games = [[{
     "OF",
     "TO",
   ]}, {
-  problem: "LFOOD",
+  problem: "ODFOL",
   answers: [
     "DO",
     "FLOOD",
+    "FOLD",
     "FOOD",
     "FOOL",
     "OF",
     "OLD",
   ]}, {
-  problem: "OFNWL",
+  problem: "LWNFO",
   answers: [
     "FLOW",
     "FLOWN",
@@ -2340,7 +2795,7 @@ export const games = [[{
     "WOLF",
     "WON",
   ]}, {
-  problem: "LUTEF",
+  problem: "TUELF",
   answers: [
     "ELF",
     "FLUTE",
@@ -2348,7 +2803,7 @@ export const games = [[{
     "LEFT",
     "LET",
   ]}, {
-  problem: "FAORY",
+  problem: "RAOFY",
   answers: [
     "FAR",
     "FOR",
@@ -2359,7 +2814,7 @@ export const games = [[{
     "OR",
     "RAY",
   ]}, {
-  problem: "CFREO",
+  problem: "ROCFE",
   answers: [
     "CORE",
     "FOR",
@@ -2367,9 +2822,10 @@ export const games = [[{
     "OF",
     "OR",
   ]}, {
-  problem: "ODNFU",
+  problem: "UOFND",
   answers: [
     "DO",
+    "DUO",
     "FOUND",
     "FUN",
     "NO",
@@ -2377,7 +2833,7 @@ export const games = [[{
     "ON",
     "UNDO",
   ]}, {
-  problem: "ESOXF",
+  problem: "OXESF",
   answers: [
     "FOX",
     "FOXES",
@@ -2385,7 +2841,7 @@ export const games = [[{
     "OX",
     "SO",
   ]}, {
-  problem: "NTORF",
+  problem: "TOFNR",
   answers: [
     "FOR",
     "FORT",
@@ -2395,9 +2851,10 @@ export const games = [[{
     "OF",
     "ON",
     "OR",
+    "ROT",
     "TO",
   ]}, {
-  problem: "NFROW",
+  problem: "OWNFR",
   answers: [
     "FOR",
     "FROWN",
@@ -2410,7 +2867,7 @@ export const games = [[{
     "ROW",
     "WON",
   ]}, {
-  problem: "RUTIF",
+  problem: "FTIUR",
   answers: [
     "FIT",
     "FRUIT",
@@ -2418,15 +2875,27 @@ export const games = [[{
     "IF",
     "IT",
   ]}, {
-  problem: "GEILD",
+  problem: "GSHOT",
+  answers: [
+    "GHOST",
+    "GO",
+    "GOT",
+    "HOG",
+    "HOT",
+    "OH",
+    "SO",
+    "TO",
+  ]}, {
+  problem: "LIDEG",
   answers: [
     "DIG",
     "GLIDE",
     "LED",
     "LEG",
+    "LID",
     "LIE",
   ]}, {
-  problem: "EGLOB",
+  problem: "LGEOB",
   answers: [
     "BE",
     "BEG",
@@ -2435,7 +2904,7 @@ export const games = [[{
     "LEG",
     "LOG",
   ]}, {
-  problem: "GNIGO",
+  problem: "GGONI",
   answers: [
     "GO",
     "GOING",
@@ -2443,7 +2912,7 @@ export const games = [[{
     "NO",
     "ON",
   ]}, {
-  problem: "ANIGR",
+  problem: "ARGNI",
   answers: [
     "AIR",
     "AN",
@@ -2456,7 +2925,7 @@ export const games = [[{
     "RANG",
     "RING",
   ]}, {
-  problem: "TAERG",
+  problem: "RAEGT",
   answers: [
     "AGE",
     "ARE",
@@ -2467,9 +2936,11 @@ export const games = [[{
     "GATE",
     "GET",
     "GREAT",
+    "RAT",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "ROANG",
+  problem: "NOGAR",
   answers: [
     "AGO",
     "AN",
@@ -2482,7 +2953,7 @@ export const games = [[{
     "RAN",
     "RANG",
   ]}, {
-  problem: "UPRGO",
+  problem: "PUGOR",
   answers: [
     "GO",
     "GROUP",
@@ -2491,7 +2962,7 @@ export const games = [[{
     "RUG",
     "UP",
   ]}, {
-  problem: "RLOGW",
+  problem: "GWLOR",
   answers: [
     "GLOW",
     "GO",
@@ -2503,7 +2974,7 @@ export const games = [[{
     "OWL",
     "ROW",
   ]}, {
-  problem: "NGWRO",
+  problem: "OWRNG",
   answers: [
     "GO",
     "GOWN",
@@ -2518,7 +2989,15 @@ export const games = [[{
     "WON",
     "WRONG",
   ]}, {
-  problem: "ANDHY",
+  problem: "EUGST",
+  answers: [
+    "GET",
+    "GUEST",
+    "TUG",
+    "US",
+    "USE",
+  ]}, {
+  problem: "NYAHD",
   answers: [
     "AN",
     "AND",
@@ -2527,8 +3006,9 @@ export const games = [[{
     "HAD",
     "HAND",
     "HANDY",
+    "HAY",
   ]}, {
-  problem: "HTHAC",
+  problem: "TCHAH",
   answers: [
     "AT",
     "CAT",
@@ -2536,7 +3016,7 @@ export const games = [[{
     "HAT",
     "HATCH",
   ]}, {
-  problem: "HEARD",
+  problem: "ERHDA",
   answers: [
     "ARE",
     "DEAR",
@@ -2551,18 +3031,35 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "YENOH",
+  problem: "VHYEA",
+  answers: [
+    "HAVE",
+    "HAY",
+    "HE",
+    "HEAVY",
+    "HEY",
+  ]}, {
+  problem: "HLEOL",
+  answers: [
+    "HE",
+    "HELLO",
+    "HOE",
+    "HOLE",
+    "OH",
+  ]}, {
+  problem: "YOHNE",
   answers: [
     "HE",
     "HEN",
     "HEY",
+    "HOE",
     "HONEY",
     "NO",
     "OH",
     "ON",
     "ONE",
   ]}, {
-  problem: "OHRON",
+  problem: "HOONR",
   answers: [
     "HONOR",
     "HORN",
@@ -2571,11 +3068,12 @@ export const games = [[{
     "ON",
     "OR",
   ]}, {
-  problem: "HROSE",
+  problem: "OESRH",
   answers: [
     "HE",
     "HER",
     "HERO",
+    "HOE",
     "HORSE",
     "HOSE",
     "OH",
@@ -2585,9 +3083,10 @@ export const games = [[{
     "SHOE",
     "SO",
   ]}, {
-  problem: "ESHUO",
+  problem: "EOUHS",
   answers: [
     "HE",
+    "HOE",
     "HOSE",
     "HOUSE",
     "OH",
@@ -2597,16 +3096,17 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "RIFEN",
+  problem: "INFER",
   answers: [
     "FERN",
     "FIN",
     "FINE",
+    "FIRE",
     "IF",
     "IN",
     "INFER",
   ]}, {
-  problem: "NUTPI",
+  problem: "INTUP",
   answers: [
     "IN",
     "INPUT",
@@ -2615,10 +3115,11 @@ export const games = [[{
     "PIN",
     "PINT",
     "PUT",
+    "TIP",
     "UNIT",
     "UP",
   ]}, {
-  problem: "I'NTS",
+  problem: "I'STN",
   answers: [
     "IN",
     "IS",
@@ -2628,34 +3129,37 @@ export const games = [[{
     "ITS",
     "SIT",
   ]}, {
-  problem: "DINKS",
+  problem: "SNKID",
   answers: [
     "IN",
+    "INK",
     "IS",
     "KIND",
     "KINDS",
     "SINK",
     "SKIN",
   ]}, {
-  problem: "TISKE",
+  problem: "ITSKE",
   answers: [
     "IS",
     "IT",
     "ITS",
+    "KIT",
     "KITE",
     "KITES",
     "SIT",
     "TIE",
   ]}, {
-  problem: "FINKE",
+  problem: "EKFNI",
   answers: [
     "FIN",
     "FINE",
     "IF",
     "IN",
+    "INK",
     "KNIFE",
   ]}, {
-  problem: "NRALE",
+  problem: "AENRL",
   answers: [
     "AN",
     "ARE",
@@ -2665,7 +3169,27 @@ export const games = [[{
     "NEAR",
     "RAN",
   ]}, {
-  problem: "EEGDL",
+  problem: "ALSET",
+  answers: [
+    "AS",
+    "AT",
+    "ATE",
+    "EAST",
+    "EAT",
+    "LAST",
+    "LATE",
+    "LEAST",
+    "LET",
+    "SALE",
+    "SALT",
+    "SAT",
+    "SEA",
+    "SEAL",
+    "SEAT",
+    "TALE",
+    "TEA",
+  ]}, {
+  problem: "EGEDL",
   answers: [
     "EDGE",
     "GLEE",
@@ -2673,16 +3197,26 @@ export const games = [[{
     "LEDGE",
     "LEG",
   ]}, {
-  problem: "OTUSL",
+  problem: "TRLEI",
+  answers: [
+    "IT",
+    "LET",
+    "LIE",
+    "LITRE",
+    "TIE",
+    "TIRE",
+  ]}, {
+  problem: "SOLTU",
   answers: [
     "LOT",
+    "LOTS",
     "LOTUS",
     "OUT",
     "SO",
     "TO",
     "US",
   ]}, {
-  problem: "LOVDE",
+  problem: "VLODE",
   answers: [
     "DO",
     "DOVE",
@@ -2691,15 +3225,26 @@ export const games = [[{
     "LOVED",
     "OLD",
   ]}, {
-  problem: "GNSUL",
+  problem: "NSULG",
   answers: [
     "GNU",
+    "GUN",
     "LUNGS",
     "SNUG",
     "SUN",
     "US",
   ]}, {
-  problem: "ACTMH",
+  problem: "MRACH",
+  answers: [
+    "AM",
+    "ARM",
+    "CAR",
+    "CRAM",
+    "HAM",
+    "HARM",
+    "MARCH",
+  ]}, {
+  problem: "CMTHA",
   answers: [
     "AM",
     "AT",
@@ -2711,7 +3256,7 @@ export const games = [[{
     "MATCH",
     "MATH",
   ]}, {
-  problem: "YBAME",
+  problem: "AYMBE",
   answers: [
     "AM",
     "BE",
@@ -2721,7 +3266,7 @@ export const games = [[{
     "ME",
     "MY",
   ]}, {
-  problem: "TEMAL",
+  problem: "LMTAE",
   answers: [
     "AM",
     "AT",
@@ -2737,18 +3282,20 @@ export const games = [[{
     "METAL",
     "TALE",
     "TAME",
+    "TEA",
     "TEAM",
   ]}, {
-  problem: "MSUIN",
+  problem: "NIMUS",
   answers: [
     "IN",
     "IS",
     "MINUS",
+    "SM",
     "SUM",
     "SUN",
     "US",
   ]}, {
-  problem: "DELMO",
+  problem: "MEDOL",
   answers: [
     "DO",
     "LED",
@@ -2756,7 +3303,7 @@ export const games = [[{
     "MODEL",
     "OLD",
   ]}, {
-  problem: "MTSIO",
+  problem: "OMSIT",
   answers: [
     "IS",
     "IT",
@@ -2764,10 +3311,11 @@ export const games = [[{
     "MOIST",
     "MOST",
     "SIT",
+    "SM",
     "SO",
     "TO",
   ]}, {
-  problem: "OEMYN",
+  problem: "MENOY",
   answers: [
     "ME",
     "MEN",
@@ -2777,35 +3325,58 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "MNOTH",
+  problem: "NMOTH",
   answers: [
     "HOT",
     "MONTH",
+    "MOTH",
     "NO",
     "NOT",
     "OH",
     "ON",
     "TO",
   ]}, {
-  problem: "MSOUE",
+  problem: "ROMOT",
+  answers: [
+    "MOTOR",
+    "OR",
+    "ROOM",
+    "ROOT",
+    "ROT",
+    "TO",
+    "TOO",
+  ]}, {
+  problem: "UMOES",
   answers: [
     "ME",
     "MOUSE",
+    "SM",
     "SO",
     "SOME",
     "SUM",
     "US",
     "USE",
   ]}, {
-  problem: "MTOUH",
+  problem: "MOUTH",
   answers: [
     "HOT",
+    "HUM",
+    "HUT",
+    "MOTH",
     "MOUTH",
     "OH",
     "OUT",
     "TO",
   ]}, {
-  problem: "ANSIL",
+  problem: "CMUSI",
+  answers: [
+    "IS",
+    "MUSIC",
+    "SM",
+    "SUM",
+    "US",
+  ]}, {
+  problem: "SAILN",
   answers: [
     "AN",
     "AS",
@@ -2816,7 +3387,7 @@ export const games = [[{
     "SAIL",
     "SNAIL",
   ]}, {
-  problem: "NSEDE",
+  problem: "ENDES",
   answers: [
     "DEN",
     "END",
@@ -2827,7 +3398,7 @@ export const games = [[{
     "SEEN",
     "SEND",
   ]}, {
-  problem: "GINTH",
+  problem: "ITNGH",
   answers: [
     "HINT",
     "HIT",
@@ -2837,7 +3408,7 @@ export const games = [[{
     "THIN",
     "THING",
   ]}, {
-  problem: "SENOI",
+  problem: "EINSO",
   answers: [
     "IN",
     "IS",
@@ -2850,7 +3421,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "HROTN",
+  problem: "ORTNH",
   answers: [
     "HORN",
     "HOT",
@@ -2860,9 +3431,10 @@ export const games = [[{
     "OH",
     "ON",
     "OR",
+    "ROT",
     "TO",
   ]}, {
-  problem: "CONAE",
+  problem: "AONCE",
   answers: [
     "AN",
     "CAN",
@@ -2874,7 +3446,7 @@ export const games = [[{
     "ONCE",
     "ONE",
   ]}, {
-  problem: "NTOEF",
+  problem: "TFENO",
   answers: [
     "NET",
     "NO",
@@ -2888,15 +3460,25 @@ export const games = [[{
     "TO",
     "TOE",
   ]}, {
-  problem: "TIOBR",
+  problem: "LOIVE",
+  answers: [
+    "LIE",
+    "LIVE",
+    "LOVE",
+    "OIL",
+    "OLIVE",
+  ]}, {
+  problem: "BOIRT",
   answers: [
     "BIT",
     "IT",
     "OR",
     "ORBIT",
+    "ROT",
     "TO",
+    "TRIO",
   ]}, {
-  problem: "OERDR",
+  problem: "ERROD",
   answers: [
     "DO",
     "OR",
@@ -2904,20 +3486,30 @@ export const games = [[{
     "RED",
     "RODE",
   ]}, {
-  problem: "HETRO",
+  problem: "ROHTE",
   answers: [
     "HE",
     "HER",
     "HERO",
+    "HOE",
     "HOT",
     "OH",
     "OR",
     "OTHER",
+    "ROT",
     "THE",
     "TO",
     "TOE",
   ]}, {
-  problem: "PNITA",
+  problem: "OETTR",
+  answers: [
+    "OR",
+    "OTTER",
+    "ROT",
+    "TO",
+    "TOE",
+  ]}, {
+  problem: "NIAPT",
   answers: [
     "AN",
     "ANT",
@@ -2932,11 +3524,13 @@ export const games = [[{
     "PIN",
     "PINT",
     "TAP",
+    "TIP",
   ]}, {
-  problem: "NAPIC",
+  problem: "APCNI",
   answers: [
     "AN",
     "CAN",
+    "CAP",
     "IN",
     "NAP",
     "PAIN",
@@ -2944,7 +3538,24 @@ export const games = [[{
     "PANIC",
     "PIN",
   ]}, {
-  problem: "RSAPT",
+  problem: "ASPNT",
+  answers: [
+    "AN",
+    "ANT",
+    "AS",
+    "AT",
+    "NAP",
+    "NAPS",
+    "PAN",
+    "PANTS",
+    "PAST",
+    "PAT",
+    "SAT",
+    "SNAP",
+    "SPAN",
+    "TAP",
+  ]}, {
+  problem: "RSPTA",
   answers: [
     "ART",
     "AS",
@@ -2953,12 +3564,13 @@ export const games = [[{
     "PARTS",
     "PAST",
     "PAT",
+    "RAT",
     "SAT",
     "STAR",
     "TAP",
     "TRAP",
   ]}, {
-  problem: "RYTAP",
+  problem: "RYPAT",
   answers: [
     "ART",
     "AT",
@@ -2966,10 +3578,32 @@ export const games = [[{
     "PARTY",
     "PAT",
     "PAY",
+    "RAT",
     "RAY",
     "TAP",
     "TRAP",
     "TRY",
+  ]}, {
+  problem: "ASEPT",
+  answers: [
+    "AS",
+    "AT",
+    "ATE",
+    "EAST",
+    "EAT",
+    "PAST",
+    "PASTE",
+    "PAT",
+    "PEST",
+    "PET",
+    "PETS",
+    "SAT",
+    "SEA",
+    "SEAT",
+    "STEP",
+    "TAP",
+    "TAPE",
+    "TEA",
   ]}, {
   problem: "USEAP",
   answers: [
@@ -2980,7 +3614,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "SPARE",
+  problem: "SRPAE",
   answers: [
     "ARE",
     "AS",
@@ -2989,7 +3623,7 @@ export const games = [[{
     "SEA",
     "SPARE",
   ]}, {
-  problem: "SSETP",
+  problem: "TEPSS",
   answers: [
     "PEST",
     "PESTS",
@@ -2997,7 +3631,7 @@ export const games = [[{
     "PETS",
     "STEP",
   ]}, {
-  problem: "PAHES",
+  problem: "ESPAH",
   answers: [
     "AS",
     "HAS",
@@ -3007,10 +3641,11 @@ export const games = [[{
     "SHAPE",
     "SHE",
   ]}, {
-  problem: "HOPNE",
+  problem: "NPOHE",
   answers: [
     "HE",
     "HEN",
+    "HOE",
     "HOP",
     "HOPE",
     "NO",
@@ -3021,7 +3656,7 @@ export const games = [[{
     "PEN",
     "PHONE",
   ]}, {
-  problem: "AONIP",
+  problem: "NPIAO",
   answers: [
     "AN",
     "IN",
@@ -3033,15 +3668,24 @@ export const games = [[{
     "PIANO",
     "PIN",
   ]}, {
-  problem: "HIPTC",
+  problem: "TIPCH",
   answers: [
     "CHIP",
     "HIT",
     "IT",
     "ITCH",
     "PITCH",
+    "TIP",
   ]}, {
-  problem: "LNIAP",
+  problem: "ELPCA",
+  answers: [
+    "CAP",
+    "CLAP",
+    "LACE",
+    "LEAP",
+    "PLACE",
+  ]}, {
+  problem: "NALIP",
   answers: [
     "AN",
     "IN",
@@ -3054,7 +3698,7 @@ export const games = [[{
     "PLAIN",
     "PLAN",
   ]}, {
-  problem: "ELAPN",
+  problem: "APLNE",
   answers: [
     "AN",
     "LEAN",
@@ -3065,7 +3709,7 @@ export const games = [[{
     "PLAN",
     "PLANE",
   ]}, {
-  problem: "PLANT",
+  problem: "LNTPA",
   answers: [
     "AN",
     "ANT",
@@ -3077,15 +3721,16 @@ export const games = [[{
     "PLANT",
     "TAP",
   ]}, {
-  problem: "POSME",
+  problem: "EMOSP",
   answers: [
     "ME",
     "MOP",
     "POEMS",
+    "SM",
     "SO",
     "SOME",
   ]}, {
-  problem: "PNOTI",
+  problem: "OINTP",
   answers: [
     "IN",
     "INTO",
@@ -3097,21 +3742,24 @@ export const games = [[{
     "PINT",
     "POINT",
     "POT",
+    "TIP",
     "TO",
     "TOP",
   ]}, {
-  problem: "DNPOU",
+  problem: "NUDPO",
   answers: [
     "DO",
+    "DUO",
     "NO",
     "ON",
+    "POD",
     "POND",
     "POUND",
     "UNDO",
     "UP",
     "UPON",
   ]}, {
-  problem: "RWPOE",
+  problem: "WEORP",
   answers: [
     "OR",
     "POWER",
@@ -3119,15 +3767,16 @@ export const games = [[{
     "ROW",
     "WE",
   ]}, {
-  problem: "RIEPC",
+  problem: "CIRPE",
   answers: [
     "ICE",
     "PIE",
     "PRICE",
     "RICE",
     "RIP",
+    "RIPE",
   ]}, {
-  problem: "INPRT",
+  problem: "RTNPI",
   answers: [
     "IN",
     "IT",
@@ -3135,9 +3784,18 @@ export const games = [[{
     "PINT",
     "PRINT",
     "RIP",
+    "TIP",
     "TRIP",
   ]}, {
-  problem: "ANYIR",
+  problem: "PSRIM",
+  answers: [
+    "IS",
+    "PRISM",
+    "RIP",
+    "SIR",
+    "SM",
+  ]}, {
+  problem: "RYAIN",
   answers: [
     "AIR",
     "AN",
@@ -3149,7 +3807,7 @@ export const games = [[{
     "RAY",
     "YARN",
   ]}, {
-  problem: "ERTAC",
+  problem: "TEACR",
   answers: [
     "ARE",
     "ART",
@@ -3159,10 +3817,14 @@ export const games = [[{
     "CART",
     "CAT",
     "EAT",
+    "RACE",
+    "RAT",
     "REACT",
+    "TEA",
     "TEAR",
+    "TRACE",
   ]}, {
-  problem: "EADRY",
+  problem: "ADERY",
   answers: [
     "ARE",
     "DAY",
@@ -3175,7 +3837,7 @@ export const games = [[{
     "YARD",
     "YEAR",
   ]}, {
-  problem: "PARYE",
+  problem: "RAPEY",
   answers: [
     "ARE",
     "PAY",
@@ -3184,7 +3846,7 @@ export const games = [[{
     "REPAY",
     "YEAR",
   ]}, {
-  problem: "EERUS",
+  problem: "UEERS",
   answers: [
     "REUSE",
     "SEE",
@@ -3192,7 +3854,26 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "ORPES",
+  problem: "YHMRE",
+  answers: [
+    "HE",
+    "HER",
+    "HEY",
+    "ME",
+    "MY",
+    "RHYME",
+  ]}, {
+  problem: "OBORT",
+  answers: [
+    "BOOT",
+    "OR",
+    "ROBOT",
+    "ROOT",
+    "ROT",
+    "TO",
+    "TOO",
+  ]}, {
+  problem: "EPRSO",
   answers: [
     "OR",
     "ROPE",
@@ -3200,7 +3881,7 @@ export const games = [[{
     "ROSE",
     "SO",
   ]}, {
-  problem: "RUOGH",
+  problem: "GOURH",
   answers: [
     "GO",
     "HOG",
@@ -3212,9 +3893,10 @@ export const games = [[{
     "ROUGH",
     "RUG",
   ]}, {
-  problem: "NRUDO",
+  problem: "RODUN",
   answers: [
     "DO",
+    "DUO",
     "NO",
     "ON",
     "OR",
@@ -3223,7 +3905,19 @@ export const games = [[{
     "RUN",
     "UNDO",
   ]}, {
-  problem: "ESURL",
+  problem: "ORUSE",
+  answers: [
+    "OR",
+    "OUR",
+    "ROSE",
+    "ROUSE",
+    "SO",
+    "SOUR",
+    "SURE",
+    "US",
+    "USE",
+  ]}, {
+  problem: "ESRLU",
   answers: [
     "RULE",
     "RULES",
@@ -3231,15 +3925,17 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "YSDLA",
+  problem: "ASLYD",
   answers: [
     "AS",
     "DAY",
+    "LAD",
     "LADY",
     "SAD",
     "SADLY",
+    "SAY",
   ]}, {
-  problem: "SNYDA",
+  problem: "YNADS",
   answers: [
     "AN",
     "AND",
@@ -3249,27 +3945,30 @@ export const games = [[{
     "SAD",
     "SAND",
     "SANDY",
+    "SAY",
   ]}, {
-  problem: "CAESL",
+  problem: "LSAEC",
   answers: [
     "AS",
     "CASE",
+    "LACE",
     "SALE",
     "SCALE",
     "SEA",
     "SEAL",
   ]}, {
-  problem: "EARCS",
+  problem: "RESAC",
   answers: [
     "ARE",
     "AS",
     "CAR",
     "CASE",
     "EARS",
+    "RACE",
     "SCARE",
     "SEA",
   ]}, {
-  problem: "OSCLW",
+  problem: "OLSCW",
   answers: [
     "COW",
     "LOW",
@@ -3278,7 +3977,21 @@ export const games = [[{
     "SLOW",
     "SO",
   ]}, {
-  problem: "EHSKA",
+  problem: "HSDEA",
+  answers: [
+    "AS",
+    "DASH",
+    "HAD",
+    "HAS",
+    "HE",
+    "HEAD",
+    "SAD",
+    "SEA",
+    "SHADE",
+    "SHE",
+    "SHED",
+  ]}, {
+  problem: "SAHKE",
   answers: [
     "AS",
     "ASK",
@@ -3288,7 +4001,7 @@ export const games = [[{
     "SHAKE",
     "SHE",
   ]}, {
-  problem: "SHARE",
+  problem: "HSREA",
   answers: [
     "ARE",
     "AS",
@@ -3301,7 +4014,15 @@ export const games = [[{
     "SHARE",
     "SHE",
   ]}, {
-  problem: "PSHEE",
+  problem: "SDH'E",
+  answers: [
+    "HE",
+    "HE'D",
+    "SHE",
+    "SHE'D",
+    "SHED",
+  ]}, {
+  problem: "HPSEE",
   answers: [
     "HE",
     "SEE",
@@ -3309,7 +4030,16 @@ export const games = [[{
     "SHE",
     "SHEEP",
   ]}, {
-  problem: "HSNIE",
+  problem: "TEESH",
+  answers: [
+    "HE",
+    "SEE",
+    "SHE",
+    "SHEET",
+    "THE",
+    "THESE",
+  ]}, {
+  problem: "IESNH",
   answers: [
     "HE",
     "HEN",
@@ -3319,7 +4049,7 @@ export const games = [[{
     "SHE",
     "SHINE",
   ]}, {
-  problem: "YSNHI",
+  problem: "IHYSN",
   answers: [
     "HIS",
     "IN",
@@ -3327,7 +4057,7 @@ export const games = [[{
     "SHINY",
     "SHY",
   ]}, {
-  problem: "HTSIR",
+  problem: "RSITH",
   answers: [
     "HIS",
     "HIT",
@@ -3341,9 +4071,10 @@ export const games = [[{
     "STIR",
     "THIS",
   ]}, {
-  problem: "SOSEH",
+  problem: "OHSES",
   answers: [
     "HE",
+    "HOE",
     "HOSE",
     "OH",
     "SHE",
@@ -3351,9 +4082,21 @@ export const games = [[{
     "SHOES",
     "SO",
   ]}, {
-  problem: "HOSUT",
+  problem: "TOSRH",
   answers: [
     "HOT",
+    "OH",
+    "OR",
+    "ROT",
+    "SHORT",
+    "SO",
+    "SORT",
+    "TO",
+  ]}, {
+  problem: "UHOTS",
+  answers: [
+    "HOT",
+    "HUT",
     "OH",
     "OUT",
     "SHOUT",
@@ -3363,7 +4106,7 @@ export const games = [[{
     "TO",
     "US",
   ]}, {
-  problem: "USBHR",
+  problem: "BHRSU",
   answers: [
     "BUS",
     "BUSH",
@@ -3372,7 +4115,7 @@ export const games = [[{
     "SHRUB",
     "US",
   ]}, {
-  problem: "THISX",
+  problem: "IXSTH",
   answers: [
     "HIS",
     "HIT",
@@ -3385,24 +4128,43 @@ export const games = [[{
     "SIXTH",
     "THIS",
   ]}, {
-  problem: "LESID",
+  problem: "EKSAT",
+  answers: [
+    "AS",
+    "ASK",
+    "AT",
+    "ATE",
+    "EAST",
+    "EAT",
+    "SAT",
+    "SEA",
+    "SEAT",
+    "SKATE",
+    "TAKE",
+    "TAKES",
+    "TASK",
+    "TEA",
+  ]}, {
+  problem: "IEDSL",
   answers: [
     "IS",
     "LED",
+    "LID",
     "LIE",
     "SIDE",
     "SLED",
     "SLIDE",
   ]}, {
-  problem: "SMALL",
+  problem: "ALMSL",
   answers: [
     "ALL",
     "AM",
     "AS",
     "SAM",
+    "SM",
     "SMALL",
   ]}, {
-  problem: "ATSRM",
+  problem: "TASRM",
   answers: [
     "AM",
     "ARM",
@@ -3410,12 +4172,14 @@ export const games = [[{
     "AS",
     "AT",
     "MAT",
+    "RAT",
     "SAM",
     "SAT",
+    "SM",
     "SMART",
     "STAR",
   ]}, {
-  problem: "MIESL",
+  problem: "LSEIM",
   answers: [
     "IS",
     "LIE",
@@ -3423,9 +4187,18 @@ export const games = [[{
     "ME",
     "MILE",
     "SLIM",
+    "SM",
     "SMILE",
   ]}, {
-  problem: "AKENS",
+  problem: "OEMKS",
+  answers: [
+    "ME",
+    "SM",
+    "SMOKE",
+    "SO",
+    "SOME",
+  ]}, {
+  problem: "NKESA",
   answers: [
     "AN",
     "AS",
@@ -3434,7 +4207,7 @@ export const games = [[{
     "SEA",
     "SNAKE",
   ]}, {
-  problem: "FFSIN",
+  problem: "NFFSI",
   answers: [
     "FIN",
     "IF",
@@ -3442,7 +4215,7 @@ export const games = [[{
     "IS",
     "SNIFF",
   ]}, {
-  problem: "OONPS",
+  problem: "SOPON",
   answers: [
     "NO",
     "ON",
@@ -3452,7 +4225,7 @@ export const games = [[{
     "SOON",
     "SPOON",
   ]}, {
-  problem: "OENRS",
+  problem: "NOSER",
   answers: [
     "NO",
     "NOSE",
@@ -3465,7 +4238,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "AOSRL",
+  problem: "ALORS",
   answers: [
     "ALSO",
     "AS",
@@ -3475,10 +4248,11 @@ export const games = [[{
     "SOAR",
     "SOLAR",
   ]}, {
-  problem: "DISLO",
+  problem: "OLDSI",
   answers: [
     "DO",
     "IS",
+    "LID",
     "OIL",
     "OLD",
     "SO",
@@ -3486,9 +4260,10 @@ export const games = [[{
     "SOLD",
     "SOLID",
   ]}, {
-  problem: "UOSND",
+  problem: "DOSNU",
   answers: [
     "DO",
+    "DUO",
     "NO",
     "ON",
     "SO",
@@ -3498,7 +4273,15 @@ export const games = [[{
     "UNDO",
     "US",
   ]}, {
-  problem: "ILPLS",
+  problem: "PCSEA",
+  answers: [
+    "AS",
+    "CAP",
+    "CASE",
+    "SEA",
+    "SPACE",
+  ]}, {
+  problem: "ILSPL",
   answers: [
     "ILL",
     "IS",
@@ -3506,7 +4289,7 @@ export const games = [[{
     "SLIP",
     "SPILL",
   ]}, {
-  problem: "PLITS",
+  problem: "LTPSI",
   answers: [
     "IS",
     "IT",
@@ -3516,8 +4299,9 @@ export const games = [[{
     "SLIP",
     "SPIT",
     "SPLIT",
+    "TIP",
   ]}, {
-  problem: "IPLOS",
+  problem: "POSLI",
   answers: [
     "IS",
     "LIP",
@@ -3528,15 +4312,16 @@ export const games = [[{
     "SOIL",
     "SPOIL",
   ]}, {
-  problem: "RPSAY",
+  problem: "ASYRP",
   answers: [
     "AS",
     "PAY",
     "RAY",
     "RAYS",
+    "SAY",
     "SPRAY",
   ]}, {
-  problem: "AMTPS",
+  problem: "STMPA",
   answers: [
     "AM",
     "AS",
@@ -3547,10 +4332,11 @@ export const games = [[{
     "PAT",
     "SAM",
     "SAT",
+    "SM",
     "STAMP",
     "TAP",
   ]}, {
-  problem: "NATSD",
+  problem: "NSTDA",
   answers: [
     "AN",
     "AND",
@@ -3562,11 +4348,12 @@ export const games = [[{
     "SAT",
     "STAND",
   ]}, {
-  problem: "TTRSA",
+  problem: "TRAST",
   answers: [
     "ART",
     "AS",
     "AT",
+    "RAT",
     "SAT",
     "STAR",
     "START",
@@ -3583,26 +4370,29 @@ export const games = [[{
     "SEAT",
     "STATE",
     "TASTE",
+    "TEA",
     "TEST",
   ]}, {
-  problem: "STYAS",
+  problem: "SSAYT",
   answers: [
     "AS",
     "AT",
     "SAT",
+    "SAY",
     "STAY",
     "STAYS",
   ]}, {
-  problem: "CTSKI",
+  problem: "ICKTS",
   answers: [
     "IS",
     "IT",
     "ITS",
+    "KIT",
     "SICK",
     "SIT",
     "STICK",
   ]}, {
-  problem: "FISFT",
+  problem: "ISFFT",
   answers: [
     "FIT",
     "FITS",
@@ -3613,7 +4403,7 @@ export const games = [[{
     "SIT",
     "STIFF",
   ]}, {
-  problem: "ISLLT",
+  problem: "TLLSI",
   answers: [
     "ILL",
     "IS",
@@ -3622,7 +4412,18 @@ export const games = [[{
     "SIT",
     "STILL",
   ]}, {
-  problem: "TESNO",
+  problem: "SITNG",
+  answers: [
+    "IN",
+    "IS",
+    "IT",
+    "ITS",
+    "SIGN",
+    "SING",
+    "SIT",
+    "STING",
+  ]}, {
+  problem: "NEOTS",
   answers: [
     "NEST",
     "NET",
@@ -3642,37 +4443,43 @@ export const games = [[{
     "TO",
     "TOE",
   ]}, {
-  problem: "OTSDO",
+  problem: "SOODT",
   answers: [
     "DO",
     "DOT",
     "SO",
+    "SOOT",
     "STOOD",
     "TO",
     "TOO",
   ]}, {
-  problem: "SLTOO",
+  problem: "OLOTS",
   answers: [
     "LOT",
+    "LOTS",
     "SO",
+    "SOLO",
+    "SOOT",
     "STOOL",
     "TO",
     "TOO",
   ]}, {
-  problem: "ETORS",
+  problem: "TEOSR",
   answers: [
     "OR",
     "REST",
     "ROSE",
+    "ROT",
     "SO",
     "SORT",
     "STORE",
     "TO",
     "TOE",
   ]}, {
-  problem: "ORTSY",
+  problem: "STYOR",
   answers: [
     "OR",
+    "ROT",
     "SO",
     "SORT",
     "STORY",
@@ -3681,27 +4488,29 @@ export const games = [[{
     "TOYS",
     "TRY",
   ]}, {
-  problem: "SVOTE",
+  problem: "ETOSV",
   answers: [
     "SO",
     "STOVE",
     "TO",
     "TOE",
     "VEST",
+    "VET",
     "VOTE",
   ]}, {
-  problem: "RWTSA",
+  problem: "WTARS",
   answers: [
     "ART",
     "AS",
     "AT",
+    "RAT",
     "SAT",
     "SAW",
     "STAR",
     "STRAW",
     "WAS",
   ]}, {
-  problem: "TAWES",
+  problem: "ETSAW",
   answers: [
     "AS",
     "AT",
@@ -3715,12 +4524,13 @@ export const games = [[{
     "SEW",
     "STEW",
     "SWEAT",
+    "TEA",
     "WAS",
     "WE",
     "WEST",
     "WET",
   ]}, {
-  problem: "FTISW",
+  problem: "FIWST",
   answers: [
     "FIT",
     "FITS",
@@ -3731,7 +4541,7 @@ export const games = [[{
     "SIT",
     "SWIFT",
   ]}, {
-  problem: "WINSG",
+  problem: "SIWGN",
   answers: [
     "IN",
     "IS",
@@ -3744,7 +4554,7 @@ export const games = [[{
     "WINGS",
     "WINS",
   ]}, {
-  problem: "LBTEA",
+  problem: "TBALE",
   answers: [
     "AT",
     "ATE",
@@ -3757,23 +4567,9 @@ export const games = [[{
     "LET",
     "TABLE",
     "TALE",
+    "TEA",
   ]}, {
-  problem: "KTESA",
-  answers: [
-    "AS",
-    "ASK",
-    "AT",
-    "ATE",
-    "EAST",
-    "EAT",
-    "SAT",
-    "SEA",
-    "SEAT",
-    "TAKE",
-    "TAKES",
-    "TASK",
-  ]}, {
-  problem: "TEEAS",
+  problem: "EAEST",
   answers: [
     "AS",
     "AT",
@@ -3784,9 +4580,10 @@ export const games = [[{
     "SEA",
     "SEAT",
     "SEE",
+    "TEA",
     "TEASE",
   ]}, {
-  problem: "ETNDS",
+  problem: "NSDTE",
   answers: [
     "DEN",
     "END",
@@ -3798,7 +4595,7 @@ export const games = [[{
     "TENDS",
     "TENS",
   ]}, {
-  problem: "TENTH",
+  problem: "TTHEN",
   answers: [
     "HE",
     "HEN",
@@ -3809,19 +4606,21 @@ export const games = [[{
     "THE",
     "THEN",
   ]}, {
-  problem: "ASTXE",
+  problem: "AXETS",
   answers: [
     "AS",
     "AT",
     "ATE",
+    "AXE",
     "EAST",
     "EAT",
     "SAT",
     "SEA",
     "SEAT",
+    "TEA",
     "TEXAS",
   ]}, {
-  problem: "HTNKA",
+  problem: "TNKAH",
   answers: [
     "AN",
     "ANT",
@@ -3831,10 +4630,11 @@ export const games = [[{
     "THAN",
     "THANK",
   ]}, {
-  problem: "REHIT",
+  problem: "TREIH",
   answers: [
     "HE",
     "HER",
+    "HIRE",
     "HIT",
     "IT",
     "THE",
@@ -3842,7 +4642,7 @@ export const games = [[{
     "TIE",
     "TIRE",
   ]}, {
-  problem: "MTEEH",
+  problem: "EMETH",
   answers: [
     "HE",
     "ME",
@@ -3851,7 +4651,7 @@ export const games = [[{
     "THEM",
     "THEME",
   ]}, {
-  problem: "RETEH",
+  problem: "REETH",
   answers: [
     "HE",
     "HER",
@@ -3861,26 +4661,29 @@ export const games = [[{
     "THREE",
     "TREE",
   ]}, {
-  problem: "SHETE",
+  problem: "CTHKI",
   answers: [
-    "HE",
-    "SEE",
-    "SHE",
-    "THE",
-    "THESE",
+    "HIT",
+    "IT",
+    "ITCH",
+    "KIT",
+    "THICK",
   ]}, {
-  problem: "TKHNI",
+  problem: "TNKHI",
   answers: [
     "HINT",
     "HIT",
     "IN",
+    "INK",
     "IT",
+    "KIT",
     "THIN",
     "THINK",
   ]}, {
-  problem: "HSTOE",
+  problem: "SEOTH",
   answers: [
     "HE",
+    "HOE",
     "HOSE",
     "HOT",
     "OH",
@@ -3892,7 +4695,15 @@ export const games = [[{
     "TO",
     "TOE",
   ]}, {
-  problem: "EGIRT",
+  problem: "HMTBU",
+  answers: [
+    "BUT",
+    "HUM",
+    "HUT",
+    "THUMB",
+    "TUB",
+  ]}, {
+  problem: "RTGIE",
   answers: [
     "GET",
     "GRIT",
@@ -3901,7 +4712,7 @@ export const games = [[{
     "TIGER",
     "TIRE",
   ]}, {
-  problem: "TAODS",
+  problem: "OTSDA",
   answers: [
     "AS",
     "AT",
@@ -3915,7 +4726,7 @@ export const games = [[{
     "TOAD",
     "TOADS",
   ]}, {
-  problem: "TAOTS",
+  problem: "OSATT",
   answers: [
     "AS",
     "AT",
@@ -3925,7 +4736,7 @@ export const games = [[{
     "TO",
     "TOAST",
   ]}, {
-  problem: "OTAYD",
+  problem: "YDATO",
   answers: [
     "AT",
     "DAY",
@@ -3937,7 +4748,21 @@ export const games = [[{
     "TODAY",
     "TOY",
   ]}, {
-  problem: "TLOAT",
+  problem: "NTEON",
+  answers: [
+    "NET",
+    "NO",
+    "NONE",
+    "NOT",
+    "NOTE",
+    "ON",
+    "ONE",
+    "TEN",
+    "TO",
+    "TOE",
+    "TONNE",
+  ]}, {
+  problem: "LAOTT",
   answers: [
     "AT",
     "LOT",
@@ -3945,19 +4770,22 @@ export const games = [[{
     "TO",
     "TOTAL",
   ]}, {
-  problem: "OHTCU",
+  problem: "COTHU",
   answers: [
+    "COT",
     "CUT",
     "HOT",
+    "HUT",
     "OH",
     "OUCH",
     "OUT",
     "TO",
     "TOUCH",
   ]}, {
-  problem: "REWTO",
+  problem: "RWEOT",
   answers: [
     "OR",
+    "ROT",
     "ROW",
     "TO",
     "TOE",
@@ -3968,7 +4796,7 @@ export const games = [[{
     "WET",
     "WROTE",
   ]}, {
-  problem: "INRTA",
+  problem: "ARNIT",
   answers: [
     "AIR",
     "AN",
@@ -3979,38 +4807,43 @@ export const games = [[{
     "IT",
     "RAIN",
     "RAN",
+    "RAT",
     "TRAIN",
   ]}, {
-  problem: "ATTIR",
+  problem: "TRATI",
   answers: [
     "AIR",
     "ART",
     "AT",
     "IT",
+    "RAT",
     "TRAIT",
   ]}, {
-  problem: "ARHTS",
+  problem: "STRHA",
   answers: [
     "ART",
     "AS",
     "AT",
     "HAS",
     "HAT",
+    "RAT",
     "SAT",
     "STAR",
     "TRASH",
   ]}, {
-  problem: "ATETR",
+  problem: "ETART",
   answers: [
     "ARE",
     "ART",
     "AT",
     "ATE",
     "EAT",
+    "RAT",
+    "TEA",
     "TEAR",
     "TREAT",
   ]}, {
-  problem: "RDETI",
+  problem: "ERDTI",
   answers: [
     "DIRT",
     "IT",
@@ -4021,16 +4854,17 @@ export const games = [[{
     "TIRE",
     "TRIED",
   ]}, {
-  problem: "TOTUR",
+  problem: "RTTOU",
   answers: [
     "OR",
     "OUR",
     "OUT",
+    "ROT",
     "TO",
     "TOUR",
     "TROUT",
   ]}, {
-  problem: "BUTES",
+  problem: "TUBES",
   answers: [
     "BE",
     "BEST",
@@ -4043,7 +4877,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "WITCE",
+  problem: "CWITE",
   answers: [
     "ICE",
     "IT",
@@ -4052,7 +4886,7 @@ export const games = [[{
     "WE",
     "WET",
   ]}, {
-  problem: "TWTIS",
+  problem: "ISTWT",
   answers: [
     "IS",
     "IT",
@@ -4060,7 +4894,7 @@ export const games = [[{
     "SIT",
     "TWIST",
   ]}, {
-  problem: "RNEUD",
+  problem: "DNERU",
   answers: [
     "DEN",
     "END",
@@ -4069,7 +4903,7 @@ export const games = [[{
     "RUN",
     "UNDER",
   ]}, {
-  problem: "TUIEN",
+  problem: "TIENU",
   answers: [
     "IN",
     "IT",
@@ -4082,7 +4916,7 @@ export const games = [[{
     "UNITE",
     "UNTIE",
   ]}, {
-  problem: "NLUIT",
+  problem: "NTULI",
   answers: [
     "IN",
     "IT",
@@ -4090,7 +4924,7 @@ export const games = [[{
     "UNIT",
     "UNTIL",
   ]}, {
-  problem: "TSVII",
+  problem: "SITVI",
   answers: [
     "IS",
     "IT",
@@ -4098,7 +4932,7 @@ export const games = [[{
     "SIT",
     "VISIT",
   ]}, {
-  problem: "EVLWO",
+  problem: "VLEOW",
   answers: [
     "LOVE",
     "LOW",
@@ -4106,7 +4940,7 @@ export const games = [[{
     "VOWEL",
     "WE",
   ]}, {
-  problem: "ACHWT",
+  problem: "HCWTA",
   answers: [
     "AT",
     "CAT",
@@ -4116,20 +4950,22 @@ export const games = [[{
     "WATCH",
     "WHAT",
   ]}, {
-  problem: "AREWT",
+  problem: "EWTAR",
   answers: [
     "ARE",
     "ART",
     "AT",
     "ATE",
     "EAT",
+    "RAT",
+    "TEA",
     "TEAR",
     "WATER",
     "WE",
     "WEAR",
     "WET",
   ]}, {
-  problem: "WESVA",
+  problem: "WAESV",
   answers: [
     "AS",
     "SAVE",
@@ -4141,7 +4977,15 @@ export const games = [[{
     "WAVES",
     "WE",
   ]}, {
-  problem: "EHWRE",
+  problem: "WLEHA",
+  answers: [
+    "HE",
+    "HEAL",
+    "LAW",
+    "WE",
+    "WHALE",
+  ]}, {
+  problem: "WEHRE",
   answers: [
     "HE",
     "HER",
@@ -4150,7 +4994,7 @@ export const games = [[{
     "WERE",
     "WHERE",
   ]}, {
-  problem: "TEIWH",
+  problem: "IEWTH",
   answers: [
     "HE",
     "HIT",
@@ -4162,7 +5006,7 @@ export const games = [[{
     "WHITE",
     "WITH",
   ]}, {
-  problem: "SWH'O",
+  problem: "SOW'H",
   answers: [
     "HOW",
     "OH",
@@ -4171,9 +5015,10 @@ export const games = [[{
     "WHO",
     "WHO'S",
   ]}, {
-  problem: "OEHLW",
+  problem: "HOLWE",
   answers: [
     "HE",
+    "HOE",
     "HOLE",
     "HOW",
     "LOW",
@@ -4183,9 +5028,10 @@ export const games = [[{
     "WHO",
     "WHOLE",
   ]}, {
-  problem: "OEWHS",
+  problem: "HEWOS",
   answers: [
     "HE",
+    "HOE",
     "HOSE",
     "HOW",
     "OH",
@@ -4198,7 +5044,7 @@ export const games = [[{
     "WHO",
     "WHOSE",
   ]}, {
-  problem: "THIWC",
+  problem: "ICWTH",
   answers: [
     "HIT",
     "IT",
@@ -4206,7 +5052,7 @@ export const games = [[{
     "WITCH",
     "WITH",
   ]}, {
-  problem: "OMWNA",
+  problem: "MNAWO",
   answers: [
     "AM",
     "AN",
@@ -4218,7 +5064,7 @@ export const games = [[{
     "WOMAN",
     "WON",
   ]}, {
-  problem: "'WTNO",
+  problem: "N'WOT",
   answers: [
     "NO",
     "NOT",
@@ -4232,7 +5078,7 @@ export const games = [[{
     "WON",
     "WON'T",
   ]}, {
-  problem: "RLOWD",
+  problem: "LDWRO",
   answers: [
     "DO",
     "LOW",
@@ -4243,19 +5089,21 @@ export const games = [[{
     "WORD",
     "WORLD",
   ]}, {
-  problem: "LWODU",
+  problem: "LUDOW",
   answers: [
     "DO",
+    "DUO",
     "LOUD",
     "LOW",
     "OLD",
     "OWL",
     "WOULD",
   ]}, {
-  problem: "ONUWD",
+  problem: "NODUW",
   answers: [
     "DO",
     "DOWN",
+    "DUO",
     "NO",
     "NOW",
     "ON",
@@ -4264,16 +5112,26 @@ export const games = [[{
     "WON",
     "WOUND",
   ]}, {
-  problem: "WRTIE",
+  problem: "ITWER",
   answers: [
     "IT",
     "TIE",
     "TIRE",
     "WE",
     "WET",
+    "WIRE",
     "WRITE",
   ]}, {
-  problem: "YSARE",
+  problem: "CAHTY",
+  answers: [
+    "AT",
+    "CAT",
+    "CHAT",
+    "HAT",
+    "HAY",
+    "YACHT",
+  ]}, {
+  problem: "EARSY",
   answers: [
     "ARE",
     "AS",
@@ -4281,21 +5139,32 @@ export const games = [[{
     "EASY",
     "RAY",
     "RAYS",
+    "SAY",
     "SEA",
     "YEAR",
     "YEARS",
     "YES",
   ]}, {
-  problem: "UYNGO",
+  problem: "YNUGO",
   answers: [
     "GNU",
     "GO",
+    "GUN",
     "NO",
     "ON",
     "YOU",
     "YOUNG",
+  ]}, {
+  problem: "BREZA",
+  answers: [
+    "ARE",
+    "BAR",
+    "BARE",
+    "BE",
+    "BEAR",
+    "ZEBRA",
   ]}, ], [{
-  problem: "BSARBO",
+  problem: "RSBABO",
   answers: [
     "ABSORB",
     "AS",
@@ -4305,19 +5174,21 @@ export const games = [[{
     "SO",
     "SOAR",
   ]}, {
-  problem: "ACCETP",
+  problem: "EPCATC",
   answers: [
     "ACCEPT",
     "AT",
     "ATE",
+    "CAP",
     "CAT",
     "EAT",
     "PAT",
     "PET",
     "TAP",
     "TAPE",
+    "TEA",
   ]}, {
-  problem: "ASORSC",
+  problem: "SSCAOR",
   answers: [
     "ACROSS",
     "AS",
@@ -4328,20 +5199,21 @@ export const games = [[{
     "SO",
     "SOAR",
   ]}, {
-  problem: "DUTASL",
+  problem: "DSTLAU",
   answers: [
     "ADULT",
     "ADULTS",
     "AS",
     "AT",
     "DUST",
+    "LAD",
     "LAST",
     "SAD",
     "SALT",
     "SAT",
     "US",
   ]}, {
-  problem: "ACFIRA",
+  problem: "ARFCIA",
   answers: [
     "AFRICA",
     "AIR",
@@ -4350,7 +5222,7 @@ export const games = [[{
     "FAR",
     "IF",
   ]}, {
-  problem: "ATMSOL",
+  problem: "SALMTO",
   answers: [
     "ALMOST",
     "ALSO",
@@ -4360,12 +5232,14 @@ export const games = [[{
     "ATOM",
     "LAST",
     "LOT",
+    "LOTS",
     "MAT",
     "MOST",
     "OAT",
     "SALT",
     "SAM",
     "SAT",
+    "SM",
     "SO",
     "TO",
   ]}, {
@@ -4376,10 +5250,27 @@ export const games = [[{
     "AWAY",
     "LAW",
     "SAW",
+    "SAY",
     "WAS",
     "WAY",
   ]}, {
-  problem: "LMNIAA",
+  problem: "HCNARO",
+  answers: [
+    "AN",
+    "ANCHOR",
+    "CAN",
+    "CAR",
+    "CORN",
+    "HORA",
+    "HORN",
+    "NO",
+    "OAR",
+    "OH",
+    "ON",
+    "OR",
+    "RAN",
+  ]}, {
+  problem: "NIMLAA",
   answers: [
     "AIM",
     "AM",
@@ -4391,7 +5282,7 @@ export const games = [[{
     "MAN",
     "NAIL",
   ]}, {
-  problem: "SEARWN",
+  problem: "SANRWE",
   answers: [
     "AN",
     "ANSWER",
@@ -4401,6 +5292,7 @@ export const games = [[{
     "EARS",
     "NEAR",
     "NEW",
+    "NEWS",
     "RAN",
     "SAW",
     "SEA",
@@ -4410,7 +5302,7 @@ export const games = [[{
     "WE",
     "WEAR",
   ]}, {
-  problem: "NAYNOE",
+  problem: "ONAYEN",
   answers: [
     "AN",
     "ANY",
@@ -4420,7 +5312,7 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "TAR'EN",
+  problem: "ERNT'A",
   answers: [
     "AN",
     "ANT",
@@ -4435,15 +5327,18 @@ export const games = [[{
     "NEAT",
     "NET",
     "RAN",
+    "RAT",
+    "TEA",
     "TEAR",
     "TEN",
   ]}, {
-  problem: "AODUNR",
+  problem: "RAOUND",
   answers: [
     "AN",
     "AND",
     "AROUND",
     "DO",
+    "DUO",
     "NO",
     "OAR",
     "ON",
@@ -4455,7 +5350,7 @@ export const games = [[{
     "RUN",
     "UNDO",
   ]}, {
-  problem: "STIART",
+  problem: "ISTTAR",
   answers: [
     "AIR",
     "ART",
@@ -4465,6 +5360,7 @@ export const games = [[{
     "IS",
     "IT",
     "ITS",
+    "RAT",
     "SAT",
     "SIR",
     "SIT",
@@ -4473,7 +5369,17 @@ export const games = [[{
     "STIR",
     "TRAIT",
   ]}, {
-  problem: "ATNU'S",
+  problem: "AUGUST",
+  answers: [
+    "AS",
+    "AT",
+    "AUGUST",
+    "GAS",
+    "SAT",
+    "TUG",
+    "US",
+  ]}, {
+  problem: "SN'TUA",
   answers: [
     "AN",
     "ANT",
@@ -4488,7 +5394,7 @@ export const games = [[{
     "SUN",
     "US",
   ]}, {
-  problem: "TNUAUM",
+  problem: "ATUUNM",
   answers: [
     "AM",
     "AN",
@@ -4500,16 +5406,50 @@ export const games = [[{
     "MAT",
     "NUT",
   ]}, {
-  problem: "BEELAN",
+  problem: "ALEBEN",
   answers: [
     "AN",
     "BALEEN",
     "BE",
+    "BEAN",
     "BEE",
     "BEEN",
     "LEAN",
   ]}, {
-  problem: "BERKEA",
+  problem: "LNAOLB",
+  answers: [
+    "ALL",
+    "AN",
+    "BALL",
+    "BALLON",
+    "NO",
+    "ON",
+  ]}, {
+  problem: "ATKSEB",
+  answers: [
+    "AS",
+    "ASK",
+    "AT",
+    "ATE",
+    "BAKE",
+    "BASKET",
+    "BAT",
+    "BE",
+    "BEAK",
+    "BEAT",
+    "BEST",
+    "EAST",
+    "EAT",
+    "SAT",
+    "SEA",
+    "SEAT",
+    "SKATE",
+    "TAKE",
+    "TAKES",
+    "TASK",
+    "TEA",
+  ]}, {
+  problem: "KAEEBR",
   answers: [
     "ARE",
     "BAKE",
@@ -4523,7 +5463,7 @@ export const games = [[{
     "BEE",
     "RAKE",
   ]}, {
-  problem: "BOEFER",
+  problem: "BEEOFR",
   answers: [
     "BE",
     "BEE",
@@ -4534,7 +5474,7 @@ export const games = [[{
     "OR",
     "ROBE",
   ]}, {
-  problem: "SENBGI",
+  problem: "ENISGB",
   answers: [
     "BE",
     "BEG",
@@ -4542,17 +5482,19 @@ export const games = [[{
     "BEGINS",
     "BEING",
     "BIG",
+    "BIN",
     "IN",
     "IS",
     "SIGN",
     "SING",
   ]}, {
-  problem: "BNHDIE",
+  problem: "DBEIHN",
   answers: [
     "BE",
     "BED",
     "BEHIND",
     "BEND",
+    "BIN",
     "DEN",
     "DINE",
     "END",
@@ -4561,7 +5503,20 @@ export const games = [[{
     "HIDE",
     "IN",
   ]}, {
-  problem: "R'SIDB",
+  problem: "IDEEBS",
+  answers: [
+    "BE",
+    "BED",
+    "BEDS",
+    "BEE",
+    "BEES",
+    "BESIDE",
+    "IS",
+    "SEE",
+    "SEED",
+    "SIDE",
+  ]}, {
+  problem: "BI'RDS",
   answers: [
     "BIRD",
     "BIRD'S",
@@ -4571,7 +5526,7 @@ export const games = [[{
     "IS",
     "SIR",
   ]}, {
-  problem: "LSDBNE",
+  problem: "ENSDLB",
   answers: [
     "BE",
     "BED",
@@ -4586,9 +5541,10 @@ export const games = [[{
     "SEND",
     "SLED",
   ]}, {
-  problem: "BGINOR",
+  problem: "ORIBGN",
   answers: [
     "BIG",
+    "BIN",
     "BORING",
     "BORN",
     "BRING",
@@ -4601,20 +5557,33 @@ export const games = [[{
     "OR",
     "RING",
   ]}, {
-  problem: "TBONSO",
+  problem: "BSONOT",
   answers: [
     "BOOT",
     "BOSTON",
     "NO",
     "NOT",
     "ON",
+    "ONTO",
     "SO",
     "SON",
     "SOON",
+    "SOOT",
     "TO",
     "TOO",
   ]}, {
-  problem: "CAHBNR",
+  problem: "ETOLTB",
+  answers: [
+    "BE",
+    "BELT",
+    "BOLT",
+    "BOTTLE",
+    "LET",
+    "LOT",
+    "TO",
+    "TOE",
+  ]}, {
+  problem: "BANHRC",
   answers: [
     "AN",
     "BAR",
@@ -4624,7 +5593,7 @@ export const games = [[{
     "CAR",
     "RAN",
   ]}, {
-  problem: "EHTRAB",
+  problem: "TABEHR",
   answers: [
     "ARE",
     "ART",
@@ -4646,10 +5615,12 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THE",
   ]}, {
-  problem: "GHRTBI",
+  problem: "GBRHIT",
   answers: [
     "BIG",
     "BIRTH",
@@ -4660,18 +5631,31 @@ export const games = [[{
     "IT",
     "RIGHT",
   ]}, {
-  problem: "REIBUD",
+  problem: "KUCBTE",
+  answers: [
+    "BE",
+    "BUCKET",
+    "BUT",
+    "CUBE",
+    "CUT",
+    "CUTE",
+    "TUB",
+    "TUBE",
+  ]}, {
+  problem: "REUDBI",
   answers: [
     "BE",
     "BED",
     "BIRD",
+    "BRIDE",
+    "BUD",
     "BURIED",
     "RED",
     "RIDE",
     "RUB",
     "RUDE",
   ]}, {
-  problem: "TEBSLU",
+  problem: "LEUSBT",
   answers: [
     "BE",
     "BELT",
@@ -4688,7 +5672,16 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "LCDALE",
+  problem: "UTRBET",
+  answers: [
+    "BE",
+    "BUT",
+    "BUTTER",
+    "RUB",
+    "TUB",
+    "TUBE",
+  ]}, {
+  problem: "ADLELC",
   answers: [
     "ALL",
     "CALL",
@@ -4696,10 +5689,44 @@ export const games = [[{
     "CLAD",
     "DEAL",
     "DELL",
+    "LACE",
+    "LAD",
     "LEAD",
     "LED",
   ]}, {
-  problem: "LSEACT",
+  problem: "AECARM",
+  answers: [
+    "AM",
+    "ARE",
+    "AREA",
+    "ARM",
+    "CAME",
+    "CAMERA",
+    "CAR",
+    "CRAM",
+    "CREAM",
+    "ME",
+    "RACE",
+  ]}, {
+  problem: "RAROCT",
+  answers: [
+    "ART",
+    "AT",
+    "CAR",
+    "CARROT",
+    "CART",
+    "CAT",
+    "COAT",
+    "COT",
+    "OAR",
+    "OAT",
+    "OR",
+    "RAT",
+    "ROAR",
+    "ROT",
+    "TO",
+  ]}, {
+  problem: "CLSATE",
   answers: [
     "AS",
     "AT",
@@ -4711,8 +5738,10 @@ export const games = [[{
     "CATS",
     "EAST",
     "EAT",
+    "LACE",
     "LAST",
     "LATE",
+    "LEAST",
     "LET",
     "SALE",
     "SALT",
@@ -4722,19 +5751,22 @@ export const games = [[{
     "SEAL",
     "SEAT",
     "TALE",
+    "TEA",
   ]}, {
-  problem: "CELATT",
+  problem: "LTTCEA",
   answers: [
     "AT",
     "ATE",
     "CAT",
     "CATTLE",
     "EAT",
+    "LACE",
     "LATE",
     "LET",
     "TALE",
+    "TEA",
   ]}, {
-  problem: "CGUAHT",
+  problem: "THUACG",
   answers: [
     "AT",
     "CAT",
@@ -4743,8 +5775,19 @@ export const games = [[{
     "CUT",
     "HAT",
     "HUG",
+    "HUT",
+    "TUG",
   ]}, {
-  problem: "CHAECN",
+  problem: "REETNC",
+  answers: [
+    "CENT",
+    "CENTER",
+    "ENTER",
+    "NET",
+    "TEN",
+    "TREE",
+  ]}, {
+  problem: "CNCHAE",
   answers: [
     "AN",
     "CAN",
@@ -4754,7 +5797,7 @@ export const games = [[{
     "HE",
     "HEN",
   ]}, {
-  problem: "AHENGC",
+  problem: "HNGAEC",
   answers: [
     "AGE",
     "AN",
@@ -4767,18 +5810,19 @@ export const games = [[{
     "HE",
     "HEN",
   ]}, {
-  problem: "AHSESC",
+  problem: "CHAESS",
   answers: [
     "AS",
     "CASE",
     "CHASES",
+    "CHESS",
     "EACH",
     "HAS",
     "HE",
     "SEA",
     "SHE",
   ]}, {
-  problem: "RLCEOS",
+  problem: "EORCSL",
   answers: [
     "CLOSE",
     "CLOSER",
@@ -4787,20 +5831,21 @@ export const games = [[{
     "ROSE",
     "SO",
   ]}, {
-  problem: "CUDLOS",
+  problem: "CULDOS",
   answers: [
     "CLOUD",
     "CLOUDS",
     "COLD",
     "COULD",
     "DO",
+    "DUO",
     "LOUD",
     "OLD",
     "SO",
     "SOLD",
     "US",
   ]}, {
-  problem: "OCRLEV",
+  problem: "CLEROV",
   answers: [
     "CLOVER",
     "CORE",
@@ -4809,7 +5854,25 @@ export const games = [[{
     "OR",
     "OVER",
   ]}, {
-  problem: "IGONMC",
+  problem: "OCRSOL",
+  answers: [
+    "COLOR",
+    "COLORS",
+    "COOL",
+    "OR",
+    "SO",
+    "SOLO",
+  ]}, {
+  problem: "OLORUC",
+  answers: [
+    "COLOR",
+    "COLOUR",
+    "COOL",
+    "CURL",
+    "OR",
+    "OUR",
+  ]}, {
+  problem: "NMCGIO",
   answers: [
     "COIN",
     "COMING",
@@ -4818,7 +5881,7 @@ export const games = [[{
     "NO",
     "ON",
   ]}, {
-  problem: "COERNR",
+  problem: "CNEORR",
   answers: [
     "CONE",
     "CORE",
@@ -4830,7 +5893,7 @@ export const games = [[{
     "ONE",
     "OR",
   ]}, {
-  problem: "RDALCE",
+  problem: "DECRLA",
   answers: [
     "ARE",
     "CAR",
@@ -4839,12 +5902,15 @@ export const games = [[{
     "CRADLE",
     "DEAL",
     "DEAR",
+    "LACE",
+    "LAD",
     "LEAD",
     "LED",
+    "RACE",
     "READ",
     "RED",
   ]}, {
-  problem: "EAERTC",
+  problem: "CTREEA",
   answers: [
     "ARE",
     "ART",
@@ -4855,15 +5921,29 @@ export const games = [[{
     "CAT",
     "CREATE",
     "EAT",
+    "RACE",
+    "RAT",
     "REACT",
+    "TEA",
     "TEAR",
+    "TRACE",
     "TREE",
+  ]}, {
+  problem: "CSRVUE",
+  answers: [
+    "CURE",
+    "CURVE",
+    "CURVES",
+    "SURE",
+    "US",
+    "USE",
   ]}, {
   problem: "REDGNA",
   answers: [
     "AGE",
     "AN",
     "AND",
+    "ANGER",
     "ARE",
     "DANGER",
     "DEAR",
@@ -4877,7 +5957,7 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "AGELDN",
+  problem: "ELGDNA",
   answers: [
     "AGE",
     "AN",
@@ -4888,6 +5968,7 @@ export const games = [[{
     "DEN",
     "END",
     "GLAD",
+    "LAD",
     "LAND",
     "LEAD",
     "LEAN",
@@ -4895,7 +5976,7 @@ export const games = [[{
     "LEG",
     "LEND",
   ]}, {
-  problem: "RDAGNI",
+  problem: "NIAGDR",
   answers: [
     "AIR",
     "AN",
@@ -4911,7 +5992,7 @@ export const games = [[{
     "RANG",
     "RING",
   ]}, {
-  problem: "ADMEDN",
+  problem: "AMDNDE",
   answers: [
     "ADD",
     "AM",
@@ -4931,7 +6012,7 @@ export const games = [[{
     "MEN",
     "NAME",
   ]}, {
-  problem: "ERTDES",
+  problem: "TDESER",
   answers: [
     "DEER",
     "DESERT",
@@ -4941,7 +6022,7 @@ export const games = [[{
     "SEED",
     "TREE",
   ]}, {
-  problem: "TN'IDD",
+  problem: "DNIT'D",
   answers: [
     "DID",
     "DIDN'T",
@@ -4950,7 +6031,7 @@ export const games = [[{
     "IT",
     "IT'D",
   ]}, {
-  problem: "NRNIDE",
+  problem: "NDNREI",
   answers: [
     "DEN",
     "DINE",
@@ -4962,9 +6043,10 @@ export const games = [[{
     "RED",
     "RIDE",
   ]}, {
-  problem: "TRECDI",
+  problem: "ICRDET",
   answers: [
     "CRIED",
+    "DICE",
     "DIRECT",
     "DIRT",
     "ICE",
@@ -4977,8 +6059,9 @@ export const games = [[{
     "TIRE",
     "TRIED",
   ]}, {
-  problem: "TOODCR",
+  problem: "TCORDO",
   answers: [
+    "COT",
     "DO",
     "DOCTOR",
     "DOOR",
@@ -4986,32 +6069,37 @@ export const games = [[{
     "ODOR",
     "OR",
     "ROOT",
+    "ROT",
     "TO",
     "TOO",
   ]}, {
-  problem: "LARDLO",
+  problem: "ADLLOR",
   answers: [
     "ALL",
     "DO",
     "DOLL",
     "DOLLAR",
+    "LAD",
+    "LOAD",
     "OAR",
     "OLD",
     "OR",
     "ROAD",
   ]}, {
-  problem: "UBDLEO",
+  problem: "BOELDU",
   answers: [
     "BE",
     "BED",
     "BLUE",
+    "BUD",
     "DO",
     "DOUBLE",
+    "DUO",
     "LED",
     "LOUD",
     "OLD",
   ]}, {
-  problem: "YSDWRO",
+  problem: "YRSODW",
   answers: [
     "DO",
     "DROWSY",
@@ -5021,7 +6109,7 @@ export const games = [[{
     "SO",
     "WORD",
   ]}, {
-  problem: "MROBYE",
+  problem: "YBRMEO",
   answers: [
     "BE",
     "BOY",
@@ -5033,14 +6121,16 @@ export const games = [[{
     "OR",
     "ROBE",
   ]}, {
-  problem: "HONGUE",
+  problem: "HUEOGN",
   answers: [
     "ENOUGH",
     "GNU",
     "GO",
     "GONE",
+    "GUN",
     "HE",
     "HEN",
+    "HOE",
     "HOG",
     "HUG",
     "HUGE",
@@ -5049,7 +6139,7 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "LEQUSA",
+  problem: "LUQASE",
   answers: [
     "AS",
     "EQUAL",
@@ -5060,18 +6150,20 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "APXEDN",
+  problem: "NPXAED",
   answers: [
     "AN",
     "AND",
+    "AXE",
     "DEN",
     "END",
     "EXPAND",
     "NAP",
+    "PAD",
     "PAN",
     "PEN",
   ]}, {
-  problem: "AMIYFL",
+  problem: "AMLFIY",
   answers: [
     "AIM",
     "AM",
@@ -5082,18 +6174,19 @@ export const games = [[{
     "MAY",
     "MY",
   ]}, {
-  problem: "MFASOU",
+  problem: "UOSFAM",
   answers: [
     "AM",
     "AS",
     "FAMOUS",
     "OF",
     "SAM",
+    "SM",
     "SO",
     "SUM",
     "US",
   ]}, {
-  problem: "MAFRRE",
+  problem: "FARMRE",
   answers: [
     "AM",
     "ARE",
@@ -5104,7 +6197,7 @@ export const games = [[{
     "ME",
     "RARE",
   ]}, {
-  problem: "SATREF",
+  problem: "TEFRSA",
   answers: [
     "AFTER",
     "ARE",
@@ -5120,15 +6213,17 @@ export const games = [[{
     "FASTER",
     "FAT",
     "FEAST",
+    "RAT",
     "REST",
     "SAFE",
     "SAT",
     "SEA",
     "SEAT",
     "STAR",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "AFTHER",
+  problem: "ARFTEH",
   answers: [
     "AFTER",
     "ARE",
@@ -5146,10 +6241,39 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THE",
   ]}, {
-  problem: "WEROFL",
+  problem: "SHIINF",
+  answers: [
+    "FIN",
+    "FINISH",
+    "FISH",
+    "HIS",
+    "IF",
+    "IN",
+    "IS",
+  ]}, {
+  problem: "ASFELM",
+  answers: [
+    "AM",
+    "AS",
+    "ELF",
+    "FLAMES",
+    "LEAF",
+    "ME",
+    "MEAL",
+    "SAFE",
+    "SALE",
+    "SAM",
+    "SAME",
+    "SEA",
+    "SEAL",
+    "SM",
+  ]}, {
+  problem: "RLFEOW",
   answers: [
     "ELF",
     "FEW",
@@ -5166,7 +6290,22 @@ export const games = [[{
     "WE",
     "WOLF",
   ]}, {
-  problem: "FOLLOW",
+  problem: "RFLDOE",
+  answers: [
+    "DO",
+    "ELF",
+    "FED",
+    "FOLD",
+    "FOLDER",
+    "FOR",
+    "LED",
+    "OF",
+    "OLD",
+    "OR",
+    "RED",
+    "RODE",
+  ]}, {
+  problem: "OFWLOL",
   answers: [
     "FLOW",
     "FOLLOW",
@@ -5177,7 +6316,7 @@ export const games = [[{
     "OWL",
     "WOLF",
   ]}, {
-  problem: "TRSEOF",
+  problem: "FTEOSR",
   answers: [
     "FOR",
     "FOREST",
@@ -5186,6 +6325,7 @@ export const games = [[{
     "OR",
     "REST",
     "ROSE",
+    "ROT",
     "SO",
     "SOFT",
     "SORT",
@@ -5193,7 +6333,7 @@ export const games = [[{
     "TO",
     "TOE",
   ]}, {
-  problem: "FSSOLI",
+  problem: "ISOLSF",
   answers: [
     "FOSSIL",
     "IF",
@@ -5204,7 +6344,7 @@ export const games = [[{
     "SO",
     "SOIL",
   ]}, {
-  problem: "OUTFRH",
+  problem: "FTOURH",
   answers: [
     "FOR",
     "FORT",
@@ -5214,15 +6354,17 @@ export const games = [[{
     "HOT",
     "HOUR",
     "HURT",
+    "HUT",
     "OF",
     "OH",
     "OR",
     "OUR",
     "OUT",
+    "ROT",
     "TO",
     "TOUR",
   ]}, {
-  problem: "NFREID",
+  problem: "NRIEFD",
   answers: [
     "DEN",
     "DINE",
@@ -5232,6 +6374,7 @@ export const games = [[{
     "FIN",
     "FIND",
     "FINE",
+    "FIRE",
     "FRIEND",
     "IF",
     "IN",
@@ -5239,7 +6382,7 @@ export const games = [[{
     "RED",
     "RIDE",
   ]}, {
-  problem: "RYSIKF",
+  problem: "IFYKRS",
   answers: [
     "FRISKY",
     "FRY",
@@ -5248,7 +6391,7 @@ export const games = [[{
     "SIR",
     "SKY",
   ]}, {
-  problem: "GRAHTE",
+  problem: "TEAHRG",
   answers: [
     "AGE",
     "ARE",
@@ -5267,10 +6410,12 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THE",
   ]}, {
-  problem: "ELTENG",
+  problem: "TLGEEN",
   answers: [
     "GELT",
     "GENTLE",
@@ -5281,7 +6426,7 @@ export const games = [[{
     "NET",
     "TEN",
   ]}, {
-  problem: "LGEBRI",
+  problem: "GEBRIL",
   answers: [
     "BE",
     "BEG",
@@ -5291,7 +6436,7 @@ export const games = [[{
     "LEG",
     "LIE",
   ]}, {
-  problem: "MEGLIM",
+  problem: "LMMIEG",
   answers: [
     "GIMMEL",
     "LEG",
@@ -5300,7 +6445,16 @@ export const games = [[{
     "ME",
     "MILE",
   ]}, {
-  problem: "GLCANE",
+  problem: "LGLAYD",
+  answers: [
+    "ALL",
+    "DAY",
+    "GLAD",
+    "GLADLY",
+    "LAD",
+    "LADY",
+  ]}, {
+  problem: "CGLANE",
   answers: [
     "AGE",
     "AN",
@@ -5309,12 +6463,14 @@ export const games = [[{
     "CAN",
     "CANE",
     "CLAN",
+    "CLANG",
     "CLEAN",
     "GLANCE",
+    "LACE",
     "LEAN",
     "LEG",
   ]}, {
-  problem: "IDRELG",
+  problem: "GIDLRE",
   answers: [
     "DIG",
     "GIRL",
@@ -5322,18 +6478,21 @@ export const games = [[{
     "GLIDER",
     "LED",
     "LEG",
+    "LID",
     "LIE",
     "RED",
     "RIDE",
   ]}, {
-  problem: "GORDNU",
+  problem: "RUDNGO",
   answers: [
     "DO",
     "DOG",
+    "DUO",
     "GNU",
     "GO",
     "GOD",
     "GROUND",
+    "GUN",
     "NO",
     "ON",
     "OR",
@@ -5343,7 +6502,7 @@ export const games = [[{
     "RUN",
     "UNDO",
   ]}, {
-  problem: "RIUATG",
+  problem: "UTRIGA",
   answers: [
     "AIR",
     "ART",
@@ -5351,22 +6510,38 @@ export const games = [[{
     "GRIT",
     "GUITAR",
     "IT",
+    "RAT",
     "RUG",
+    "TUG",
   ]}, {
-  problem: "LAVHES",
+  problem: "AVHESL",
   answers: [
     "AS",
     "HALVES",
     "HAS",
     "HAVE",
     "HE",
+    "HEAL",
     "SALE",
     "SAVE",
     "SEA",
     "SEAL",
     "SHE",
   ]}, {
-  problem: "HRBRAO",
+  problem: "MAREMH",
+  answers: [
+    "AM",
+    "ARE",
+    "ARM",
+    "HAM",
+    "HAMMER",
+    "HARM",
+    "HE",
+    "HEAR",
+    "HER",
+    "ME",
+  ]}, {
+  problem: "RAOBHR",
   answers: [
     "BAR",
     "HARBOR",
@@ -5376,7 +6551,7 @@ export const games = [[{
     "OR",
     "ROAR",
   ]}, {
-  problem: "EDHRRA",
+  problem: "AHDRER",
   answers: [
     "ARE",
     "DEAR",
@@ -5393,7 +6568,7 @@ export const games = [[{
     "READ",
     "RED",
   ]}, {
-  problem: "ANT'HS",
+  problem: "SNAHT'",
   answers: [
     "AN",
     "ANT",
@@ -5405,21 +6580,23 @@ export const games = [[{
     "SAT",
     "THAN",
   ]}, {
-  problem: "LHETAH",
+  problem: "HEHATL",
   answers: [
     "AT",
     "ATE",
     "EAT",
     "HAT",
     "HE",
+    "HEAL",
     "HEALTH",
     "HEAT",
     "LATE",
     "LET",
     "TALE",
+    "TEA",
     "THE",
   ]}, {
-  problem: "REAHHT",
+  problem: "HEHART",
   answers: [
     "ARE",
     "ART",
@@ -5434,10 +6611,12 @@ export const games = [[{
     "HEARTH",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THE",
   ]}, {
-  problem: "ERELHP",
+  problem: "HPRLEE",
   answers: [
     "HE",
     "HELP",
@@ -5446,7 +6625,7 @@ export const games = [[{
     "HERE",
     "PEER",
   ]}, {
-  problem: "IPSHOP",
+  problem: "IPOSPH",
   answers: [
     "HIPPOS",
     "HIS",
@@ -5458,7 +6637,7 @@ export const games = [[{
     "SHOP",
     "SO",
   ]}, {
-  problem: "OEASRH",
+  problem: "ARESOH",
   answers: [
     "ARE",
     "AS",
@@ -5469,6 +6648,7 @@ export const games = [[{
     "HER",
     "HERO",
     "HOARSE",
+    "HOE",
     "HORA",
     "HORSE",
     "HOSE",
@@ -5483,7 +6663,7 @@ export const games = [[{
     "SO",
     "SOAR",
   ]}, {
-  problem: "GIHONP",
+  problem: "OHPGIN",
   answers: [
     "GO",
     "HOG",
@@ -5496,17 +6676,28 @@ export const games = [[{
     "PIG",
     "PIN",
   ]}, {
-  problem: "POPEHD",
+  problem: "PPDOEH",
   answers: [
     "DO",
     "HE",
+    "HOE",
     "HOP",
     "HOPE",
     "HOPPED",
     "OH",
+    "POD",
     "POP",
   ]}, {
-  problem: "TCSNIE",
+  problem: "UHYRNG",
+  answers: [
+    "GNU",
+    "GUN",
+    "HUG",
+    "HUNGRY",
+    "RUG",
+    "RUN",
+  ]}, {
+  problem: "STINEC",
   answers: [
     "CENT",
     "ICE",
@@ -5524,7 +6715,7 @@ export const games = [[{
     "TENS",
     "TIE",
   ]}, {
-  problem: "ENDISI",
+  problem: "EDINIS",
   answers: [
     "DEN",
     "DINE",
@@ -5535,7 +6726,17 @@ export const games = [[{
     "SEND",
     "SIDE",
   ]}, {
-  problem: "EBJABR",
+  problem: "IVTNEI",
+  answers: [
+    "IN",
+    "INVITE",
+    "IT",
+    "NET",
+    "TEN",
+    "TIE",
+    "VET",
+  ]}, {
+  problem: "AERBJB",
   answers: [
     "ARE",
     "BAR",
@@ -5545,7 +6746,7 @@ export const games = [[{
     "JABBER",
     "JAR",
   ]}, {
-  problem: "OGEGDJ",
+  problem: "EGGOJD",
   answers: [
     "DO",
     "DOG",
@@ -5555,10 +6756,12 @@ export const games = [[{
     "JOG",
     "JOGGED",
   ]}, {
-  problem: "ETINTK",
+  problem: "ITKETN",
   answers: [
     "IN",
+    "INK",
     "IT",
+    "KIT",
     "KITE",
     "KITTEN",
     "NET",
@@ -5566,11 +6769,12 @@ export const games = [[{
     "TENT",
     "TIE",
   ]}, {
-  problem: "EKSORH",
+  problem: "ERKSOH",
   answers: [
     "HE",
     "HER",
     "HERO",
+    "HOE",
     "HORSE",
     "HOSE",
     "KOSHER",
@@ -5581,15 +6785,33 @@ export const games = [[{
     "SHOE",
     "SO",
   ]}, {
-  problem: "DELAIS",
+  problem: "DRDAEL",
+  answers: [
+    "ADD",
+    "ARE",
+    "DAD",
+    "DEAD",
+    "DEAL",
+    "DEAR",
+    "DREAD",
+    "LAD",
+    "LADDER",
+    "LEAD",
+    "LED",
+    "READ",
+    "RED",
+  ]}, {
+  problem: "SELAID",
   answers: [
     "AS",
     "DEAL",
     "IDEA",
     "IS",
+    "LAD",
     "LADIES",
     "LEAD",
     "LED",
+    "LID",
     "LIE",
     "SAD",
     "SAID",
@@ -5601,16 +6823,18 @@ export const games = [[{
     "SLED",
     "SLIDE",
   ]}, {
-  problem: "YD'ALS",
+  problem: "LDS'AY",
   answers: [
     "AS",
     "DAY",
+    "LAD",
     "LADY",
     "LADY'S",
     "SAD",
     "SADLY",
+    "SAY",
   ]}, {
-  problem: "ETSLKA",
+  problem: "SKATEL",
   answers: [
     "AS",
     "ASK",
@@ -5622,6 +6846,7 @@ export const games = [[{
     "LAST",
     "LATE",
     "LATKES",
+    "LEAST",
     "LET",
     "SALE",
     "SALT",
@@ -5629,25 +6854,38 @@ export const games = [[{
     "SEA",
     "SEAL",
     "SEAT",
+    "SKATE",
     "TAKE",
     "TAKES",
     "TALE",
     "TALK",
     "TASK",
+    "TEA",
   ]}, {
-  problem: "LDEEAR",
+  problem: "DLEREA",
   answers: [
     "ARE",
     "DEAL",
     "DEAR",
     "DEER",
+    "LAD",
     "LEAD",
     "LEADER",
     "LED",
     "READ",
     "RED",
   ]}, {
-  problem: "VLESEA",
+  problem: "DPEALE",
+  answers: [
+    "DEAL",
+    "LAD",
+    "LEAD",
+    "LEAP",
+    "LEAPED",
+    "LED",
+    "PAD",
+  ]}, {
+  problem: "LEVSEA",
   answers: [
     "AS",
     "LEAVES",
@@ -5657,7 +6895,7 @@ export const games = [[{
     "SEAL",
     "SEE",
   ]}, {
-  problem: "GNEHTL",
+  problem: "NHLTGE",
   answers: [
     "GELT",
     "GET",
@@ -5671,7 +6909,7 @@ export const games = [[{
     "THE",
     "THEN",
   ]}, {
-  problem: "LKLYEI",
+  problem: "LKEYLI",
   answers: [
     "ILL",
     "KEY",
@@ -5680,7 +6918,7 @@ export const games = [[{
     "LIKELY",
     "YELL",
   ]}, {
-  problem: "NSLEIT",
+  problem: "ELNIST",
   answers: [
     "IN",
     "IS",
@@ -5700,16 +6938,17 @@ export const games = [[{
     "TENS",
     "TIE",
   ]}, {
-  problem: "LTEITR",
+  problem: "ILRTTE",
   answers: [
     "IT",
     "LET",
     "LIE",
+    "LITRE",
     "LITTER",
     "TIE",
     "TIRE",
   ]}, {
-  problem: "TLETIL",
+  problem: "LTIETL",
   answers: [
     "ILL",
     "IT",
@@ -5719,24 +6958,27 @@ export const games = [[{
     "TELL",
     "TIE",
   ]}, {
-  problem: "EOATCL",
+  problem: "TLAECO",
   answers: [
     "AT",
     "ATE",
     "CAT",
     "COAL",
     "COAT",
+    "COT",
     "EAT",
+    "LACE",
     "LATE",
     "LET",
     "LOCATE",
     "LOT",
     "OAT",
     "TALE",
+    "TEA",
     "TO",
     "TOE",
   ]}, {
-  problem: "LYNEOL",
+  problem: "LNLYOE",
   answers: [
     "LONELY",
     "NO",
@@ -5745,7 +6987,7 @@ export const games = [[{
     "ONLY",
     "YELL",
   ]}, {
-  problem: "RELGNO",
+  problem: "REOGNL",
   answers: [
     "GO",
     "GONE",
@@ -5758,20 +7000,22 @@ export const games = [[{
     "ONE",
     "OR",
   ]}, {
-  problem: "YLDLUO",
+  problem: "YDLOLU",
   answers: [
     "DO",
     "DOLL",
     "DULL",
+    "DUO",
     "LOUD",
     "LOUDLY",
     "OLD",
     "YOU",
   ]}, {
-  problem: "SEOTLW",
+  problem: "LWOTSE",
   answers: [
     "LET",
     "LOT",
+    "LOTS",
     "LOW",
     "LOWEST",
     "OWL",
@@ -5787,7 +7031,7 @@ export const games = [[{
     "WEST",
     "WET",
   ]}, {
-  problem: "SRUTEL",
+  problem: "RTUESL",
   answers: [
     "LET",
     "LUSTER",
@@ -5800,7 +7044,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "EMANTL",
+  problem: "ATLMNE",
   answers: [
     "AM",
     "AN",
@@ -5827,10 +7071,11 @@ export const games = [[{
     "NET",
     "TALE",
     "TAME",
+    "TEA",
     "TEAM",
     "TEN",
   ]}, {
-  problem: "TTAREM",
+  problem: "RMATET",
   answers: [
     "AM",
     "ARE",
@@ -5843,12 +7088,14 @@ export const games = [[{
     "MATTER",
     "ME",
     "MEAT",
+    "RAT",
     "TAME",
+    "TEA",
     "TEAM",
     "TEAR",
     "TREAT",
   ]}, {
-  problem: "DMAWOE",
+  problem: "MADEWO",
   answers: [
     "AM",
     "DEW",
@@ -5859,33 +7106,36 @@ export const games = [[{
     "MEADOW",
     "WE",
   ]}, {
-  problem: "EOTMHD",
+  problem: "DMHTEO",
   answers: [
     "DO",
     "DOT",
     "HE",
+    "HOE",
     "HOME",
     "HOT",
     "ME",
     "METHOD",
+    "MOTH",
     "OH",
     "THE",
     "THEM",
     "TO",
     "TOE",
   ]}, {
-  problem: "DDLEMI",
+  problem: "IDMLDE",
   answers: [
     "DID",
     "DIME",
     "LED",
+    "LID",
     "LIE",
     "LIME",
     "ME",
     "MIDDLE",
     "MILE",
   ]}, {
-  problem: "TMGHIY",
+  problem: "MHGTIY",
   answers: [
     "HIM",
     "HIT",
@@ -5894,7 +7144,7 @@ export const games = [[{
     "MIGHTY",
     "MY",
   ]}, {
-  problem: "EITNMU",
+  problem: "UINMET",
   answers: [
     "IN",
     "IT",
@@ -5913,7 +7163,7 @@ export const games = [[{
     "UNITE",
     "UNTIE",
   ]}, {
-  problem: "NIETMT",
+  problem: "ITMETN",
   answers: [
     "IN",
     "IT",
@@ -5928,7 +7178,7 @@ export const games = [[{
     "TIE",
     "TIME",
   ]}, {
-  problem: "LBIOME",
+  problem: "ELOIMB",
   answers: [
     "BE",
     "BOIL",
@@ -5939,7 +7189,7 @@ export const games = [[{
     "MOBILE",
     "OIL",
   ]}, {
-  problem: "KOYMEN",
+  problem: "KNOMYE",
   answers: [
     "KEY",
     "ME",
@@ -5951,25 +7201,28 @@ export const games = [[{
     "ON",
     "ONE",
   ]}, {
-  problem: "MEORHT",
+  problem: "HEORMT",
   answers: [
     "HE",
     "HER",
     "HERO",
+    "HOE",
     "HOME",
     "HOT",
     "ME",
     "MORE",
+    "MOTH",
     "MOTHER",
     "OH",
     "OR",
     "OTHER",
+    "ROT",
     "THE",
     "THEM",
     "TO",
     "TOE",
   ]}, {
-  problem: "NIMTOO",
+  problem: "MTNIOO",
   answers: [
     "IN",
     "INTO",
@@ -5980,19 +7233,31 @@ export const games = [[{
     "NO",
     "NOT",
     "ON",
+    "ONTO",
     "TO",
     "TOO",
   ]}, {
-  problem: "MYSFLE",
+  problem: "MESMUU",
+  answers: [
+    "ME",
+    "MUM",
+    "MUSEUM",
+    "SM",
+    "SUM",
+    "US",
+    "USE",
+  ]}, {
+  problem: "FMYSLE",
   answers: [
     "ELF",
     "FLY",
     "ME",
     "MY",
     "MYSELF",
+    "SM",
     "YES",
   ]}, {
-  problem: "OTAINN",
+  problem: "AITNNO",
   answers: [
     "AN",
     "ANT",
@@ -6008,7 +7273,7 @@ export const games = [[{
     "ON",
     "TO",
   ]}, {
-  problem: "ATRNUE",
+  problem: "ANETUR",
   answers: [
     "AN",
     "ANT",
@@ -6025,13 +7290,32 @@ export const games = [[{
     "NET",
     "NUT",
     "RAN",
+    "RAT",
     "RUN",
+    "TEA",
     "TEAR",
     "TEN",
     "TUNE",
     "TURN",
   ]}, {
-  problem: "ATRNEC",
+  problem: "YLRNAE",
+  answers: [
+    "AN",
+    "ANY",
+    "ARE",
+    "EARLY",
+    "EARN",
+    "LEAN",
+    "LEARN",
+    "NEAR",
+    "NEARLY",
+    "RAN",
+    "RAY",
+    "RELAY",
+    "YARN",
+    "YEAR",
+  ]}, {
+  problem: "CRENTA",
   answers: [
     "AN",
     "ANT",
@@ -6052,12 +7336,34 @@ export const games = [[{
     "NEAT",
     "NECTAR",
     "NET",
+    "RACE",
     "RAN",
+    "RAT",
     "REACT",
+    "TEA",
     "TEAR",
     "TEN",
+    "TRACE",
   ]}, {
-  problem: "ELNYCI",
+  problem: "LEDENE",
+  answers: [
+    "DEN",
+    "END",
+    "LED",
+    "LEND",
+    "NEED",
+    "NEEDLE",
+  ]}, {
+  problem: "EIBBNL",
+  answers: [
+    "BE",
+    "BIN",
+    "IN",
+    "LIE",
+    "LINE",
+    "NIBBLE",
+  ]}, {
+  problem: "EYILCN",
   answers: [
     "ICE",
     "IN",
@@ -6066,20 +7372,24 @@ export const games = [[{
     "NICE",
     "NICELY",
   ]}, {
-  problem: "ILNCEK",
+  problem: "KINLCE",
   answers: [
     "ICE",
     "IN",
+    "INK",
+    "LICK",
     "LIE",
     "LIKE",
     "LINE",
     "NECK",
     "NICE",
+    "NICK",
     "NICKEL",
   ]}, {
-  problem: "LEBIMN",
+  problem: "LNMEIB",
   answers: [
     "BE",
+    "BIN",
     "IN",
     "LIE",
     "LIME",
@@ -6090,7 +7400,7 @@ export const games = [[{
     "MINE",
     "NIMBLE",
   ]}, {
-  problem: "BYNDOO",
+  problem: "ONYDBO",
   answers: [
     "BODY",
     "BOY",
@@ -6100,9 +7410,10 @@ export const games = [[{
     "NOBODY",
     "ON",
   ]}, {
-  problem: "RUNEMB",
+  problem: "NBREUM",
   answers: [
     "BE",
+    "BUN",
     "BURN",
     "ME",
     "MEN",
@@ -6110,16 +7421,17 @@ export const games = [[{
     "RUB",
     "RUN",
   ]}, {
-  problem: "TOJEBC",
+  problem: "CEOBJT",
   answers: [
     "BE",
+    "COT",
     "JET",
     "JOB",
     "OBJECT",
     "TO",
     "TOE",
   ]}, {
-  problem: "EODNPE",
+  problem: "EDOPNE",
   answers: [
     "DEN",
     "DO",
@@ -6132,13 +7444,15 @@ export const games = [[{
     "OPEN",
     "OPENED",
     "PEN",
+    "POD",
     "POND",
   ]}, {
-  problem: "OENRGA",
+  problem: "REONGA",
   answers: [
     "AGE",
     "AGO",
     "AN",
+    "ANGER",
     "ARE",
     "EARN",
     "GO",
@@ -6154,7 +7468,7 @@ export const games = [[{
     "RAN",
     "RANG",
   ]}, {
-  problem: "UPUTTO",
+  problem: "TOUPTU",
   answers: [
     "OUT",
     "OUTPUT",
@@ -6164,7 +7478,7 @@ export const games = [[{
     "TOP",
     "UP",
   ]}, {
-  problem: "OEXYGN",
+  problem: "YOGXEN",
   answers: [
     "GO",
     "GONE",
@@ -6174,7 +7488,7 @@ export const games = [[{
     "OX",
     "OXYGEN",
   ]}, {
-  problem: "APRNET",
+  problem: "PATENR",
   answers: [
     "AN",
     "ANT",
@@ -6195,13 +7509,15 @@ export const games = [[{
     "PEN",
     "PET",
     "RAN",
+    "RAT",
     "TAP",
     "TAPE",
+    "TEA",
     "TEAR",
     "TEN",
     "TRAP",
   ]}, {
-  problem: "RPDOEI",
+  problem: "EDRPIO",
   answers: [
     "DIP",
     "DO",
@@ -6210,13 +7526,15 @@ export const games = [[{
     "OR",
     "PERIOD",
     "PIE",
+    "POD",
     "RED",
     "RIDE",
     "RIP",
+    "RIPE",
     "RODE",
     "ROPE",
   ]}, {
-  problem: "TPIMRE",
+  problem: "PMRTEI",
   answers: [
     "IT",
     "ME",
@@ -6224,12 +7542,29 @@ export const games = [[{
     "PET",
     "PIE",
     "RIP",
+    "RIPE",
     "TIE",
     "TIME",
+    "TIP",
     "TIRE",
     "TRIP",
   ]}, {
-  problem: "AEHSPS",
+  problem: "ERPOTL",
+  answers: [
+    "LET",
+    "LOT",
+    "OR",
+    "PET",
+    "PETROL",
+    "POLE",
+    "POT",
+    "ROPE",
+    "ROT",
+    "TO",
+    "TOE",
+    "TOP",
+  ]}, {
+  problem: "SAEPSH",
   answers: [
     "AS",
     "HAS",
@@ -6241,7 +7576,7 @@ export const games = [[{
     "SHAPE",
     "SHE",
   ]}, {
-  problem: "LOILWP",
+  problem: "POLLIW",
   answers: [
     "ILL",
     "LIP",
@@ -6251,7 +7586,7 @@ export const games = [[{
     "PILLOW",
     "WILL",
   ]}, {
-  problem: "ATPAIN",
+  problem: "APIATN",
   answers: [
     "AN",
     "ANT",
@@ -6267,12 +7602,15 @@ export const games = [[{
     "PINATA",
     "PINT",
     "TAP",
+    "TIP",
   ]}, {
-  problem: "PLCAES",
+  problem: "CEPSLA",
   answers: [
     "AS",
+    "CAP",
     "CASE",
     "CLAP",
+    "LACE",
     "LEAP",
     "PLACE",
     "PLACES",
@@ -6282,7 +7620,7 @@ export const games = [[{
     "SEAL",
     "SPACE",
   ]}, {
-  problem: "STPNLA",
+  problem: "NTSPLA",
   answers: [
     "AN",
     "ANT",
@@ -6292,6 +7630,7 @@ export const games = [[{
     "NAP",
     "NAPS",
     "PAN",
+    "PANTS",
     "PAST",
     "PAT",
     "PLAN",
@@ -6300,9 +7639,10 @@ export const games = [[{
     "SALT",
     "SAT",
     "SNAP",
+    "SPAN",
     "TAP",
   ]}, {
-  problem: "EAELSP",
+  problem: "SLAEPE",
   answers: [
     "AS",
     "LEAP",
@@ -6314,7 +7654,7 @@ export const games = [[{
     "SEEP",
     "SLEEP",
   ]}, {
-  problem: "OPTTOA",
+  problem: "TPAOOT",
   answers: [
     "AT",
     "OAT",
@@ -6326,12 +7666,13 @@ export const games = [[{
     "TOO",
     "TOP",
   ]}, {
-  problem: "CPRANE",
+  problem: "NECPRA",
   answers: [
     "AN",
     "ARE",
     "CAN",
     "CANE",
+    "CAP",
     "CAR",
     "CRANE",
     "EARN",
@@ -6340,9 +7681,10 @@ export const games = [[{
     "PAN",
     "PEN",
     "PRANCE",
+    "RACE",
     "RAN",
   ]}, {
-  problem: "RNECPI",
+  problem: "ENRCPI",
   answers: [
     "ICE",
     "IN",
@@ -6354,19 +7696,33 @@ export const games = [[{
     "PRINCE",
     "RICE",
     "RIP",
+    "RIPE",
   ]}, {
-  problem: "HUDESP",
+  problem: "HSDEUP",
   answers: [
     "HE",
     "PUSH",
     "PUSHED",
     "SHE",
+    "SHED",
     "UP",
     "US",
     "USE",
     "USED",
   ]}, {
-  problem: "KRCTEA",
+  problem: "BBIATR",
+  answers: [
+    "AIR",
+    "ART",
+    "AT",
+    "BAR",
+    "BAT",
+    "BIT",
+    "IT",
+    "RABBIT",
+    "RAT",
+  ]}, {
+  problem: "KCATER",
   answers: [
     "ARE",
     "ART",
@@ -6377,13 +7733,17 @@ export const games = [[{
     "CART",
     "CAT",
     "EAT",
+    "RACE",
     "RACKET",
     "RAKE",
+    "RAT",
     "REACT",
     "TAKE",
+    "TEA",
     "TEAR",
+    "TRACE",
   ]}, {
-  problem: "CERORD",
+  problem: "EORRCD",
   answers: [
     "CORE",
     "DO",
@@ -6393,19 +7753,20 @@ export const games = [[{
     "RED",
     "RODE",
   ]}, {
-  problem: "FIERLL",
+  problem: "ELFRLI",
   answers: [
     "ELF",
     "FELL",
     "FILE",
     "FILL",
+    "FIRE",
     "IF",
     "ILL",
     "LIE",
     "LIFE",
     "REFILL",
   ]}, {
-  problem: "DERFNU",
+  problem: "FEUNDR",
   answers: [
     "DEN",
     "END",
@@ -6419,7 +7780,7 @@ export const games = [[{
     "RUN",
     "UNDER",
   ]}, {
-  problem: "IMRNAE",
+  problem: "NRIAEM",
   answers: [
     "AIM",
     "AIR",
@@ -6442,7 +7803,7 @@ export const games = [[{
     "RAN",
     "REMAIN",
   ]}, {
-  problem: "RPNOEE",
+  problem: "OEPERN",
   answers: [
     "NO",
     "ON",
@@ -6454,8 +7815,9 @@ export const games = [[{
     "REOPEN",
     "ROPE",
   ]}, {
-  problem: "ECUESR",
+  problem: "EECUSR",
   answers: [
+    "CURE",
     "RESCUE",
     "REUSE",
     "SEE",
@@ -6463,7 +7825,18 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "IRGSHT",
+  problem: "NOBRBI",
+  answers: [
+    "BIN",
+    "BORN",
+    "IN",
+    "IRON",
+    "NO",
+    "ON",
+    "OR",
+    "RIBBON",
+  ]}, {
+  problem: "STIGRH",
   answers: [
     "GRIT",
     "HIS",
@@ -6480,7 +7853,18 @@ export const games = [[{
     "STIR",
     "THIS",
   ]}, {
-  problem: "RASEDD",
+  problem: "RCETKO",
+  answers: [
+    "CORE",
+    "COT",
+    "OR",
+    "ROCK",
+    "ROCKET",
+    "ROT",
+    "TO",
+    "TOE",
+  ]}, {
+  problem: "SDERDA",
   answers: [
     "ADD",
     "ARE",
@@ -6496,7 +7880,7 @@ export const games = [[{
     "SADDER",
     "SEA",
   ]}, {
-  problem: "AFYTSE",
+  problem: "STEFAY",
   answers: [
     "AS",
     "AT",
@@ -6510,13 +7894,15 @@ export const games = [[{
     "SAFE",
     "SAFETY",
     "SAT",
+    "SAY",
     "SEA",
     "SEAT",
     "STAY",
+    "TEA",
     "YES",
     "YET",
   ]}, {
-  problem: "LISAAM",
+  problem: "SMALIA",
   answers: [
     "AIM",
     "AM",
@@ -6527,8 +7913,9 @@ export const games = [[{
     "SALAMI",
     "SAM",
     "SLIM",
+    "SM",
   ]}, {
-  problem: "ELSAPM",
+  problem: "MSLPAE",
   answers: [
     "AM",
     "AMPLE",
@@ -6544,12 +7931,14 @@ export const games = [[{
     "SAMPLE",
     "SEA",
     "SEAL",
+    "SM",
   ]}, {
-  problem: "LAECSS",
+  problem: "EASCLS",
   answers: [
     "AS",
     "CASE",
     "CLASS",
+    "LACE",
     "LESS",
     "SALE",
     "SCALE",
@@ -6557,14 +7946,16 @@ export const games = [[{
     "SEA",
     "SEAL",
   ]}, {
-  problem: "RAPECS",
+  problem: "APSCRE",
   answers: [
     "ARE",
     "AS",
+    "CAP",
     "CAR",
     "CASE",
     "EARS",
     "PEARS",
+    "RACE",
     "SCARE",
     "SCRAP",
     "SCRAPE",
@@ -6572,7 +7963,7 @@ export const games = [[{
     "SPACE",
     "SPARE",
   ]}, {
-  problem: "HCASER",
+  problem: "ASHRCE",
   answers: [
     "ARE",
     "AS",
@@ -6585,13 +7976,14 @@ export const games = [[{
     "HE",
     "HEAR",
     "HER",
+    "RACE",
     "SCARE",
     "SEA",
     "SEARCH",
     "SHARE",
     "SHE",
   ]}, {
-  problem: "SNOAES",
+  problem: "SOSNEA",
   answers: [
     "AN",
     "AS",
@@ -6605,7 +7997,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "EOSNCD",
+  problem: "EONDCS",
   answers: [
     "CONE",
     "DEN",
@@ -6624,7 +8016,7 @@ export const games = [[{
     "SO",
     "SON",
   ]}, {
-  problem: "AWSEES",
+  problem: "SWAESE",
   answers: [
     "AS",
     "SAW",
@@ -6635,7 +8027,7 @@ export const games = [[{
     "WAS",
     "WE",
   ]}, {
-  problem: "L'HELS",
+  problem: "LSEH'L",
   answers: [
     "HE",
     "HE'LL",
@@ -6644,19 +8036,22 @@ export const games = [[{
     "SHE'LL",
     "SHELL",
   ]}, {
-  problem: "VSERHI",
+  problem: "VHESRI",
   answers: [
     "HE",
     "HER",
+    "HIRE",
     "HIS",
+    "HIVE",
     "IS",
     "SHE",
     "SHIVER",
     "SIR",
   ]}, {
-  problem: "DULOSH",
+  problem: "UHDOSL",
   answers: [
     "DO",
+    "DUO",
     "HOLD",
     "LOUD",
     "OH",
@@ -6666,7 +8061,7 @@ export const games = [[{
     "SOLD",
     "US",
   ]}, {
-  problem: "SHILLR",
+  problem: "SHLRLI",
   answers: [
     "HILL",
     "HIS",
@@ -6675,7 +8070,7 @@ export const games = [[{
     "SHRILL",
     "SIR",
   ]}, {
-  problem: "GLSANI",
+  problem: "AILNSG",
   answers: [
     "AN",
     "AS",
@@ -6692,7 +8087,7 @@ export const games = [[{
     "SING",
     "SNAIL",
   ]}, {
-  problem: "LMPESI",
+  problem: "SEPILM",
   answers: [
     "IS",
     "LIE",
@@ -6704,9 +8099,22 @@ export const games = [[{
     "SIMPLE",
     "SLIM",
     "SLIP",
+    "SM",
     "SMILE",
   ]}, {
-  problem: "SITSRE",
+  problem: "ELIGSN",
+  answers: [
+    "IN",
+    "IS",
+    "LEG",
+    "LENS",
+    "LIE",
+    "LINE",
+    "SIGN",
+    "SING",
+    "SINGLE",
+  ]}, {
+  problem: "RSIEST",
   answers: [
     "IS",
     "IT",
@@ -6721,7 +8129,7 @@ export const games = [[{
     "TIE",
     "TIRE",
   ]}, {
-  problem: "GSHLEI",
+  problem: "GLSEHI",
   answers: [
     "HE",
     "HIS",
@@ -6731,7 +8139,7 @@ export const games = [[{
     "SHE",
     "SLEIGH",
   ]}, {
-  problem: "LSROWE",
+  problem: "LROSWE",
   answers: [
     "LOW",
     "OR",
@@ -6744,17 +8152,20 @@ export const games = [[{
     "SO",
     "WE",
   ]}, {
-  problem: "OOSMTH",
+  problem: "HOSMTO",
   answers: [
     "HOT",
     "MOST",
+    "MOTH",
     "OH",
+    "SM",
     "SMOOTH",
     "SO",
+    "SOOT",
     "TO",
     "TOO",
   ]}, {
-  problem: "BBSODE",
+  problem: "EBBOSD",
   answers: [
     "BE",
     "BED",
@@ -6764,7 +8175,7 @@ export const games = [[{
     "SO",
     "SOBBED",
   ]}, {
-  problem: "ESNROO",
+  problem: "SEONOR",
   answers: [
     "NO",
     "NOSE",
@@ -6779,7 +8190,7 @@ export const games = [[{
     "SOON",
     "SOONER",
   ]}, {
-  problem: "RHSEPE",
+  problem: "SRHEPE",
   answers: [
     "HE",
     "HER",
@@ -6791,7 +8202,7 @@ export const games = [[{
     "SHEEP",
     "SPHERE",
   ]}, {
-  problem: "REPDIS",
+  problem: "RSDIEP",
   answers: [
     "DIP",
     "DRIP",
@@ -6800,16 +8211,18 @@ export const games = [[{
     "RED",
     "RIDE",
     "RIP",
+    "RIPE",
     "SIDE",
     "SIR",
     "SPIDER",
   ]}, {
-  problem: "SRPDAE",
+  problem: "SDEPAR",
   answers: [
     "ARE",
     "AS",
     "DEAR",
     "EARS",
+    "PAD",
     "PEARS",
     "READ",
     "RED",
@@ -6818,7 +8231,7 @@ export const games = [[{
     "SPARE",
     "SPREAD",
   ]}, {
-  problem: "GIPNRS",
+  problem: "PRGNIS",
   answers: [
     "GRIN",
     "IN",
@@ -6834,13 +8247,14 @@ export const games = [[{
     "SPIN",
     "SPRING",
   ]}, {
-  problem: "SROPTU",
+  problem: "PSUTOR",
   answers: [
     "OR",
     "OUR",
     "OUT",
     "POT",
     "PUT",
+    "ROT",
     "RUST",
     "SO",
     "SORT",
@@ -6855,7 +8269,7 @@ export const games = [[{
     "UP",
     "US",
   ]}, {
-  problem: "QARSUE",
+  problem: "ESUARQ",
   answers: [
     "ARE",
     "AS",
@@ -6866,7 +8280,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "KSQEAU",
+  problem: "UQEAKS",
   answers: [
     "AS",
     "ASK",
@@ -6875,17 +8289,20 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "SARTDE",
+  problem: "ASREDT",
   answers: [
     "ARE",
     "ART",
     "AS",
     "AT",
     "ATE",
+    "DART",
+    "DATE",
     "DEAR",
     "EARS",
     "EAST",
     "EAT",
+    "RAT",
     "READ",
     "RED",
     "REST",
@@ -6895,19 +8312,21 @@ export const games = [[{
     "SEAT",
     "STAR",
     "STARED",
+    "TEA",
     "TEAR",
   ]}, {
-  problem: "SSRATT",
+  problem: "TTSRSA",
   answers: [
     "ART",
     "AS",
     "AT",
+    "RAT",
     "SAT",
     "STAR",
     "START",
     "STARTS",
   ]}, {
-  problem: "TTSEAS",
+  problem: "ESTAST",
   answers: [
     "AS",
     "AT",
@@ -6920,13 +8339,15 @@ export const games = [[{
     "STATE",
     "STATES",
     "TASTE",
+    "TEA",
     "TEST",
   ]}, {
-  problem: "KITRSE",
+  problem: "SRIKET",
   answers: [
     "IS",
     "IT",
     "ITS",
+    "KIT",
     "KITE",
     "KITES",
     "REST",
@@ -6937,7 +8358,7 @@ export const games = [[{
     "TIE",
     "TIRE",
   ]}, {
-  problem: "ITRSGN",
+  problem: "IGRNST",
   answers: [
     "GRIN",
     "GRIT",
@@ -6950,10 +8371,11 @@ export const games = [[{
     "SING",
     "SIR",
     "SIT",
+    "STING",
     "STIR",
     "STRING",
   ]}, {
-  problem: "TISPRE",
+  problem: "PSIERT",
   answers: [
     "IS",
     "IT",
@@ -6964,6 +8386,7 @@ export const games = [[{
     "PIE",
     "REST",
     "RIP",
+    "RIPE",
     "SIR",
     "SIT",
     "SPIT",
@@ -6971,28 +8394,33 @@ export const games = [[{
     "STIR",
     "STRIPE",
     "TIE",
+    "TIP",
     "TIRE",
     "TRIP",
   ]}, {
-  problem: "LLTOSR",
+  problem: "OTRLLS",
   answers: [
     "LOT",
+    "LOTS",
     "OR",
+    "ROT",
     "SO",
     "SORT",
     "STROLL",
     "TO",
   ]}, {
-  problem: "MEURSM",
+  problem: "MRUEMS",
   answers: [
     "ME",
+    "MUM",
+    "SM",
     "SUM",
     "SUMMER",
     "SURE",
     "US",
     "USE",
   ]}, {
-  problem: "SNTSUE",
+  problem: "ETSNUS",
   answers: [
     "NEST",
     "NET",
@@ -7006,7 +8434,7 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "STNNAU",
+  problem: "ANSNUT",
   answers: [
     "AN",
     "ANT",
@@ -7014,34 +8442,39 @@ export const games = [[{
     "AT",
     "AUNT",
     "AUNTS",
+    "NUN",
     "NUT",
     "SAT",
     "SUN",
     "SUNTAN",
     "US",
   ]}, {
-  problem: "LSYMOB",
+  problem: "MSLBOY",
   answers: [
     "BOY",
     "BOYS",
     "BY",
     "MY",
+    "SM",
     "SO",
     "SYMBOL",
   ]}, {
-  problem: "YTSSME",
+  problem: "MYSTES",
   answers: [
     "ME",
+    "MESS",
     "MY",
+    "SM",
     "STEM",
     "SYSTEM",
     "YES",
     "YET",
   ]}, {
-  problem: "ETPACU",
+  problem: "TCPAUE",
   answers: [
     "AT",
     "ATE",
+    "CAP",
     "CAT",
     "CUP",
     "CUT",
@@ -7052,10 +8485,45 @@ export const games = [[{
     "PUT",
     "TAP",
     "TAPE",
+    "TEA",
     "TEACUP",
     "UP",
   ]}, {
-  problem: "EDHTY'",
+  problem: "TPOTEA",
+  answers: [
+    "AT",
+    "ATE",
+    "EAT",
+    "OAT",
+    "PAT",
+    "PET",
+    "POT",
+    "TAP",
+    "TAPE",
+    "TEA",
+    "TEAPOT",
+    "TO",
+    "TOE",
+    "TOP",
+  ]}, {
+  problem: "NSENIT",
+  answers: [
+    "IN",
+    "INN",
+    "IS",
+    "IT",
+    "ITS",
+    "NEST",
+    "NET",
+    "NINE",
+    "SENT",
+    "SIT",
+    "TEN",
+    "TENNIS",
+    "TENS",
+    "TIE",
+  ]}, {
+  problem: "HE'DTY",
   answers: [
     "HE",
     "HE'D",
@@ -7065,7 +8533,7 @@ export const games = [[{
     "THEY'D",
     "YET",
   ]}, {
-  problem: "GINHTS",
+  problem: "GNISHT",
   answers: [
     "HINT",
     "HIS",
@@ -7079,17 +8547,20 @@ export const games = [[{
     "SIGN",
     "SING",
     "SIT",
+    "STING",
     "THIN",
     "THING",
     "THINGS",
     "THIS",
   ]}, {
-  problem: "DHERTA",
+  problem: "EHTRDA",
   answers: [
     "ARE",
     "ART",
     "AT",
     "ATE",
+    "DART",
+    "DATE",
     "DEAR",
     "EARTH",
     "EAT",
@@ -7104,13 +8575,15 @@ export const games = [[{
     "HEAT",
     "HER",
     "HERD",
+    "RAT",
     "READ",
     "RED",
+    "TEA",
     "TEAR",
     "THE",
     "THREAD",
   ]}, {
-  problem: "ETHART",
+  problem: "TERTAH",
   answers: [
     "ARE",
     "ART",
@@ -7124,13 +8597,15 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THAT",
     "THE",
     "THREAT",
     "TREAT",
   ]}, {
-  problem: "ATNNIM",
+  problem: "IATNMN",
   answers: [
     "AIM",
     "AM",
@@ -7146,17 +8621,20 @@ export const games = [[{
     "MINT",
     "TINMAN",
   ]}, {
-  problem: "OTDRWA",
+  problem: "TAOWRD",
   answers: [
     "ART",
     "AT",
+    "DART",
     "DO",
     "DOT",
     "DRAW",
     "OAR",
     "OAT",
     "OR",
+    "RAT",
     "ROAD",
+    "ROT",
     "ROW",
     "TO",
     "TOAD",
@@ -7165,7 +8643,7 @@ export const games = [[{
     "TWO",
     "WORD",
   ]}, {
-  problem: "TVLERA",
+  problem: "ETAVLR",
   answers: [
     "ALTER",
     "ARE",
@@ -7175,11 +8653,23 @@ export const games = [[{
     "EAT",
     "LATE",
     "LET",
+    "RAT",
     "TALE",
+    "TEA",
     "TEAR",
     "TRAVEL",
+    "VET",
   ]}, {
-  problem: "LATRIS",
+  problem: "BLETRE",
+  answers: [
+    "BE",
+    "BEE",
+    "BELT",
+    "LET",
+    "TREBLE",
+    "TREE",
+  ]}, {
+  problem: "TILASR",
   answers: [
     "AIR",
     "ART",
@@ -7189,6 +8679,7 @@ export const games = [[{
     "IT",
     "ITS",
     "LAST",
+    "RAT",
     "SAIL",
     "SALT",
     "SAT",
@@ -7199,16 +8690,34 @@ export const games = [[{
     "TAIL",
     "TRIALS",
   ]}, {
-  problem: "IYTRCK",
+  problem: "YTIRKC",
   answers: [
     "CITY",
     "CRY",
     "IT",
+    "KIT",
     "TRICK",
     "TRICKY",
     "TRY",
   ]}, {
-  problem: "UATDRN",
+  problem: "ERPTIL",
+  answers: [
+    "IT",
+    "LET",
+    "LIE",
+    "LIP",
+    "LITRE",
+    "PET",
+    "PIE",
+    "RIP",
+    "RIPE",
+    "TIE",
+    "TIP",
+    "TIRE",
+    "TRIP",
+    "TRIPLE",
+  ]}, {
+  problem: "TUDANR",
   answers: [
     "AN",
     "AND",
@@ -7216,15 +8725,18 @@ export const games = [[{
     "ART",
     "AT",
     "AUNT",
+    "DART",
     "NUT",
     "RAN",
+    "RAT",
     "RUN",
     "TUNDRA",
     "TURN",
   ]}, {
-  problem: "RTENDU",
+  problem: "REDTNU",
   answers: [
     "DEN",
+    "DUET",
     "END",
     "NET",
     "NUT",
@@ -7237,17 +8749,19 @@ export const games = [[{
     "TURNED",
     "UNDER",
   ]}, {
-  problem: "XTEUDO",
+  problem: "UEXOTD",
   answers: [
     "DO",
     "DOT",
+    "DUET",
+    "DUO",
     "OUT",
     "OX",
     "TO",
     "TOE",
     "TUXEDO",
   ]}, {
-  problem: "NTTYRA",
+  problem: "TRAYTN",
   answers: [
     "AN",
     "ANT",
@@ -7255,12 +8769,13 @@ export const games = [[{
     "ART",
     "AT",
     "RAN",
+    "RAT",
     "RAY",
     "TRY",
     "TYRANT",
     "YARN",
   ]}, {
-  problem: "NSCULE",
+  problem: "ECUSNL",
   answers: [
     "LENS",
     "SUN",
@@ -7269,10 +8784,29 @@ export const games = [[{
     "US",
     "USE",
   ]}, {
-  problem: "NIUETD",
+  problem: "UIKDNN",
+  answers: [
+    "IN",
+    "INK",
+    "INN",
+    "KIND",
+    "NUN",
+    "UNKIND",
+  ]}, {
+  problem: "KLUINE",
+  answers: [
+    "IN",
+    "INK",
+    "LIE",
+    "LIKE",
+    "LINE",
+    "UNLIKE",
+  ]}, {
+  problem: "ENDITU",
   answers: [
     "DEN",
     "DINE",
+    "DUET",
     "END",
     "IN",
     "IT",
@@ -7287,7 +8821,28 @@ export const games = [[{
     "UNTIE",
     "UNTIED",
   ]}, {
-  problem: "EADRWN",
+  problem: "DUISPE",
+  answers: [
+    "DIP",
+    "IS",
+    "PIE",
+    "SIDE",
+    "UP",
+    "UPSIDE",
+    "US",
+    "USE",
+    "USED",
+  ]}, {
+  problem: "ULSEFU",
+  answers: [
+    "ELF",
+    "FUEL",
+    "FUSE",
+    "US",
+    "USE",
+    "USEFUL",
+  ]}, {
+  problem: "AEWRND",
   answers: [
     "AN",
     "AND",
@@ -7309,19 +8864,20 @@ export const games = [[{
     "WE",
     "WEAR",
   ]}, {
-  problem: "NWIAGN",
+  problem: "GIAWNN",
   answers: [
     "AN",
     "GAIN",
     "GNAW",
     "IN",
     "INN",
+    "WAG",
     "WANING",
     "WIG",
     "WIN",
     "WING",
   ]}, {
-  problem: "NT'WAS",
+  problem: "ASNWT'",
   answers: [
     "AN",
     "ANT",
@@ -7334,18 +8890,20 @@ export const games = [[{
     "WAS",
     "WASN'T",
   ]}, {
-  problem: "WIANGX",
+  problem: "IGXNAW",
   answers: [
     "AN",
     "GAIN",
     "GNAW",
     "IN",
+    "WAG",
+    "WAX",
     "WAXING",
     "WIG",
     "WIN",
     "WING",
   ]}, {
-  problem: "RWKEAE",
+  problem: "EEAKWR",
   answers: [
     "ARE",
     "RAKE",
@@ -7357,7 +8915,7 @@ export const games = [[{
     "WEEK",
     "WERE",
   ]}, {
-  problem: "DBEEWB",
+  problem: "EEBWBD",
   answers: [
     "BE",
     "BED",
@@ -7367,7 +8925,7 @@ export const games = [[{
     "WEB",
     "WEBBED",
   ]}, {
-  problem: "HITGWE",
+  problem: "TGEHWI",
   answers: [
     "EIGHT",
     "GET",
@@ -7377,13 +8935,14 @@ export const games = [[{
     "THE",
     "TIE",
     "WE",
+    "WEIGH",
     "WEIGHT",
     "WET",
     "WHITE",
     "WIG",
     "WITH",
   ]}, {
-  problem: "L'WHOL",
+  problem: "HO'LLW",
   answers: [
     "HOW",
     "LOW",
@@ -7392,7 +8951,7 @@ export const games = [[{
     "WHO",
     "WHO'LL",
   ]}, {
-  problem: "OOHSHW",
+  problem: "OHHSWO",
   answers: [
     "HOW",
     "OH",
@@ -7401,7 +8960,7 @@ export const games = [[{
     "WHO",
     "WHOOSH",
   ]}, {
-  problem: "GGLIEW",
+  problem: "GLGIWE",
   answers: [
     "EGG",
     "LEG",
@@ -7410,7 +8969,7 @@ export const games = [[{
     "WIG",
     "WIGGLE",
   ]}, {
-  problem: "DNIWOW",
+  problem: "NWODIW",
   answers: [
     "DO",
     "DOWN",
@@ -7424,7 +8983,7 @@ export const games = [[{
     "WINDOW",
     "WON",
   ]}, {
-  problem: "ITWENR",
+  problem: "RENTIW",
   answers: [
     "IN",
     "IT",
@@ -7438,9 +8997,10 @@ export const games = [[{
     "WET",
     "WIN",
     "WINTER",
+    "WIRE",
     "WRITE",
   ]}, {
-  problem: "EWHSIS",
+  problem: "WESSHI",
   answers: [
     "HE",
     "HIS",
@@ -7451,10 +9011,11 @@ export const games = [[{
     "WISH",
     "WISHES",
   ]}, {
-  problem: "IRTWEH",
+  problem: "HREITW",
   answers: [
     "HE",
     "HER",
+    "HIRE",
     "HIT",
     "IT",
     "THE",
@@ -7464,11 +9025,12 @@ export const games = [[{
     "WE",
     "WET",
     "WHITE",
+    "WIRE",
     "WITH",
     "WITHER",
     "WRITE",
   ]}, {
-  problem: "NODERW",
+  problem: "ONRWDE",
   answers: [
     "DEN",
     "DEW",
@@ -7492,7 +9054,7 @@ export const games = [[{
     "WONDER",
     "WORD",
   ]}, {
-  problem: "RREKOW",
+  problem: "ERORWK",
   answers: [
     "OR",
     "ROW",
@@ -7501,7 +9063,7 @@ export const games = [[{
     "WORK",
     "WORKER",
   ]}, {
-  problem: "HWTARE",
+  problem: "HETWAR",
   answers: [
     "ARE",
     "ART",
@@ -7515,6 +9077,8 @@ export const games = [[{
     "HEART",
     "HEAT",
     "HER",
+    "RAT",
+    "TEA",
     "TEAR",
     "THAW",
     "THE",
@@ -7525,7 +9089,7 @@ export const games = [[{
     "WHAT",
     "WREATH",
   ]}, {
-  problem: "LOLEYW",
+  problem: "WOLYEL",
   answers: [
     "LOW",
     "OWL",
@@ -7534,7 +9098,7 @@ export const games = [[{
     "YELL",
     "YELLOW",
   ]}, {
-  problem: "SAEBZR",
+  problem: "BARZSE",
   answers: [
     "ARE",
     "AS",
@@ -7544,5 +9108,6 @@ export const games = [[{
     "BEAR",
     "EARS",
     "SEA",
+    "ZEBRA",
     "ZEBRAS",
   ]}, ], ]

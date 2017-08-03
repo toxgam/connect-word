@@ -9,10 +9,12 @@ export default class StartScreen extends Component {
 
   render() {
     return(
-      <div className="start_screen">
-        <div className="header" />
+      <div className="start_screen outer">
+        <div className="middle">
+          <div className="header" />
 
-        <Packages />
+          <Packages />
+        </div>
       </div>)
   }
 }
@@ -20,7 +22,7 @@ export default class StartScreen extends Component {
 class Packages extends Component {
   render() {
     return (
-      <div>
+      <div className="inner">
         {packages.map((e, i) => 
           <Package
             key={i}
