@@ -12,14 +12,17 @@
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
+        "cordova-plugin-admobpro": "^2.29.21",
+        "cordova-plugin-extension": "^1.5.1",
         "cordova-plugin-whitelist": "^1.3.2",
-        "it.innowatio.cordova.ios-security": "git+https://github.com/innowatio/cordova-ios-fullscreen.git",
-        "it.innowatio.cordova.ios-fullscreen": "https://github.com/innowatio/cordova-ios-fullscreen.git"
+        "it.innowatio.cordova.ios-fullscreen": "https://github.com/innowatio/cordova-ios-fullscreen.git",
+        "it.innowatio.cordova.ios-security": "git+https://github.com/innowatio/cordova-ios-fullscreen.git"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "it.innowatio.cordova.ios-fullscreen": {}
+            "it.innowatio.cordova.ios-fullscreen": {},
+            "cordova-plugin-admobpro": {}
         },
         "platforms": [
             "android",
