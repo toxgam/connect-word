@@ -23,8 +23,8 @@ int minAns;
 vector<string> wordList;
 int n;
 
-void readWordList(vector<string> &wordList) {
-    ifstream iFile("wordListHighSchool.txt");
+void readWordList(vector<string> &wordList, string inputName) {
+    ifstream iFile(inputName);
     
     string tmp;
     
@@ -95,15 +95,46 @@ void tries(string answer, int n, map<char, int> &count, vector<int> &ans) {
 
 int main(int argc, const char * argv[]) {
     //preprocessing
-    readWordList(wordList);
+    
+    // kindergarten
+//    readWordList(wordList, "wordListKinde.txt");
+//    readWordList(wordList, "sightWords");
+//    
+//    ofstream oFile("gamesKinde.js");
+    
+    // Grade 1
+//    readWordList(wordList, "wordListGrade1.txt");
+//    readWordList(wordList, "term1");
+//    readWordList(wordList, "term2");
+//    readWordList(wordList, "term3");
+//    readWordList(wordList, "useful");
+//    readWordList(wordList, "family");
+//    readWordList(wordList, "magic");
+//    
+//    ofstream oFile("gameGrade1.js");
+   
+    // Primary
+//    readWordList(wordList, "wordListGrade2.txt");
+//    readWordList(wordList, "wordListGrade3.txt");
+//    readWordList(wordList, "wordListGrade4.txt");
+//    readWordList(wordList, "wordListGrade5.txt");
+//
+//    ofstream oFile("gamePrimary.js");
+    
+    // High school
+    readWordList(wordList, "wordListGrade6.txt");
+    readWordList(wordList, "wordListGrade7.txt");
+    readWordList(wordList, "wordListGrade8.txt");
+    readWordList(wordList, "wordListHighSchool.txt");
+    
+    ofstream oFile("gameHigh.js");
+    
     sort(wordList.begin(), wordList.end());
     wordList = clean(wordList);
     n = (int)wordList.size();
     
     //retrieve world
     vector<bool> notAvailable(n);
-    
-    ofstream oFile("gameHighSchool.js");
     
     oFile << "export const games = [";
     for (maxLength = 2; maxLength <= 6; maxLength++) {
