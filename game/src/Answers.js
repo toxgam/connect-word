@@ -106,16 +106,11 @@ export default class Answers extends Component {
   }
 
   render() {
-    // console.log(this.props.width, this.props.height, this.state.size)
-    // console.log(this.state.widths)
-    // console.log(this.state.heights)
-    // console.log(this.state.xs)
-    // console.log(this.state.ys)
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>       
         {this.props.words.map((e, i) => <Word
           key={i}
-          x={this.state.xs[i]}
+          x={this.state.xs[i] + this.state.size * margin / 2 * ((this.state.xs[i] === 0) ? -1 : 1)}
           y={this.state.ys[i]}
           size={this.state.size}
           centerAlign={this.state.centerAlign}

@@ -72,7 +72,7 @@ export default class Panel extends Component {
           y={this.props.height / 16}
           width={this.props.width - 2 * size}
           height={this.props.height / 3}
-          text={"Package " + this.state.packageName}
+          text={this.state.packageName}
           fontSize={size / 3}
           align="center"
           fill={textColor}
