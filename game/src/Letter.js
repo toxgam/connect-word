@@ -45,13 +45,13 @@ export default class Letter extends Component {
         />
 
         <Text
-          x={0}
+          x={this.state.letter === "I" ? this.state.size / 4 : 0}
           y={0}
           align="center"
           text={this.state.letter}
           fontFamily={font}
           fontStyle="bold"
-          fontSize={this.state.size}
+          fontSize={this.state.size * 0.8}
           fill={textColor}
           padding={this.state.size / 5}
           visible={this.state.visible}

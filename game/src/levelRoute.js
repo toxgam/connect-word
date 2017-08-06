@@ -4,29 +4,13 @@ import {games} from './data'
 const random = (n, notAvallable) => {
   let count = Math.floor(Math.random() * (n - notAvallable.length))
 
-  const binarySearch = (array, e) => {
-    let l = 0, r = array.length - 1, result = -1
-
-    while (l <= r) {
-      const p = Math.floor((l + r) / 2)
-
-      if (array[p] === e) {
-        result = p
-        break
-      } else if (array[p] < e) {
-        l = p + 1
-      } else {
-        r = p - 1
-      }
-    }
-
-    return result
-  }
-
   let result = 0
+  let i = 0
   while (count >= 0) {
-    if (binarySearch(notAvallable, result) === -1) {
+    if (notAvallable[i] !== result) {
       count--
+    } else {
+      i++
     }
     result++
   }

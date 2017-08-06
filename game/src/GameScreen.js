@@ -40,7 +40,7 @@ const endGame = (id, gameNumber) => {
     } else if (gamePlayed[i] === gameNumber) {
       console.log("Err")
     } else {
-      gamePlayed[i] = gameNumber
+      gamePlayed[i + 1] = gameNumber
       break
     }
   }
@@ -63,8 +63,10 @@ export default class GameScreen extends Component {
       level: props.levelId,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
-      maxGameNumber: games[props.levelId].length
+      maxGameNumber: games[props.packageId][props.levelId].length
     }
+
+    this.flag = true
 
     this.absolute = {
       x: props.x,
@@ -72,47 +74,39 @@ export default class GameScreen extends Component {
     }
   }
 
-  stateFromProps = (props) => {
-    return {
-      level: props.levelId,
-      gameNumber: props.gameId,
-      gameNum: props.gameNum,
-      maxGameNumber: games[props.levelId].length
-    }
-  }
-
   componentWillReceiveProps(nextProps) {
     this.init(nextProps)
-    this.setState(this.stateFromProps(nextProps))
   }
 
   init = ((props) => {
-    // alert("You Won")
-
-    let levelId, gameId, gameNum
-    [levelId, gameId, gameNum] = levelInit(props.packageId)
-
-    const rawGame = games[props.packageId][levelId][gameId]
+    const rawGame = games[props.packageId][props.levelId][props.gameId]
     const game = selectGame(rawGame)
 
-    // console.log(game)
+    this.flag = true
 
     this.setState({
       visibilities: game.answers.map(e => false),
       letters: game.problem,
       answers: game.answers,
-      level: levelId,
-      gameNumber: gameId,
-      gameNum: gameNum,
-      maxGameNumber: games[levelId].length,
+      level: props.levelId,
+      gameNumber: props.gameId,
+      gameNum: props.gameNum,
+      maxGameNumber: games[props.packageId][props.levelId].length,
       changed: true
     })
   })
 
+  next = (props) => {
+    let levelId, gameId, gameNum
+    [levelId, gameId, gameNum] = levelInit(props.packageId)
+    window.location = `#/${props.packageId}/${levelId}/${gameId}/${gameNum}`
+  }
+
   checkEndGame = (() => {
-    if (this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
-      endGame(this.props.packageId, this.state.gameId)
-      setTimeout(() => {this.init(this.props)}, 1000)
+    if (this.flag && this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
+      endGame(this.props.packageId, this.state.gameNumber)
+      setTimeout(() => {this.next(this.props)}, 1000)
+      this.flag = false
     }
   })
 

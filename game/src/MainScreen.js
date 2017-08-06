@@ -16,10 +16,10 @@ export default class MainScreen extends Component {
             y={0} 
             width={window.innerWidth} 
             height={window.innerHeight} 
-            packageId={this.props.match.params.packageId}
-            levelId={this.props.match.params.levelId}
-            gameId={this.props.match.params.gameId}
-            gameNum={this.props.match.params.gameNum}
+            packageId={parseInt(this.props.match.params.packageId, 10)}
+            levelId={parseInt(this.props.match.params.levelId, 10)}
+            gameId={parseInt(this.props.match.params.gameId, 10)}
+            gameNum={parseInt(this.props.match.params.gameNum, 10)}
           />
         </Layer>
       </Stage>
