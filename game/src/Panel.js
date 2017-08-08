@@ -73,18 +73,7 @@ export default class Panel extends Component {
           width={this.props.width - 2 * size}
           height={this.props.height / 3}
           text={this.state.packageName}
-          fontSize={size / 3}
-          align="center"
-          fill={textColor}
-        />
-
-        <Text 
-          x={size}
-          y={this.props.height / 3}
-          width={this.props.width - 2 * size}
-          height={this.props.height / 3}
-          text={"Level " + this.state.level + "/" + this.state.maxLevel}
-          fontSize={size / 3}
+          fontSize={size / 1.5}
           align="center"
           fill={textColor}
         />
@@ -95,7 +84,7 @@ export default class Panel extends Component {
           width={this.props.width - 2 * size}
           height={this.props.height / 3}
           text={"Game " + this.state.gameNumber + "/" + this.state.maxGameNumber}
-          fontSize={size / 3}
+          fontSize={size / 1.5}
           align="center"
           fill={textColor}
         />
