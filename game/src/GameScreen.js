@@ -63,7 +63,7 @@ export default class GameScreen extends Component {
       level: props.levelId,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
-      maxGameNumber: games[props.packageId][props.levelId].length
+      maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0)
     }
 
     this.flag = true
@@ -91,7 +91,7 @@ export default class GameScreen extends Component {
       level: props.levelId,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
-      maxGameNumber: games[props.packageId][props.levelId].length,
+      maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0),
       changed: true
     })
   })
