@@ -158,8 +158,6 @@ export default class GameScreen extends Component {
           x={0}
           y={0}
           id={this.props.id}
-          level={this.state.level + 1}
-          maxLevel={games.length}
           packageName={packages[this.props.packageId]}
           packageId={this.props.packageId}
           gameNumber={this.state.gameNum + 1}

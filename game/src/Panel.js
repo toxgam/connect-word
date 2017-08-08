@@ -14,9 +14,7 @@ export default class Panel extends Component {
       packageName: this.props.packageName,
       packageId: this.props.packageId,
       gameNumber: this.props.gameNumber,
-      maxGameNumber: this.props.maxGameNumber,
-      level: this.props.level,
-      maxLevel: this.props.maxLevel
+      maxGameNumber: this.props.maxGameNumber
     }
   }
 
@@ -36,8 +34,6 @@ export default class Panel extends Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      level: nextProps.level, 
-      maxLevel: nextProps.maxLevel,
       gameNumber: nextProps.gameNumber,
       maxGameNumber: nextProps.maxGameNumber
     })
