@@ -65,22 +65,22 @@ export default class Panel extends Component {
 
         <Text 
           x={size}
-          y={this.props.height / 16}
+          y={this.props.height / 8}
           width={this.props.width - 2 * size}
           height={this.props.height / 3}
           text={this.state.packageName}
-          fontSize={size / 1.5}
+          fontSize={size / 2}
           align="center"
           fill={textColor}
         />
 
         <Text 
           x={size}
-          y={this.props.height * 2 / 3 - this.props.height / 16}
+          y={this.props.height * 2 / 3 - this.props.height / 8}
           width={this.props.width - 2 * size}
           height={this.props.height / 3}
           text={"Game " + this.state.gameNumber + "/" + this.state.maxGameNumber}
-          fontSize={size / 1.5}
+          fontSize={size / 2}
           align="center"
           fill={textColor}
         />

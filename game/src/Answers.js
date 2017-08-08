@@ -13,9 +13,10 @@ export default class Answers extends Component {
     [size1, size2, size, heights, widths, xs, ys] = this.init(props)
 
     this.state = {
-      visibilities: props.words.map(e => false),
+      visibilities: props.wordLengths.map(e => false),
+      answers: props.answers,
       centerAlign: (size1 > size2),
-      words: props.words,
+      wordLengths: props.wordLengths,
       size: size,
       heights: heights,
       widths: widths,
@@ -26,8 +27,8 @@ export default class Answers extends Component {
   }
 
   init(props) {
-    const n = props.words.length
-    const lengths = props.words.map(e => e.length)
+    const n = props.wordLengths.length
+    const lengths = props.wordLengths
     const middleLength = lengths[Math.floor((lengths.length - 1) / 2)]
     const maxLength = lengths[lengths.length - 1]
     
@@ -81,16 +82,21 @@ export default class Answers extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (!nextProps.changed) {
-      this.setState({visibilities: nextProps.visibilities, changed: nextProps.changed})
+      this.setState({
+        visibilities: nextProps.visibilities, 
+        answers: nextProps.answers,
+        changed: nextProps.changed
+      })
     } else {
       let size1, size2, size, heights, widths, xs, ys
 
       [size1, size2, size, heights, widths, xs, ys] = this.init(nextProps)
 
       this.setState({
-        visibilities: nextProps.words.map(e => false),
+        visibilities: nextProps.wordLengths.map(e => false),
+        answers: nextProps.answers,
         centerAlign: (size1 > size2),
-        words: nextProps.words,
+        wordLengths: nextProps.wordLengths,
         size: size,
         heights: heights,
         widths: widths,
@@ -108,7 +114,7 @@ export default class Answers extends Component {
   render() {
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.width} height={this.props.height}>       
-        {this.props.words.map((e, i) => <Word
+        {this.props.wordLengths.map((e, i) => <Word
           key={i}
           x={this.state.xs[i] + this.state.size * margin / 2 * ((this.state.xs[i] === 0) ? -1 : 1)}
           y={this.state.ys[i]}
@@ -117,7 +123,8 @@ export default class Answers extends Component {
           width={this.state.widths[i]}
           height={this.state.heights[i]}
           visible={this.state.visibilities[i]}
-          letters={this.state.words[i]}
+          word={this.state.answers[i]}
+          letterNumber={this.state.wordLengths[i]}
           changed={this.state.changed}
         />)}
       </Group>

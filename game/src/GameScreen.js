@@ -8,6 +8,7 @@ import Panel from './Panel'
 
 //import data
 import {packages, maxWord, backgroundColor, games} from './data'
+import {wordList} from './wordList.js'
 import {levelInit} from './levelRoute'
 
 const selectGame = (rawGame => {
@@ -23,7 +24,8 @@ const selectGame = (rawGame => {
 
   if (n > maxWord) {
     game.answers = game.answers.slice(n - maxWord, n)
-  } 
+  }
+  game.answers = game.answers.map(e => e.length)
 
   return game
 })
@@ -52,15 +54,14 @@ const endGame = (id, gameNumber) => {
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
-    // console.log(props.packageId)
     const rawGame = games[props.packageId][props.levelId][props.gameId]
     const game = selectGame(rawGame)
 
     this.state = {
       visibilities: game.answers.map(e => false),
+      answers: game.answers.map(e => ""),
       letters: game.problem,
-      answers: game.answers,
-      level: props.levelId,
+      answerLengths: game.answers,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
       maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0)
@@ -86,9 +87,9 @@ export default class GameScreen extends Component {
 
     this.setState({
       visibilities: game.answers.map(e => false),
+      answers: game.answers.map(e => ""),
       letters: game.problem,
-      answers: game.answers,
-      level: props.levelId,
+      answerLengths: game.answers,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
       maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0),
@@ -102,25 +103,58 @@ export default class GameScreen extends Component {
     window.location = `#/${props.packageId}/${levelId}/${gameId}/${gameNum}`
   }
 
-  checkEndGame = (() => {
+  checkEndGame = () => {
     if (this.flag && this.state.visibilities.reduce(((ret, e) => ret && e), true)) {
       endGame(this.props.packageId, this.state.gameNumber)
       setTimeout(() => {this.next(this.props)}, 1000)
       this.flag = false
     }
-  })
+  }
+
+  checkAppearance = (guess) => {
+    let l = 0
+    let r = wordList.length - 1
+
+    while (l <= r) {
+      const p = Math.floor((l + r) / 2)
+
+      if (wordList[p] === guess) {
+        return true
+      } else if (guess < wordList[p]) {
+        r = p - 1
+      } else {
+        l = p + 1
+      }
+    }
+
+    return false
+  }
+
+  checkAvailable = (guess) => {
+    for (let i = 0; i < this.state.answers.length; i++) {
+      if (this.state.answers[i] === guess) {
+        return false
+      }
+    }
+
+    return true
+  }
 
   update(guess) {
     const visibilities = this.state.visibilities
+    const answers = this.state.answers
 
     for (let i = 0; i < this.state.answers.length; i++) {
-      if (guess === this.state.answers[i]) {
-        visibilities[i] = true
+      if (guess.length === this.state.answerLengths[i] && !visibilities[i]) {
+        if (this.checkAppearance(guess) && this.checkAvailable(guess)) {
+          visibilities[i] = true
+          answers[i] = guess
+        }
         break
       }
     }
     
-    this.setState({visibilities, changed: false})
+    this.setState({visibilities, answers, changed: false})
   }
 
   render() {
@@ -137,8 +171,9 @@ export default class GameScreen extends Component {
           y={this.props.height / 6}
           width={this.props.width}
           height={this.props.height / 3}
-          words={this.state.answers}
+          wordLengths={this.state.answerLengths}
           visibilities={this.state.visibilities}
+          answers={this.state.answers}
           checkEndGame={this.checkEndGame.bind(this)}
           maxWordLength={this.state.letters.length}
           changed={this.state.changed}

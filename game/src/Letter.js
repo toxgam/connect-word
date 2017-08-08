@@ -8,30 +8,31 @@ export default class Letter extends Component {
     super(props)
 
     this.state = {
-      letter: props.letter,
       x: props.x,
       y: props.y,
       size: props.size,
-      visible: props.visible
+      visible: props.visible,
+      letter: props.letter
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (!nextProps.changed) {
-      this.setState({visible: nextProps.visible})
+      this.setState({
+        visible: nextProps.visible,
+        letter: nextProps.letter
+      })
     } else {
       this.setState({
-        letter: nextProps.letter,
         x: nextProps.x,
         y: nextProps.y,
         size: nextProps.size,
-        visible: nextProps.visible,
+        visible: nextProps.visible
       })
     }
   }
 
   render() {
-    // console.log(this.state.x, this.state.y)
     return (
       <Group x={this.props.x} y={this.props.y} width={this.props.size} height={this.props.size}>
         <Rect

@@ -16,8 +16,9 @@ export default class Word extends Component {
       size: props.size,
       width: props.width,
       height: props.height,
-      letters: props.letters,
+      letterNumber: props.letterNumber,
       visible: props.visible,
+      word: props.word,
       changed:props.changed
     }
   }
@@ -27,13 +28,17 @@ export default class Word extends Component {
 
     this.verticalMargin = (props.height - size) / 2
     this.outMargin = (props.centerAlign) ? 
-      (props.width - size * props.letters.length - size * margin * (props.letters.length)) / 2:
+      (props.width - size * props.letterNumber - size * margin * (props.letterNumber)) / 2:
       size * margin
   }
 
   componentWillReceiveProps(nextProps) {
     if (!nextProps.changed) {
-      this.setState({visible: nextProps.visible, changed: nextProps.changed})
+      this.setState({
+        visible: nextProps.visible, 
+        word: nextProps.word,
+        changed: nextProps.changed
+      })
     } else {
       this.calculate(nextProps)
 
@@ -43,27 +48,36 @@ export default class Word extends Component {
         size: nextProps.size,
         width: nextProps.width,
         height: nextProps.height,
-        letters: nextProps.letters,
+        letterNumber: nextProps.letterNumber,
         visible: nextProps.visible,
+        word: nextProps.word,
         changed: nextProps.changed
       })
     }
   }
 
+  Letters() {
+    const result = []
+
+    for (let i = 0; i < this.state.letterNumber; i++) {
+      result.push(<Letter 
+        key={i}
+        visible={this.state.visible}
+        letter={this.state.word[i]}
+        x={this.outMargin + i * this.state.size * (1 + margin)}
+        y={this.verticalMargin}
+        size={this.state.size}
+        changed={this.state.changed}
+      />)
+    }
+
+    return result
+  }
+
   render() {
-    // console.log("Word")
-    // console.log(this.verticalMargin, this.outMargin)
     return (
       <Group x={this.state.x} y={this.state.y} width={this.state.width} height={this.state.height}>
-        {Array.prototype.map.call(this.state.letters, ((e, i) => <Letter 
-          key={i}
-          visible={this.state.visible}
-          x={this.outMargin + i * this.state.size * (1 + margin)}
-          y={this.verticalMargin}
-          size={this.state.size}
-          letter={e}
-          changed={this.state.changed}
-        />))}
+        {this.Letters()}
       </Group>
     )
   }
