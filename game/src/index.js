@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+
 import './index.css'
 import App from './App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-
-const loadAdMob = () => {
+const initApp = () => {
   ReactDOM.render(<App />, document.getElementById('root'))
 
   if (window.AdMob) {
@@ -28,8 +27,8 @@ const loadAdMob = () => {
   }
 }
 
-if ((/(ipad|iphone|ipod|android)/i.test(navigator.userAgent))) {
-  document.addEventListener('deviceready', loadAdMob, false)
+if (/(ipad|iphone|ipod|android)/i.test(navigator.userAgent)) {
+  document.addEventListener('deviceready', initApp, false)
 } else {
-  loadAdMob()
+  initApp()
 }
