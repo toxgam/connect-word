@@ -7,12 +7,12 @@ import Letters from './Letters'
 import Panel from './Panel'
 
 //import data
-import {packages, maxWord, backgroundColor, games} from './data'
+import {packages, maxWord, backgroundColor, games as allGame} from './data'
 import {wordList} from './wordList.js'
 import {levelInit} from './levelRoute'
 
 const selectGame = (rawGame => {
-  const game = rawGame
+  const game = Object.assign({}, rawGame)
 
   const n = game.answers.length
 
@@ -51,10 +51,15 @@ const endGame = (id, gameNumber) => {
   localStorage.setItem("dataCW", JSON.stringify(dataCW))
 }
 
+let games
+
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
-    const rawGame = games[props.packageId][props.levelId][props.gameId]
+    console.log(allGame)
+    games = allGame[props.packageId][props.levelId]
+    this.maxGameNumber = allGame[props.packageId].reduce((sum, value) => sum += value.length, 0)
+    const rawGame = games[props.gameId]
     const game = selectGame(rawGame)
 
     this.state = {
@@ -64,7 +69,7 @@ export default class GameScreen extends Component {
       answerLengths: game.answers,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
-      maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0)
+      maxGameNumber: this.maxGameNumber
     }
 
     this.flag = true
@@ -75,13 +80,19 @@ export default class GameScreen extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.init(nextProps)
+  componentWillReceiveProps = (nextProps) => { this.init(nextProps) }
+
+  readRawGame = (gameId) => {
+    console.log(games[gameId])
+    return games[gameId]
   }
 
-  init = ((props) => {
-    const rawGame = games[props.packageId][props.levelId][props.gameId]
-    const game = selectGame(rawGame)
+  init = (props) => {
+    if (props.levelId !== this.state.levelId || props.packageId !== this.props.packageId) {
+      games = allGame[props.packageId][props.levelId]
+    }
+
+    const game = selectGame(this.readRawGame(props.gameId))
 
     this.flag = true
 
@@ -92,10 +103,10 @@ export default class GameScreen extends Component {
       answerLengths: game.answers,
       gameNumber: props.gameId,
       gameNum: props.gameNum,
-      maxGameNumber: games[props.packageId].reduce((sum, value) => sum += value.length, 0),
+      maxGameNumber: this.maxGameNumber,
       changed: true
     })
-  })
+  }
 
   next = (props) => {
     let levelId, gameId, gameNum
