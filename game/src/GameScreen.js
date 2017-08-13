@@ -56,7 +56,7 @@ let games
 export default class GameScreen extends Component {
   constructor(props) {
     super(props)
-    console.log(allGame)
+    // console.log(allGame)
     games = allGame[props.packageId][props.levelId]
     this.maxGameNumber = allGame[props.packageId].reduce((sum, value) => sum += value.length, 0)
     const rawGame = games[props.gameId]

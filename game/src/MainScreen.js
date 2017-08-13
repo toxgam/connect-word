@@ -15,7 +15,7 @@ export default class MainScreen extends Component {
             x={0} 
             y={0} 
             width={window.innerWidth} 
-            height={window.innerHeight} 
+            height={window.innerHeight * 0.9} 
             packageId={parseInt(this.props.match.params.packageId, 10)}
             levelId={parseInt(this.props.match.params.levelId, 10)}
             gameId={parseInt(this.props.match.params.gameId, 10)}
