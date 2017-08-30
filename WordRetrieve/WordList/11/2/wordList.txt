@@ -1,0 +1,8 @@
+noisy
+business
+pollution
+street
+apartment
+bank
+traffic
+busy

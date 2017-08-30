@@ -1,0 +1,9 @@
+artist
+nurse
+fireman
+baker
+job
+vet
+doctor
+work
+teacher

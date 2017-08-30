@@ -1,0 +1,7 @@
+iron
+force
+magnetic
+metal
+nonmagnetic
+pull
+ring magnet

@@ -1,0 +1,10 @@
+core
+flood
+land
+lava
+mineral
+movement
+ocean
+stream
+weathering
+rock

@@ -1,0 +1,8 @@
+storm
+air
+precipitation
+sun
+sunshine
+weather patterns
+heat
+cloud

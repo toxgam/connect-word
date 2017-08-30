@@ -1,0 +1,9 @@
+high
+around
+front
+back
+location words
+under
+close
+middle
+far

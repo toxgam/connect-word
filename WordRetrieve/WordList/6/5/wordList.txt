@@ -1,0 +1,7 @@
+pests
+grow
+soil
+plants
+spider
+web
+eat

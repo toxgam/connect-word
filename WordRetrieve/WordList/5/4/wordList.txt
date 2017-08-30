@@ -1,0 +1,10 @@
+left
+last
+hit
+jam
+hit
+hide
+hide
+left
+last
+jam

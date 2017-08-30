@@ -1,0 +1,9 @@
+through
+forward
+straight
+circular
+farther
+up
+backward
+zigzag
+down

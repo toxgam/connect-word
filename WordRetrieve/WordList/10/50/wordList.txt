@@ -1,0 +1,10 @@
+rain
+glacier
+expand
+movement
+earth
+melt
+fossil
+oxygen
+water
+equator

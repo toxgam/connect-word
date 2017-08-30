@@ -1,0 +1,9 @@
+luster
+matter
+mix
+property
+rough
+sink
+size
+texture
+volume

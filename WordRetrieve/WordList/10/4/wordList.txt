@@ -1,0 +1,7 @@
+push
+magnet
+force
+position
+direction
+pull
+location

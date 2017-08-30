@@ -1,0 +1,9 @@
+mass
+south pole
+north pole
+sky
+environment
+equator
+surface
+earth
+gas

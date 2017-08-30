@@ -1,0 +1,8 @@
+beside
+tens
+under
+sort
+between
+addition
+subtract
+ones

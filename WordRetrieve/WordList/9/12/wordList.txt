@@ -1,0 +1,5 @@
+graph
+curves
+slide
+right
+middle

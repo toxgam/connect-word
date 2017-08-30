@@ -1,0 +1,7 @@
+fossil
+plastic
+rubber
+resource
+nonrenewable
+renewable
+gasoline

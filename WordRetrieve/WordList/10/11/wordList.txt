@@ -1,0 +1,10 @@
+soft
+dull
+triangle
+straight
+characteristics
+rectangle
+surface
+shiny
+circular
+circle

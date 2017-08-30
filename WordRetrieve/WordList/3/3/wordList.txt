@@ -1,0 +1,6 @@
+fact
+recognize
+identify
+compare
+conclusion
+describe

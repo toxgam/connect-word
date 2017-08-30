@@ -1,0 +1,10 @@
+south
+west
+east
+backward
+left
+direction
+up
+north
+right
+down

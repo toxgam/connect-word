@@ -1,0 +1,9 @@
+between
+compare
+before
+less
+more
+after
+small
+big
+opposite

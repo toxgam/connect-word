@@ -1,0 +1,10 @@
+crust
+earth
+erosion
+landform
+mantle
+mining
+nonmetal
+oil
+sand
+valley

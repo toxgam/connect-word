@@ -1,0 +1,8 @@
+attract
+friction
+horseshoe magnet
+magnet
+magnetism
+movement
+position
+repel

@@ -1,0 +1,9 @@
+small
+long
+big
+short
+measure
+longest
+shorter
+biggest
+size

@@ -1,0 +1,9 @@
+light
+electricity
+temperature
+light waves
+solar energy
+heat
+absorb
+melt
+refract

@@ -1,0 +1,7 @@
+air
+warm
+energy
+move
+land
+water
+rises

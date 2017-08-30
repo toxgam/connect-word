@@ -1,0 +1,8 @@
+water
+cycle
+air
+dirt
+sand
+weather
+rock
+earth

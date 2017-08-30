@@ -1,0 +1,7 @@
+herbivore
+prey
+energy
+predator
+carnivore
+food chain
+producer

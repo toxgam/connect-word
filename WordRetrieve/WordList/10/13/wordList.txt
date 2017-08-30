@@ -1,0 +1,9 @@
+sink
+weaker
+float
+stronger
+warm
+hot
+magnetic
+slide
+observe

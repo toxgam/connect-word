@@ -1,0 +1,9 @@
+airplane
+ship
+bus
+car
+subway
+carpool
+bicycle
+walk
+train

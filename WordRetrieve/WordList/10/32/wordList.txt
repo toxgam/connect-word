@@ -1,0 +1,9 @@
+right
+east
+direction
+across
+south
+left
+distance
+west
+north

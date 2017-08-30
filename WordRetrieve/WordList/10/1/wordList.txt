@@ -1,0 +1,6 @@
+light
+energy
+resource
+sound
+reuse
+electricity

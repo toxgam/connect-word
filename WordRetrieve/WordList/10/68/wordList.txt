@@ -1,0 +1,7 @@
+inherit
+life form
+trait
+offspring
+organism
+growth
+parent

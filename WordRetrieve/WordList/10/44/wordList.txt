@@ -1,0 +1,7 @@
+north pole
+equator
+gas
+earth
+surface
+gravity
+south pole

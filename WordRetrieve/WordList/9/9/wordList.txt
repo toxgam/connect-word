@@ -1,0 +1,8 @@
+afternoon
+hour
+morning
+date
+minute
+today
+calendar
+second

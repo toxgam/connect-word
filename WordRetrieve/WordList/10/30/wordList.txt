@@ -1,0 +1,9 @@
+battery
+gas
+reduce
+wood
+energy
+rust
+recycle
+natural gas
+reuse

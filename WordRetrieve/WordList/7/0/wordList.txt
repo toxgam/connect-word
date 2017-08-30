@@ -1,0 +1,9 @@
+right
+bad
+wrong
+happy
+good
+stop
+start
+small
+sad

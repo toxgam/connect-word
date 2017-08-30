@@ -1,0 +1,10 @@
+north
+right
+location
+above
+south
+west
+inside
+left
+below
+east

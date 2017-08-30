@@ -1,0 +1,10 @@
+class
+desk
+school
+learn
+book
+recess
+classmates
+student
+teacher
+read

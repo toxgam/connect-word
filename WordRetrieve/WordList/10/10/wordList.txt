@@ -1,0 +1,8 @@
+texture
+appearance
+shape
+color
+size
+smooth
+combination
+rough

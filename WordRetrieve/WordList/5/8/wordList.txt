@@ -1,0 +1,9 @@
+sink
+shake
+sink
+seal
+star
+shake
+seal
+star
+stamp

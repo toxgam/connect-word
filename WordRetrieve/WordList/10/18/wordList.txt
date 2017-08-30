@@ -1,0 +1,9 @@
+bottom
+middle
+away
+close
+low
+top
+next to
+near
+front

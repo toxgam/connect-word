@@ -1,0 +1,7 @@
+nutrients
+resource
+heat energy
+renewable
+oil
+air pollution
+nonrenewable

@@ -1,0 +1,10 @@
+inside
+west
+north
+south
+right
+left
+east
+near
+above
+outside

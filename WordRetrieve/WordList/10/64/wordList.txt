@@ -1,0 +1,7 @@
+location
+shelter
+nutrients
+sunlight
+ecosystem
+endangered
+conservation

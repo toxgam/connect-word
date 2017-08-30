@@ -1,0 +1,7 @@
+boil
+evaporate
+condense
+freeze
+melt
+separate
+combine

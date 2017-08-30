@@ -1,0 +1,8 @@
+quarter
+money
+dime
+nickel
+penny
+dollar
+cent
+count

@@ -1,0 +1,6 @@
+machine
+ramp
+pulley
+screw
+wheel and axle
+work

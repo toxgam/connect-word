@@ -1,0 +1,8 @@
+bird
+wing
+hatch
+feather
+fly
+beak
+talon
+egg

@@ -1,0 +1,8 @@
+spring
+summer
+fall
+sunshine
+winter
+seasons
+day
+month

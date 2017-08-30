@@ -1,0 +1,9 @@
+sentence
+create
+answer
+sequence
+definition
+journal
+ask
+explain
+communicate

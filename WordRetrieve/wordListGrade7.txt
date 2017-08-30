@@ -1,0 +1,2204 @@
+courthouse
+landslide
+windmill
+goalkeeper
+coastline
+homemade
+sawdust
+drawstring
+skateboard
+flashback
+heartbreak
+daredevil
+whirlpool
+earache
+pitfall
+thumbtack
+password
+wallpaper
+soundtrack
+newborn
+darkroom
+masterpiece
+sightseeing
+drawback
+milestone
+landmark
+stomachache
+halfway
+newcomer
+daydream
+abrupt
+accede
+accelerate
+accidentally
+accompanied
+accost
+accumulate
+accuse
+acquittal
+adjourn
+afterward
+amphibian
+anachronism
+analysis
+ancestry
+ancestry
+ankle
+anywhere
+arrival
+artificial
+aspect
+attire
+attractive
+aversion
+ballot
+banana
+banquet
+battery
+belie
+belief
+bondage
+boycott
+brochure
+budgeting
+buffalo
+calendar
+campaign
+capitalization
+cartage
+cashier
+ceiling
+celebration
+chair
+chauffeur
+cheddar
+civil
+civilization
+civilize
+classification
+clientele
+commitment
+community
+conceive
+counterfeit
+critic
+criticize
+cuddle
+culprit
+cylinder
+deceive
+dehydration
+delegate
+delinquent
+demean
+despoil
+develop
+development
+diagnosis
+didactic
+difficulty
+disposal
+disposition
+droll
+duplicate
+durable
+elicit
+eliminate
+elliptical
+embarrass
+eminent
+employee
+emulate
+enable
+encode
+encyclopedia
+engineer
+enslave
+eon
+equipping
+evanescent
+evidently
+exclude
+exhale
+expediency
+expedite
+expenditure
+extension
+extract
+extraordinary
+exude
+familiar
+fastidious
+fiend
+flamboyant
+flexible
+foreign
+forfeit
+foundation
+fulfill
+futurity
+gaseous
+gauge
+genuine
+graduate
+grocery
+grovel
+guild
+handkerchief
+hearty
+heavily
+height
+hosiery
+hygiene
+illegal
+illiterate
+imbecile
+imitation
+inaugural
+incautious
+index
+induce
+indulge
+infection
+inferior
+inflate
+informal
+injury
+inscription
+insecure
+insinuate
+institution
+instrument
+intelligible
+interior
+invalid
+involved
+irrefutable
+jeopardize
+jewelry
+journey
+jurist
+kangaroo
+kerosene
+khaki
+kindergarten
+knowledge
+labeling
+laboratory
+laborious
+library
+logical
+literature
+lovely
+lying
+lyric
+maintenance
+mammal
+maneuver
+manuscript
+massive
+materialism
+menthol
+mercurial
+metallic
+microbe
+microcosm
+mileage
+miniature
+ministry
+misfortune
+mispronounce
+mistreat
+misunderstood
+mobilize
+monologue
+moreover
+mosquito
+murmur
+myth
+necessarily
+nickel
+niece
+nineteenth
+ninety
+ninth
+nondescript
+nonfiction
+nucleus
+obey
+obligate
+obscure
+obnoxious
+obscure
+occasion
+occasionally
+occur
+odor
+offense
+oneself
+opossum
+opponent
+optimism
+organization
+organize
+pageant
+pamphlet
+parse
+particular
+persist
+perspire
+persuade
+pleat
+plethora
+policeman
+potato
+prairie
+predecessor
+presage
+pretzel
+prostrate
+protocol
+puddle
+putter
+quandary
+quantity
+rabid
+ransack
+rapport
+raucous
+receipt
+recline
+recluse
+recognize
+recreation
+rodeo
+recurring
+rotund
+safety
+salvation
+saturate
+savor
+scholastic
+scissors
+scrabble
+secretarial
+security
+serviceable
+shriek
+shuffle
+shutter
+siege
+skeptical
+stereo
+sticky
+strenuous
+strident
+submission
+surfeit
+surmount
+syllable
+syrup
+system
+tailor
+tangible
+tariff
+tendency
+therefore
+thoroughbred
+throughout
+tornado
+turmoil
+unique
+usurp
+vacuum
+vagrant
+varnish
+vinegar
+visible
+visitor
+void
+waiver
+warranty
+weather
+wholly
+willful
+yacht
+yield
+zenith
+zoology
+anecdote
+assumption
+interpretation
+viewpoint
+stereotype
+prose
+documentary
+exposition
+compile
+inconsistency
+bias
+argumentative
+citation
+thesis
+irrelevant
+irony
+elaborate
+connotation
+memoir
+allusion
+style
+assume
+culture
+exposition
+infinitive
+foreshadow
+projection
+clause
+evidence
+conspicuous
+vague
+rubric
+nuances
+determination
+preliminary
+inquiry
+plagiarism
+convey
+cite
+credible
+multimedia
+significance
+paraphrase
+perceive
+criticism
+editorial
+syntax
+translate
+facilitator
+dialect
+cue
+derivation
+etymology
+projection
+compile
+juxtaposition
+interjection
+subplot
+inconsistency
+tempo
+address
+compact
+conduct
+defense
+sow
+object
+address
+compact
+conduct
+defense
+sow
+object
+compound
+content
+insult
+refund
+perfect
+compound
+content
+insult
+refund
+perfect
+rebel
+rebel
+associate
+contract
+duplicate
+moderate
+associate
+contract
+duplicate
+moderate
+alternate
+alternate
+estimate
+abuse
+refuse
+transplant
+abuse
+estimate
+refuse
+transplant
+offense
+offense
+combat
+complex
+conflict
+escort
+insert
+combat
+complex
+conflict
+escort
+insert
+compress
+polish
+coordinate
+compress
+Polish
+coordinate
+extract
+extract
+case
+bank
+bank
+against
+against
+bluff
+bluff
+batter
+batter
+case
+chair
+company
+company
+column
+charge
+cobbler
+chair
+cobbler
+charge
+column
+either
+dusting
+date
+either
+date
+crane
+dusting
+crane
+dread
+dread
+junk
+initial
+hail
+hail
+junk
+fire
+fire
+fuse
+fuse
+initial
+lash
+like
+marker
+loom
+like
+lash
+late
+marker
+loom
+late
+novel
+minor
+monitor
+patient
+novel
+mint
+minor
+patient
+monitor
+mint
+peer
+present
+raise
+period
+period
+raise
+present
+peer
+press
+press
+scale
+right
+right
+rash
+scale
+runner
+rash
+rare
+rare
+runner
+skin
+school
+skin
+second
+school
+shower
+scan
+second
+shower
+scan
+spell
+soil
+state
+spell
+state
+staple
+speaker
+speaker
+staple
+soil
+tackle
+suit
+trace
+suit
+tackle
+strike
+strike
+trace
+terrific
+terrific
+effect
+allowed
+affect
+aloud
+isle
+aisle
+I'll
+patience
+patients
+weather
+whether
+accept
+except
+ceiling
+sealing
+hanger
+hangar
+alter
+altar
+vile
+vial
+wave
+waive
+addition
+edition
+horse
+hoarse
+manor
+manner
+sensor
+censor
+bizarre
+bazaar
+heel
+heal
+carrot
+carat
+miner
+minor
+reign
+rain
+sole
+soul
+pause
+paws
+wail
+whale
+heard
+herd
+navel
+naval
+sheer
+shear
+air
+heir
+scene
+seen
+presence
+presents
+mundane
+senile
+benevolent
+political
+acquiescence
+doctrine
+overwhelm
+Congress
+immutable
+jocular
+correspondence
+Declaration of Independence
+recollection
+republic
+felicity
+contemplate
+testimonial
+conscience
+torment
+prudence
+bestow
+frequently
+vindication
+emancipation
+behalf
+console
+wretched
+discontentment
+anguish
+unutterable
+grievous
+adjourn
+resolution
+victory
+prosecute
+confidence
+Parliament
+morale
+lamentable
+battle
+survival
+tyranny
+juncture
+reconstruction
+complexity
+stringent
+fugitive
+vicinity
+indomitable
+rebellion
+legitimate
+insurrection
+abolitionist
+emancipate
+plantation
+covert
+disheveled
+inexplicable
+dispel
+segregation
+possession
+restlessness
+inhabited
+eavesdrop
+laconic
+writhe
+ribald
+rapport
+immortal
+prescribed
+temperament
+protest
+maturity
+sallow
+alternative
+justice
+enact
+adjourn
+promote
+domestic
+establish
+Preamble
+apportion
+abridged
+ordain
+welfare
+liberty
+posterity
+tranquility
+concurring
+stifling
+ambled
+intense
+smolder
+ornately
+proclaimed
+hazards
+unrelenting
+flared
+alleviate
+segregation
+grievances
+boycott
+submission
+galvanized
+violating
+momentous
+eminent
+oppression
+advocating
+compromise
+commitment
+perpetuate
+vagrancy
+indicted
+appeal
+injunction
+landmark
+suppressed
+creed
+principle
+century
+advocate
+limitation
+majority
+appoint
+descendant
+included
+suffrage
+neither
+reign
+amber
+broad
+proportions
+components
+complement
+harmonious
+cordial
+companion
+logical
+pleasing
+province
+parsonage
+sturdy
+merely
+dramatic
+despite
+ordinary
+rightful
+vaulted
+scaffold
+mortar
+installed
+mason
+hoisted
+simultaneously
+eventually
+bottleneck
+tally
+fascinated
+versatile
+suitable
+satisfactory
+paradigm
+preclude
+desert
+hovered
+reproach
+rural
+urban
+justify
+sleepy
+alert
+settled
+remain
+diverge
+rough
+ordinary
+converge
+generous
+special
+selfish
+excessive
+moderate
+smooth
+aristocrat
+adventure
+condemn
+bandit
+disguise
+exile
+imprisonment
+innocent
+instigator
+predecessor
+bier
+irresolute
+derisively
+consternation
+gaunt
+nave
+churlish
+cacophony
+besieged
+sluice
+nymph
+discord
+fairest
+gleaming
+brimming
+goddesses
+avenge
+Olympus
+heroes
+surpassed
+inefficient
+civic
+retrace
+automatic
+unpardonable
+committed
+unnerved
+satisfaction
+operator
+consideration
+fair
+undergrowth
+diverged
+doubted
+way
+grassy
+trodden
+claim
+traveler
+hence
+anthropomorphism
+voice
+rhythm
+land
+emphasis
+grasshopper
+personification
+thunder
+repetition
+beautify
+kitchen
+darker
+America
+symbolism
+sing
+structure
+metaphor
+ashamed
+company
+strong
+personification
+weighted
+drugstore
+chocolate
+oranges
+tier
+coats
+rouge
+simile
+bleachers
+jocular
+immutable
+Declaration of Independence
+recollection
+Congress
+doctrine
+benevolent
+senile
+acquiescence
+felicity
+conscience
+vindication
+emancipation
+denunciation
+bestow
+contemplate
+discontentment
+prudence
+console
+wretched
+patronize
+dubious
+sharecropping
+condone
+shantytown
+meticulous
+emaciate
+mulatto
+admonish
+guttural
+congenial
+disinfectant
+emancipation
+gestapo
+impoverish
+lozenge
+palpitation
+privation
+prudish
+superfluous
+Alaska
+adapt
+appearance
+brutality
+comfortable
+condition
+incompetent
+native
+salient
+survive
+coordinate plane
+analyze
+unit rates
+origin
+simple interest
+point
+fraction
+proportion
+equivalent
+area
+inverse operation
+composite
+least common multiple
+estimation
+prime
+ordinal number
+remainder
+factorization
+perfect
+cardinal number
+perfect square
+negative exponents
+scatter plots
+square root
+quartile
+linear equation
+interquartile range
+least common multiple
+scientific notation
+unit rates
+inequality
+equation
+binomial
+factor
+rational number
+expression
+simplify
+exponent
+equivalent
+constant
+greatest common divisor
+intercept
+cube root
+polynomial
+coefficient
+midpoint formula
+absolute value
+exponential
+additive inverses
+function
+compound interest
+formula
+degree
+quadratic
+domain
+distribute
+infinite
+irrational numbers
+range
+null
+arrangement
+random
+Venn diagram
+statistical
+matrix
+standard deviation
+intervals
+matrices
+likelihood
+probability
+increments
+survey
+coordinates
+collection
+distribution
+median
+mode
+cross section
+direction
+certainty
+scalar
+postulate
+theorem
+right angle
+cosine
+tangent
+proof
+focus
+vector
+sine
+circumference
+parallelogram
+diameter
+magnitude
+isosceles
+radius
+tessellation
+solid
+equilateral
+transformation
+chord
+diagonal
+perimeter
+sphere
+circumscribed
+symmetry
+collinear
+rhombus
+axiom
+prism
+renewable resource
+nonrenewable resource
+geosphere
+saturation
+rock cycle
+hydrosphere
+geologic time scale
+atmospheric pressure
+mechanical weathering
+chemical weathering
+climate
+tectonics
+absolute age
+global winds
+permeable
+altitude
+kinetic theory of matter
+calorie
+volt
+exothermic
+watt
+joule
+electromagnetic radiation
+efficiency
+current
+endothermic
+ampere
+power
+kilowatt
+electric charge
+genotype
+dominant
+recessive
+phenotype
+chromosome
+DNA
+cycles
+biodiversity
+heredity
+prokaryote
+cellular respiration
+extinction
+cell organelles
+biomass
+eukaryote
+species
+pH
+conservation of mass
+base
+product
+entropy
+meniscus
+chemical formula
+catalyst
+compound
+precipitate
+plasma
+reactant
+atomic number
+acid
+isotope
+concentration
+velocity
+acceleration
+work
+amplitude
+magnetic field
+parallax
+joule
+mechanical advantage
+air resistance
+momentum
+machine
+theory
+law
+control group
+variable
+quantitative
+ethics
+qualitative
+binary code
+technology
+experimental group
+big bang
+gas giant
+satellite
+light year
+equinox
+solstice
+black hole
+astronomical unit
+terrestrial planet
+axis of rotation
+galaxy
+constellation
+binary code
+digital
+ethics
+ethics in science
+forensic science
+law
+skepticism
+society
+technology
+theory
+control group
+controlled experiment
+dependent variable
+experimental group
+independent variable
+informed consent
+qualitative
+quantitative
+scientific processes
+variable
+catalyst
+chemical equation
+chemical reaction
+concentration
+entropy
+fusion
+mixture
+precipitate
+reactant
+product
+matter
+desalination
+chemical formula
+combustion
+base
+indicator
+pH
+chemical bond
+acid
+molecule
+compound
+covalent bond
+element
+fluid
+half-life
+inhibitor
+isotope
+plasma
+salinity
+ionic bond
+atomic number
+chemical bond
+conductor
+entropy
+gravity
+inhibitor
+isotope
+periodic
+precipitate
+reactant
+atomic mass
+chemical equation
+compound
+conservation of mass
+electron
+half-life
+insulator
+mass number
+product
+relative age
+atomic mass unit
+catalyst
+chemical formula
+concentration
+covalent bond
+element
+ionic bond
+meniscus
+proton
+salinity
+induction
+insulator
+alternating current
+efficiency
+electric cell
+neutral
+direct current
+electric current
+watt
+parallel circuit
+power
+volt
+ampere
+kilowatt
+resistance
+resistor
+series circuit
+short circuit
+transformer
+Ohm's law
+sensor
+electric force
+static electricity
+electric charge
+voltage
+circuit
+static charge
+electric potential
+electric power
+electric field
+hydroelectric energy
+law of electric charges
+nuclear fission
+hydrogen fuel cell
+conduction
+convection
+electromagnetic radiation
+sensor
+calorie
+exothermic
+conduction
+joule
+convection
+wavelength
+endothermic
+absolute zero
+specific heat
+sensor
+reflection
+spectrum
+wavelength
+diffraction
+trough
+refraction
+prism
+amplitude
+crest
+trough
+diffraction
+wavelength
+longitudinal wave
+amplitude
+vibration
+interference
+crest
+doppler effect
+acceleration
+buoyant force
+inertia
+lever
+magnetic domain
+mechanical advantage
+parallax
+speed
+wedge
+work
+air resistance
+electromagnetism
+joule
+machine
+magnetic field
+momentum
+pulley
+simple machines
+velocity
+wheel and axle
+asteroid
+constellation
+ellipse
+galaxy
+light year
+meteorite
+revolution
+solstice
+spring tide
+lunar eclipse
+axis of rotation
+impact crater
+meteor
+neap tide
+satellite
+terrestrial planet
+solar eclipse
+lunar cycle
+gas giant
+nebula
+meteor
+penumbra
+big bang
+universe
+corona
+light year
+comet
+asteroid
+astronomical unit
+black hole
+constellation
+galaxy
+impact crater
+main sequence
+meteorite
+neutron star
+solar wind
+umbra
+jet stream
+ozone
+atmospheric pressure
+isobar
+barometer
+El Nino
+hurricane
+greenhouse effect
+acid rain
+climate
+infrared radiation
+global winds
+low-pressure system
+microclimate
+air mass
+smog
+high-pressure system
+ozone
+atmosphere
+meteorologist
+barrier island
+contour line
+glacier
+contour interval
+moraine
+alluvial fan
+delta
+floodplain
+drainage basin
+divide
+seismic wave
+permeability
+latitude
+geosphere
+deposition
+nonrenewable resource
+altitude
+permeable
+Coriolis effect
+hydrothermal vent
+renewable resource
+artesian well
+impermeable
+aquifer
+water table
+permeability
+permeable
+drainage basin
+groundwater
+abrasion
+absolute age
+atmospheric pressure
+convection
+erosion
+geologic time scale
+geothermal energy
+glacier
+hydrothermal vent
+index fossil
+Big Bang Theory
+tectonics
+magnetic field
+Pangaea
+continental shelf
+continental drift
+soil horizon
+moraine
+volcanism
+soil profile
+dew point
+saturation
+floodplain
+aquifer
+relative humidity
+groundwater
+hydrosphere
+humidity
+water table
+glacier
+crust
+volcanism
+minerals
+geothermal energy
+convection
+tectonics
+rock cycle
+igneous
+metamorphic
+hydrothermal vent
+downwelling
+longshore drift
+turnover
+tidal range
+upwelling
+intertidal zone
+longshore current
+estuary
+continental shelf
+rip current
+index fossil
+peat
+humus
+soil horizon
+soil
+soil profile
+sedimentary
+cast
+absolute age
+phenomenon
+volcanism
+uniformitarianism
+tectonics
+geologist
+geologic time scale
+exfoliation
+loess
+abrasion
+erosion
+chemical weathering
+weathering
+desertification
+deposition
+mass wasting
+mechanical weathering
+prokaryotic cell
+prokaryote
+DNA
+asexual reproduction
+cellular respiration
+chromosome
+RNA
+eukaryotic
+sex chromosome
+osmosis
+metaphase
+anaphase
+prophase
+cell division
+meiosis
+mitosis
+telophase
+cell wall
+organelle
+golgi apparatus
+ribosome
+mitochondria
+cell membrane
+nucleus
+cytoplasm
+endoplasmic reticulum
+vacuole
+antigen
+immune system
+hormone
+pathogen
+antibody
+virus
+immunity
+vaccine
+cycles
+carbon cycle
+photosynthesis
+decomposer
+nitrogen cycle
+homeostasis
+nutrient cycle
+water cycle
+carrying capacity
+commensalism
+species
+emigration
+predation
+biodiversity
+symbiosis
+competitor
+opportunist
+speciation
+mutualism
+population dynamics
+natural selection
+recessive
+dominance
+trait
+extinction
+probability
+genetic drift
+evolution
+mutation
+eukaryote
+phytoplankton
+pathogen
+immunity
+osmosis
+prokaryote
+infectious disease
+parasite
+cellular respiration
+virus
+pollution
+sewage system
+by-catch
+biomass
+eutrophication
+non-point source
+septic system
+aquaculture
+point source pollution
+genetic engineering
+genetic characteristic
+punnett square
+fertilization
+genetic engineering
+probability
+homozygous
+allele
+dominance
+heterozygous
+DNA
+phenotype
+trait
+sex chromosome
+recessive trait
+mutation
+heredity
+genotype
+gene
+dominant trait
+digestive system
+organ system
+endocrine system
+circulatory system
+urinary system
+skeletal system
+nervous system
+muscular system
+immune system
+respiratory system
+blood vessel
+circulation
+artery
+heart
+blood pressure
+ventricle
+capillary
+red blood cell
+vein
+atrium
+cardiovascular
+smooth muscle
+skeletal muscle
+tissue
+voluntary muscle
+involuntary muscle
+cardiac muscle
+tendons
+trade
+iron weapons
+herding
+savannah
+cultural influence
+farming
+smelting
+griot
+terrace
+iron
+written language
+temple
+aquifer
+fertile soil
+maize
+glyph
+tropical
+isthmus
+Mayans
+Incas
+codex
+Buddhism
+yin and yang
+collar harness
+oracle bones
+The Great Wall
+cultural diffusion
+nobles
+bureaucracy
+pictograph
+silk road
+dynastic cycle
+wheelbarrow
+monastery
+catacombs
+catholic
+missionary
+parable
+crucifixion
+disciples
+bishop
+Pope
+Gentiles
+sacrament
+Christianity
+hieroglyphs
+afterlife
+pyramid
+polytheism
+mummy
+Nubia
+embalm
+cataract
+obelisk
+papyrus
+shaduf
+pharaoh
+secondary source
+artifact
+Mesolithic Age
+Neolithic Age
+anthropologist
+homonid
+archaeologist
+oral history
+primary source
+fossil
+Paleolithic Age
+historian
+terracing
+agricultural revolution
+specialization
+cave art
+complex village
+irrigation
+social class
+domestication
+migration
+hunter-gatherers
+nomad
+artisan
+polis
+barracks
+oligarchy
+limited democracy
+monarchy
+isthmus
+gods
+Olympics
+aristocracy
+tyrant
+agora
+helot
+direct democracy
+truce
+golden age
+professional army
+ally
+acropolis
+philosophy
+catapult
+tragedy
+plague
+representative democracy
+muses
+Zealots
+Torah
+diaspora
+rabbi
+monotheism
+Twelve Tribes of Israel
+exodus
+Israelites
+synagogue
+Messiah
+Judaism
+Promised Land
+Indo-European
+nonviolence
+dharma
+karma
+reincarnation
+ivory
+planned city
+nirvana
+Hinduism
+monsoon
+untouchable
+subcontinent
+longitude
+thematic map
+Ptolemy
+projection
+political map
+equator
+physical map
+compass rose
+legend
+latitude
+prime meridian
+cartography
+floodplain
+complex institution
+irrigation system
+cuneiform
+polytheism
+pictograph
+silt
+semiarid
+scribe
+civilization
+stylus
+ziggurat
+code of law
+empress
+government
+justice
+emperor
+satraps
+toleration
+Tower of Babel
+exile
+empire
+assemblies
+oratory
+plunder
+plebian
+mercenary
+patrician
+Latin
+mosaic
+civil war
+consul
+gladiator
+aqueduct
+veldt
+overgrazing
+missionary
+paleontologist
+heritage
+rite of passage
+pastoralism
+Bantu migration
+apartheid
+desertification
+drought
+savanna
+ice shelf
+Aborigine
+copra
+Maori
+marsupial
+kiwi
+gecko
+Great Barrier Reef
+outback
+platypus
+fishing
+geothermal
+Anglophone
+province
+transportation corridor
+Francophone
+constitutional monarchy
+Parliament
+First Nations
+national identity
+separatist
+prime minister
+transportation barrier
+hydroelectricity
+single-product economy
+Panama Canal
+dictator
+departamento
+sugar cane
+communism
+ladino
+oasis
+malnutrition
+mulatto
+dependency
+Scientific Revolution
+manorialism
+Renaissance
+patrician
+plebian
+czar
+feudalism
+Crusades
+imperialism
+oligarchy
+capitalism
+Industrial Revolution
+European Union
+euro
+Iron Curtain
+parliamentary republic
+socialism
+fascism
+skerry
+impressionism
+coalition government
+colonialism
+ombudsman
+puppet government
+absolute location
+latitude
+relative location
+longitude
+cartographer
+thematic map
+political map
+physical map
+map projection
+equator
+prime meridian
+compass rose
+criollo
+encomienda
+peninsulares
+ejido
+nationalize
+fiesta
+urban
+privatization
+maquiladora
+rural
+mestizo
+hacienda
+fellahin
+caliph
+ziggurats
+theocracy
+kibbutz
+papyrus
+monotheism
+polytheism
+pharaoh
+petrochemical
+fertile crescent
+hieroglyphics
+Taiwan
+North Korea
+Ring of Fire
+Mongolia
+South Korea
+dowry
+Cultural Revolution
+Japan
+zither
+China
+samurai
+haiku
+inflation
+tropical
+cartel
+El Nino
+Colombian Exchange
+Pan-American
+free-trade zone
+economic indicator
+urbanization
+guerrilla warfare
+deforestation
+delta
+partition
+India
+Vietnam
+Green Revolution
+mandala
+martial law
+Pakistan
+shogun
+panchayat
+archipelago
+jute
+monsoon
+diversify
+tariff
+interdependence
+dissident
+human rights
+globalization
+refugees
+mandate
+private property
+collective farm
+censorship
+scarcity
+citizenship
+patriotism
+equal opportuntiy
+supply and demand
+Constitution
+political process
+Bill of Rights
+immigrant
+limited government
+consumerism
+market economy
+free enterprise
+delegate
+militia
+rebellion
+repeal
+liberty
+congress
+minutemen
+ally
+proclamation
+massacre
+Patriot
+commander
+Pilgrim
+charter
+spiritual
+claim
+missionary
+cash crop
+invest
+diversity
+tolerance
+armada
+invasion
+indentured servant
+expedition
+merchant
+slavery
+hacienda
+circumnavigate
+astrolabe
+navigation
+caravan
+kingdom
+conquistador
+epidemic
+settlement
+interpreter
+flatboat
+nationalism
+pioneer
+corps
+canal
+source
+prosperity
+foreign policy
+manufacturer
+suffrage
+frontier
+ethnic group
+suffragette
+persecution
+quota
+nonviolent protest
+tenement
+prejudice
+migrant worker
+civil rights
+motto
+bracero
+naturalization
+ceremony
+wampum
+irrigation
+civilization
+confederation
+nomad
+pueblo
+tepee
+glacier
+agriculture
+potlatch
+longhouse
+textile
+gold rush
+entrepreneur
+reform
+temperance
+interchangeable parts
+famine
+annexation
+productivity
+mass production
+forty-niner
+injustice
+checks and balances
+citizen
+democracy
+veto
+ordinance
+republic
+federal
+amendment
+Cabinet
+constitution
+ratify
+compromise
+geography
+conservation
+region
+plateau
+scarcity
+landform
+economy
+opportunity
+specialization
+equator
+artisan
+dissenter
+plantation
+slave trade
+overseer
+import
+export
+refuge
+indigo
+representative
+proprietor
+growing season
+retreat
+surrender
+victory
+treason
+declaration
+inflation
+traitor
+strategy
+mercenary
+neutral
+loyalist
+independence
+competition
+stockyard
+muckraker
+rapid transit
+tenement
+settlement house
+corporation
+persecution
+ethnic group
+labor union
+monopoly
+strike
+assassination
+casualties
+border states
+draft
+emancipation
+Freedmen's Bureau
+Jim Crow
+Reconstruction
+segregation
+sharecropping
+telegraph
+total war
+entrepreneur
+annexation
+interpreter
+pioneer
+republic
+Monroe Doctrine
+doctrine
+boomtown
+interchangeable parts
+textile
+suffrage
+frontier
+Loyalist
+congress
+rights
+delegate
+tax
+confederation
+neutral
+compromise
+independence
+ratify
+treaty
+Patriot
+demonstration
+communism
+cease-fire
+desegregation
+generation
+overthrow
+capitalism
+veteran
+prosperity
+welfare
+vaccine
+civil rights
+discrimination
+Union
+tariff
+civil war
+secession
+Underground Railroad
+abolitionist
+slave state
+free state
+sectionalism
+popular sovereignty
+Confederacy
+fugitive
+Exodusters
+homestead
+demand
+extinct
+supply
+sodbusters
+railhead
+drought
+barbed wire
+assimilate
+dust bowl
+transcontinental
+Colombian Exchange
+colony
+migration
+self-government
+cash crop
+navigation
+agriculture
+merchant
+expedition
+proprietor
+empire
+plantation
+scarcity
+opportunity
+wetland
+economic system
+environment
+conservation
+resource
+specialization
+sediment
+ecosystem
+region
+interdependent
+militarism
+imperialism
+newsreel
+aircraft carrier
+concentration camp
+alliance
+isolationism
+armistice
+atomic bomb
+fascism
+nationalism
+propaganda
+coalition
+impeachment
+interdependent
+accord
+Electoral College
+millennium
+deficit
+deregulation
+Watergate
+naturalization
+volunteer
+resign

@@ -1,0 +1,10 @@
+appearance
+atom
+color
+dull
+light
+made up of
+physical property
+shiny
+smooth
+weight

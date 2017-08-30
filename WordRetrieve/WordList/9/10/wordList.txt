@@ -1,0 +1,9 @@
+equal parts
+hour hand
+clock
+month
+week
+day
+second hand
+minute hand
+first

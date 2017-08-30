@@ -1,0 +1,6 @@
+scale
+fur
+gills
+claw
+fin
+tail

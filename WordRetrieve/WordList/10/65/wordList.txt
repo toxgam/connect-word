@@ -1,0 +1,6 @@
+river
+desert
+habitat
+grassland
+pond
+ocean

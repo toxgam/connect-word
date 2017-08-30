@@ -1,0 +1,9 @@
+big
+even
+numeral
+small
+odd
+count forward
+hundred
+quantity
+number

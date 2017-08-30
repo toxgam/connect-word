@@ -1,0 +1,8 @@
+zoology
+reptile
+mammal
+insect
+bird
+animal
+amphibian
+fish

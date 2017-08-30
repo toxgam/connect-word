@@ -1,0 +1,6 @@
+tree
+sunlight
+seedling
+soil
+sprout
+plant

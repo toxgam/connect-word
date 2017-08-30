@@ -1,0 +1,1432 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:{profile:false},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"eeda64a73f87717fb599a24c9a6588b2",petok:"4df774a1e98872ae20ab34e4143525113e490d15-1500530986-1800",zone:"spellingcity.com",rocket:"0",apps:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=85b614c0f6/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgYAUVdACQoFU1Nb"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(12),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,s.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,s.now()])}var i=t("handle"),a=t(13),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(15)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(15)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(15)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",c)}function i(t){y.push(t),h&&(g=-g,x.data=g)}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(15)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var w=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,w),w.prototype=p.prototype,d.inPlace(w.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,x=document.createTextNode(g);new h(a).observe(x,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(12),c=t(13),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],13:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],14:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],15:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(13),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),c=h(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[w[n]];return d&&d.push([g,n,r,a]),a}}function p(t,e){y[t]=h(t).concat(e)}function h(t){return y[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",w[n]=e,e in u||(u[e]=[])})}var y={},w={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(12),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(w,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){s("mark",["domContent",a()+x.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-x.offset}var c=(new Date).getTime(),s=t("handle"),f=t(12),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},g=m&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:c,now:a,origin:y,features:{},xhrWrappable:g};t(9),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),s("mark",["firstbyte",c],null,"api");var b=0,E=t(14)},{}]},{},["loader",2,7]);</script>
+    <meta name="apple-itunes-app" content="app-id=538407602">
+  <meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" L gen true for "http://www.spellingcity.com" r (SS~~000 1))'/>
+  
+   <script>
+      window.VSC = window.VSC || {};
+      window.VSC.meta = {"is_pm":false,"is_premium_member":false,"is_auth_host":false,"user_type":"Visitor"};
+    </script>
+  
+  	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex, follow" />
+	<meta name="keywords" content="Lesson 30, , K teacher, Spelling, City, HMJourneys, Publisher Lists, ,  vocabulary practice, Lesson 30 word  list, spelling test practice, vocabulary activities, printable worksheets" />
+	<meta name="description" content="Lesson 30 is available for study with 20 vocabulary, spelling, writing, learning activities and games on Vocabulary SpellingCity.com. The Lesson 30 word list was created by Spelling City, Publisher Lists, , FL." />
+	<title>Lesson 30 Kindergarten Spelling City Publisher Lists    FL</title>
+
+
+  <title></title>
+  
+   <script>
+      window.VSC = window.VSC || {};
+      window.VSC.meta = {"is_pm":false,"is_premium_member":false,"is_auth_host":false,"user_type":"Visitor"};
+    </script>
+  <link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/combined.css" type="text/css" />
+<link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/teachMe.css" type="text/css" />
+<link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/layout/cms-layout.css" type="text/css" />
+<link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/layout/cms-layout-shim-legacy-page.css" type="text/css" />
+<link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/userMenu.css" type="text/css" />
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" href="/css/vscIe7Compat.css" type="text/css"/><![endif]-->
+  <!--[if IE 8]>
+  <link rel="stylesheet" href="/css/vscIe8Compat.css" type="text/css"/><![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+if (typeof jQuery === 'undefined' || jQuery.fn.jquery !== '1.8.3') {
+  document.write(unescape("%3Cscript src=\"/js/jquery-1.8.3.min.js\"%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/combined.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/vendor/soundmanager2-nodebug.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/vendorjs/flashdetect/FlashDetect.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/legacy/activity/SoundManagerHelper.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/legacy/teachme/TeachMeCanvasView.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/legacy/teachme/TeachMeNotepadActivityView.js" ></script>
+
+  <script src="/js/vendor/swfobject.js" type="text/javascript"></script>
+  <script src="/vendorjs/bootstrap/js/collapse.js" type="text/javascript">//for placement only - taken from articles.spellingcity.com/wp-content/themes/sc/js/</script>
+  <script type="text/javascript">//for placement only - taken from articles.spellingcity.com/wp-content/themes/sc/js/
+    $(document).ready(function(){
+      $('#navigation .new-hover').click(function(){
+        $('#navigation .new-hover a').toggleClass('collapsed');
+        $('.red-menu-tab-content').toggle();
+      });
+
+      $(document).mouseup(function (e){
+        var container = $('.red-menu-tab-content');
+        if (!container.is(e.target) && container.has(e.target).length === 0){
+          container.hide();
+          $('#navigation .new-hover a').removeClass('collapsed');
+        }
+      });
+    });
+
+
+  </script>
+
+  
+    <script type="text/javascript">
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+
+      (function() {
+        var gads = document.createElement('script'),
+            useSSL = document.location.protocol === 'https:',
+            node;
+
+        gads.async = true;
+        gads.type = 'text/javascript';
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+      }());
+    
+      googletag.cmd.push(function() {
+    
+            googletag
+              .defineSlot('/1905615/300a', [300, 250], '300a')
+            .setTargeting('is_pm', '')
+            .setTargeting('user_type', 'Visitor')
+          .setCollapseEmptyDiv(true, true)
+            .addService(googletag.pubads());
+            googletag
+              .defineSlot('/1905615/300b', [300, 250], '300b')
+            .setTargeting('is_pm', '')
+            .setTargeting('user_type', 'Visitor')
+          .setCollapseEmptyDiv(true, true)
+            .addService(googletag.pubads());
+            googletag
+              .defineSlot('/1905615/728b', [728, 90], '728b')
+            .setTargeting('is_pm', '')
+            .setTargeting('user_type', 'Visitor')
+          .setCollapseEmptyDiv(true, true)
+            .addService(googletag.pubads());
+            googletag
+              .defineOutOfPageSlot('/1905615/vscSkin', 'vscSkin')
+            .setTargeting('is_pm', '')
+            .setTargeting('user_type', 'Visitor')
+          .setCollapseEmptyDiv(true, true)
+            .addService(googletag.pubads());
+            googletag
+              .defineOutOfPageSlot('/1905615/outofpage2', 'outofpage2')
+            .setTargeting('is_pm', '')
+            .setTargeting('user_type', 'Visitor')
+          .setCollapseEmptyDiv(true, true)
+            .addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+      });
+    </script>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+
+  <link rel='stylesheet' id='bootstrap-css'
+        href='/wp-content/themes/sc/css/bootstrap.css?ver=4.4.1' type='text/css'
+        media='all'/>
+  <link rel='stylesheet' id='font-awesome-css'
+        href='/wp-content/themes/sc/css/font-awesome.min.css?ver=4.4.1' type='text/css'
+        media='all'/>
+  <link rel='stylesheet' id='content-style-css'
+        href='/wp-content/themes/sc/css/content.css?ver=4.4.1' type='text/css' media='all'/>
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css"/>
+
+  <link href='https://plus.google.com/114785247400135820984/' rel='publisher' />
+
+
+  <link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/layout/after-bootstrap.css" type="text/css" /></head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5HRQWT"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5HRQWT');</script>
+<!-- End Google Tag Manager -->
+<div id="vscSkin"><script type="text/javascript"> googletag.cmd.push(function() { googletag.display("vscSkin"); }); </script></div><div id="outofpage2"><script type="text/javascript"> googletag.cmd.push(function() { googletag.display("outofpage2"); }); </script></div>
+<div id="wp-header-wrapper">
+  <header id="wp-header">
+    <div class="container header-height mobile-header-height">
+      <div class="row header-row">
+        <div class="col-xs-8 col-sm-7 col-md-9 col-lg-9 p-l-0 p-r-0">
+                  <div class="logo-container">
+          <div class='site-logo'><a href='/' title='VocabularySpellingCity' rel='home'><img class="img-responsive visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline" data-cfsrc="/cms/content/2016/01/logo.png" alt='VocabularySpellingCity' style="display:none;visibility:hidden;"><noscript><img class="img-responsive visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline" src='/cms/content/2016/01/logo.png' alt='VocabularySpellingCity'></noscript></a></div>
+        </div>
+        </div>
+        <!--start user button in top header -->
+                  <ul class="top-link-menu hidden-xs">
+            <li class="register"><a href="/index.php?option=com_route&route=newuserregistrationform">Register</a></li>
+            <li class="login"><a href="/Log-yourself-in.html">Login</a></li>
+          </ul>
+                  <div id="topnav" class="navbar-inverse hidden-lg hidden-sm">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnavbar"
+                    aria-expanded="false" aria-controls="navbar">
+              <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-sm hidden-md hidden-lg">
+        <div id="topnavbar" class="navbar-collapse collapse" aria-expanded="false">
+          <div class="menu-mobile-navigation-container">
+                          <ul id="menu-mobile-navigation" class="nav navbar-nav">
+
+                <li id="menu-item-41"
+                    class="navbar-break menu-item   menu-item-41"><a
+                    title="Home" href="/">Home</a></li>
+                <li id="menu-item-42" class="menu-item   menu-item-42"><a
+                    title="Log In" href="/Log-yourself-in.html">Log In</a></li>
+
+                <li id="menu-item-43" class="menu-item   menu-item-43"><a
+                    title="Register" href="/index.php?option=com_route&route=newuserregistrationform">Register</a></li>
+                <li id="menu-item-6870"
+                    class="navbar-break menu-item   menu-item-6870"><a
+                    title="Search" href="/spelling-list-search.html">Search</a></li>
+                <li class="menu-item   menu-item-46"><a
+                    title="Training Videos" href="/teacher-resources.html">Teaching Resources</a></li>
+                <li class="menu-item   menu-item-46"><a
+                    title="Training Videos" href="/faqs.html">Videos/FAQs</a></li>
+                <li class="menu-item   menu-item-47"><a
+                    title="Premium Membership" href="/pm-overview.html">Premium Membership</a></li>
+                <li class="menu-item   menu-item-48"><a
+                    title="Help" href="/Contact-Us/SpellingCity.com.html">Help</a></li>
+                <li class="menu-item   menu-item-49"><a
+                    title="App" href="/app.html">App</a></li>
+                <li
+                  class="navbar-break menu-item  "><a
+                    title="Districts" href="/schools-and-districts.html">Schools/Districts</a></li>
+                <li class="menu-item  "><a
+                    title="Districts" href="/teachers-overview.html">Teachers</a></li>
+                <li class="menu-item  "><a
+                    title="Districts" href="/parent-spelling-resources.html">Parents</a></li>
+                <li class="menu-item  "><a
+                    title="Districts" href="/homeschool-vocabulary.html">Homeschool</a></li>
+                <li
+                  class="navbar-break menu-item  "><a
+                    title="Privacy Policy" href="/privacy-policy.html">Privacy Policy</a></li>
+                <li class="menu-item  "><a
+                    title="About Us" href="/blog/">Blog</a></li>
+                <li class="menu-item  "><a
+                    title="About Us" href="/careers.html">Careers</a></li>
+                <li class="menu-item  "><a
+                    title="About Us" href="/about-us.html">About Us</a></li>
+                <li class="menu-item  "><a
+                    title="Terms of Service" href="/terms-of-service.html">Terms of Service</a></li>
+                <li class="menu-item  "><a
+                    title="Copyright" href="/copyright.html">Copyright</a></li>
+                <li class="menu-item  "><a
+                    title="Advertising on VocabularySpellingCity.com" href="/advertising.html">Advertising</a></li>
+                <li class="menu-item  "><a
+                    title="Link to Us" href="/link-to-us.html">Link to Us</a></li>
+              </ul>
+                        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  
+
+  
+  <nav id="navigation" class="navbar hidden-xs">
+    <div class="container">
+      <div class="main-navbar-container ">
+        <div class="menu-main-navigation-container">
+          <ul id="menu-main-navigation" class="nav navbar-nav">
+            <li id="menu-item-5032"
+                class="new-hover menu-item menu-item-type-custom menu-item-object-custom menu-item-5032"><a href="#">New
+                to SpellingCity?</a></li>
+            <li id="menu-item-4472"
+                class="menu-item current-menu-item page_item page-item-3850 current_page_item menu-item-4472">
+              <a href="/teacher-resources.html">Teaching Resources</a></li>
+            <li id="menu-item-54" class="menu-item  "><a
+                href="/faqs.html">Videos / FAQs</a></li>
+            <li id="menu-item-36" class="menu-item  "><a
+                href="/pm-overview.html">Premium Membership</a></li>
+            <li id="menu-item-5601"
+                class="search-icon dropdown menu-item menu-item-has-children">
+              <a href="/spelling-list-search.html" data-toggle="dropdown"
+                 class="dropdown-toggle">Search</a>
+              <ul class="sub-menu list-group-submenu-2 search-dropdown dropdown-menu">
+                <li id="menu-item-6568" class="menu-item ">
+                  <a
+                    href="/spelling-list-search.html">Word Lists</a></li>
+                <li id="menu-item-6569" class="menu-item ">
+                  <a
+                    href="/teacher-search.html">Teachers/Parents</a></li>
+                <li id="menu-item-6570" class="menu-item  ">
+                  <a
+                    href="/school-search.html">Schools</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-38" class="menu-item"><a
+                href="/app.html">Mobile App</a></li>
+            <li id="menu-item-40" class="menu-item  "><a
+                href="/Contact-Us/SpellingCity.com.html">Help</a></li>
+
+          </ul>
+          <div id="text-3" class="red-menu-tab-content widget widget_text" style="display: none;">
+            <div class="textwidget"><h2 class="red-tab-content-title red-tab-content-bg">Build Literacy Skills with
+                Vocabulary &amp; Spelling:</h2>
+              <div class="choose-category-label">Choose Your Category</div>
+              <div class="row nav-tab">
+                <div class="col-sm-3 col-lg-3"><a href="/schools-and-districts.html"><img data-cfsrc="/cms/content/nav-tab-schools-img.png" alt="Teaching Vocabulary in School District" style="display:none;visibility:hidden;"><noscript><img
+                      src="/cms/content/nav-tab-schools-img.png" alt="Teaching Vocabulary in School District"></noscript><span>Schools/Districts</span></a>
+                </div>
+                <div class="col-sm-3 col-lg-3"><a href="/teachers-overview.html"><img data-cfsrc="/cms/content/nav-tab-teachers-img.png" alt="Teacher with Student doing Vocabulary Schoolwork on a Tablet" style="display:none;visibility:hidden;"><noscript><img
+                      src="/cms/content/nav-tab-teachers-img.png"
+                      alt="Teacher with Student doing Vocabulary Schoolwork on a Tablet"></noscript><span>Teachers</span></a></div>
+                <div class="col-sm-3 col-lg-3"><a href="/parent-spelling-resources.html"><img data-cfsrc="/cms/content/2016/01/nav-tab-parents.png" alt="Parent with child doing Vocabulary Homework on a Tablet" style="display:none;visibility:hidden;"><noscript><img
+                      src="/cms/content/2016/01/nav-tab-parents.png"
+                      alt="Parent with child doing Vocabulary Homework on a Tablet"></noscript><span>Parents</span></a></div>
+                <div class="col-sm-3 col-lg-3 last"><a href="/homeschool-vocabulary.html"><img data-cfsrc="/images/homepage/nav-tab-homeschool-img2.png" alt="Homeschool Learning Vocabulary on a Tablet" style="display:none;visibility:hidden;"><noscript><img
+                      src="/images/homepage/nav-tab-homeschool-img2.png" alt="Homeschool Learning Vocabulary on a Tablet"></noscript><span>Homeschool</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Response page style edits -->
+<style>
+
+  .component-content .mod_lastteacher {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .component-content, .component-content .mod_lastteacher {
+      width: 100%;
+    }
+  }
+
+  body #googleAds {
+    display: none;
+  }
+
+</style>
+
+  <link rel="stylesheet" href="/assets_v2/4m4hxn7c1hiv/css/lastTeacherModule.css" type="text/css" />
+<div class="mod_lastteacher">
+  <div class="wrapper">
+
+          <div class="container">
+        <div class="recent_visit">
+          <div><ul class="visited-pages">
+              <li class="title-text">
+                <span>Recently Visited (?)</span>
+              </li>
+
+              
+              
+                              <li id="last-teacher-module-list"><span class="list-label">Your List:</span>
+                                      <a href="">Lesson 30</a>
+                  
+                  
+                </li>
+                          </ul></div>
+        </div>
+      </div>
+    
+    
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+  window.VSC = window.VSC || {};
+
+  (function(VSC, $) {
+    $(document).ready(function() {
+
+      var $rootElement = $('#menu-mobile-navigation'),
+        activeMenuLinkAssigner = new window.VSC.ResponsiveNavigationMenuActiveLinkAssigner($rootElement),
+        currentUri = window.location.pathname;
+
+      activeMenuLinkAssigner.assignActiveLink(currentUri);
+
+      //show or hide user menu on hover
+      $('.account-menu-container').hover(function() {
+        $('.account-menu').show();
+      }, function() {
+        $('.account-menu').hide();
+      });
+
+      //show or hide admin menu on hover
+      $('.user-menu-dropdown').hover(function() {
+        $('.user-sub-menu').show();
+      }, function() {
+        $('.user-sub-menu').hide();
+      });
+
+      // show or hide admin menu on mobile if tapped outside
+      $('.account-menu-container').on("click", function(){
+        if( $('.account-menu').css('display') == 'block'){
+          $('.account-menu').hide();
+        }
+        else {
+          $('.account-menu').show();
+        }
+      });
+      // show or hide user menu on mobile if tapped outside
+      $('.user-menu-dropdown').on("click", function(){
+        if( $('.user-sub-menu').css('display') == 'block'){
+          $('.user-sub-menu').hide();
+        }
+        else {
+          $('.user-sub-menu').show();
+        }
+      });
+
+      //this is to deal with SPA routes for admin UI - the menu needs to close when those routes are clicked
+      $('#topnavbar').on('click', '.close-on-click', function() {
+        $('#topnav').find('.navbar-toggle').click();
+      });
+
+      VSC.GlobalModuleFactory.makeHeaderDisappearer().bindEvents();
+
+    });
+  }(window.VSC, window.jQuery));
+</script>
+
+<!-- cms uses #wp-main -->
+<div id="main" class="component-content">
+    <noscript>
+  <div id="javascript-disabled" class="alert">
+    <h3 style="margin:0;">Your browser does not support or allow JavaScript. </h3>
+    <p style="margin:0;">As a result this site will not work correctly.</p>
+  </div>
+</noscript>
+  
+  
+  <script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/legacy/spellCity.js" ></script><style>
+  [id='300a'] {
+    margin-bottom: 40px;
+  }
+</style>
+
+  <script>var game_access = [{"id":2,"premium":1,"title":"MatchIt Sentences","title_img":"\/images\/games\/txt_matchitsentences.gif","display_title":"MatchIt Sentences","url":"\/word-match-vocabulary-game.html","sample_url":"\/Games\/matchit.html","min_words":2,"printable_link":"\/print-word-match-vocabulary-game.html","corner_icon":null,"img_class":"game-matchitsentences","description":"In MatchIt Sentences, students match words from their spelling and vocabulary word lists with contextually correct sentences.","file_name":"html5\/matchItSentences_v2_0_2\/index.html","seq":20,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"lineMatch_new","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true},{"id":8,"premium":1,"title":"WhichWord","title_img":"\/images\/games\/txt_whichwordsentences.gif","display_title":"WhichWord? Sentences","url":"\/which-word-best-completes-the-sentence.html","sample_url":"\/Games\/whichword.html","min_words":4,"printable_link":"\/print-which-word-best-completes-the-sentence.html","corner_icon":null,"img_class":"game-whichword","description":"WhichWord? Sentences helps students to recognize contextual sentences for each spelling and vocabulary word.","file_name":"html5\/whichWordSentences_v2_0_2\/index.html","seq":30,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"whichWord","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true},{"id":10,"premium":1,"title":"Sentence Unscramble","title_img":"\/images\/games\/txt_sentenceunscramble.gif","display_title":"Sentence Unscramble","url":"\/unscramble-the-sentence-vocabulary-game.html","sample_url":"\/Games\/sentence-unscramble.html","min_words":2,"printable_link":"\/print-unscramble-the-sentence-vocabulary-game.html","corner_icon":"1","img_class":"game-sentenceunscramble","description":"In Sentence Unscramble, students listen to words, then drag and drop scrambled words in the order they hear them to make a contextually correct sentence.","file_name":"html5\/sentenceUnscramble_v2_0_0\/index.html","seq":40,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"sentenceUnscramble_sc","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":6,"subject":"Language Arts","width":750,"height":600,"is_html5":1,"pass":true},{"id":11,"premium":1,"title":"Crossword","title_img":"\/images\/games\/txt_crossword.gif","display_title":"Crossword","url":"\/crossword-puzzle-online.html","sample_url":"\/Games\/crossword.html","min_words":2,"printable_link":"\/print-game.html?whichgame=crossword&print=1","corner_icon":null,"img_class":"game-crossword","description":"In Crossword, students read the clues and type the word for each clue in the puzzle squares that correspond to the clue number.","file_name":"html5\/crossWord_v2_0_0\/index.html","seq":105,"game_type":"other","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"crossword","app_compatible":0,"assignable":1,"show_on_games_page":1,"group_id":6,"subject":"Language Arts","width":750,"height":600,"is_html5":1,"pass":true},{"id":12,"premium":1,"title":"SpeedySpeller","title_img":"\/images\/games\/txt_SpeedySpeller.gif","display_title":"SpeedySpeller","url":"\/speedySpeller-spelling-game.html","sample_url":"\/speedyspeller.html","min_words":2,"printable_link":null,"corner_icon":null,"img_class":"game-speedyspeller","description":"SpeedySpeller provides students with the opportunity to self assess by hearing each word read to them and then typing the correct spelling of the word as fast as they can.","file_name":"html5\/speedySpeller_v2_0_0\/index.html","seq":75,"game_type":"spelling","printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"speedySpeller","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":13,"premium":1,"title":"LetterFall","title_img":"\/images\/games\/txt_letterfall.gif","display_title":"LetterFall","url":"\/letterFall-spelling-game.html","sample_url":"\/Games\/letterfall.html","min_words":2,"printable_link":null,"corner_icon":null,"img_class":"game-letterfall","description":"In LetterFall, students spell each word by catching falling letters in the correct order.","file_name":"html5\/letterFall_v2_0_0\/index.html","seq":65,"game_type":"spelling","printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"letterFall","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":14,"premium":1,"title":"sentenceWriting","title_img":"\/images\/games\/txt_sentencewritingpractice-new.gif","display_title":"Sentence Writing Practice","url":"\/sentenceWriting-spelling-game.html","sample_url":"\/Games\/sentence-writing-practice.html","min_words":1,"printable_link":"\/print-game.html?whichgame=sentencePractice","corner_icon":null,"img_class":"game-sentencewritingpractice","description":"Sentence Writing Practice is a flexible learning activity that allows students to use spelling and vocabulary words to write a sentence or definition, synonym or antonym, riddle or analogy, and many other writing exercises.","file_name":"html5\/sentenceWriting_v2_0_0\/index.html","seq":50,"game_type":"writing","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"sentenceWriting","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":4,"subject":"Writing","width":750,"height":600,"is_html5":1,"pass":true},{"id":15,"premium":1,"title":"paragraphWriting","title_img":"\/images\/games\/txt_paragraphwritingpractice-new.gif","display_title":"Paragraph Writing Practice","url":"\/paragraphWriting-spelling-game.html","sample_url":"\/Games\/paragraph-writing-practice.html","min_words":1,"printable_link":"\/print-game.html?whichgame=paragraphPractice","corner_icon":null,"img_class":"game-paragraphwritingpractice","description":"In Paragraph Writing Practice, students use the words from their spelling or vocabulary list to write a paragraph. The words appear above the text field, and are crossed off as they are used in the paragraph.","file_name":"html5\/paragraphWriting_v2_0_0\/index.html","seq":55,"game_type":"writing","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"paragraphWriting","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":4,"subject":"Writing","width":750,"height":600,"is_html5":1,"pass":true},{"id":16,"premium":1,"title":"Word-O-Rama","title_img":"\/images\/games\/txt_wordorama.gif","display_title":"Word-O-Rama","url":"\/WordORama-spelling-game.html","sample_url":"\/Games\/wordorama.html","min_words":4,"printable_link":"\/print-game.html?whichgame=wordorama","corner_icon":null,"img_class":"game-wordorama","description":"In Word-O-Rama, students choose the correct spelling and vocabulary word for each clue read to them.","file_name":"html5\/wordORama_v2_0_1\/index.html","seq":45,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"WordORama","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true},{"id":17,"premium":1,"title":"MatchIt Definitions","title_img":"\/images\/games\/txt_MatchItDefinitions.gif","display_title":"MatchIt Definitions","url":"\/lineMatchVocab-spelling-game.html","sample_url":"\/Games\/line-match-with-definitions.html","min_words":2,"printable_link":"\/print-game.html?whichgame=matchItDefinitions","corner_icon":null,"img_class":"game-matchitdefinitions","description":"In MatchIt Definitions, students match words from their spelling and vocabulary word lists with definitions.","file_name":"html5\/matchItDefinitions_v2_0_2\/index.html","seq":25,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"lineMatchVocab","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true},{"id":18,"premium":1,"title":"Which Word - Parts of Speech","title_img":"\/images\/games\/txt_PartsOfSpeech.gif","display_title":"Parts of Speech","url":"\/whichWordPartsOfSpeech-spelling-game.html","sample_url":"\/Games\/whichword-parts-of-speech.html","min_words":2,"printable_link":"\/print-game.html?whichgame=whichwordPartsOfSpeech","corner_icon":null,"img_class":"game-partsofspeech","description":"Parts of Speech provides students with the opportunity to identify the part of speech for each spelling and vocabulary word.","file_name":"html5\/whichWordPartsOfSpeech_v2_0_1\/index.html","seq":100,"game_type":"other","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"whichWordPartsOfSpeech","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":6,"subject":"Language Arts","width":750,"height":600,"is_html5":1,"pass":true},{"id":19,"premium":1,"title":"Vocabulary Test","title_img":"\/images\/games\/txt_VocabularyTestMe.gif","display_title":"Vocabulary TestMe","url":"\/taking-a-vocabulary-test.html","sample_url":"\/Games\/vocabulary-testme.html","min_words":4,"printable_link":"\/print-game.html?whichgame=vocabTest","corner_icon":null,"img_class":"game-vocabtest","description":"Vocabulary TestMe provides students with the opportunity to take a vocabulary test independently and receive immediate feedback.","file_name":"html5\/vocabTest_v2_0_1\/index.html","seq":5,"game_type":"test","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"vocabTest","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":1,"subject":"Tests","width":750,"height":600,"is_html5":1,"pass":true},{"id":21,"premium":1,"title":"FlashCards","title_img":"\/images\/games\/txt_FlashCards.gif","display_title":"FlashCards","url":"\/flashcards-spelling-game.html","sample_url":"\/Games\/flash-cards.html","min_words":1,"printable_link":"\/print-game.html?whichgame=flashcards","corner_icon":null,"img_class":"game-flashcards","description":"FlashCards provides students with the opportunity to see and hear each word spelled and then read aloud. In addition, students hear each word used in a contextually rich sentence.","file_name":"html5\/flashCards_v2_0_1\/index.html","seq":15,"game_type":"teach","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"flashcardsweb","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":2,"subject":"Teach","width":750,"height":600,"is_html5":1,"pass":true},{"id":23,"premium":1,"title":"Which Word - Definitions","title_img":"\/images\/games\/txt_whichworddefinitions.gif","display_title":"WhichWord? Definitions","url":"\/whichWordDefinitions-spelling-game.html","sample_url":"\/whichword-definitions.html","min_words":4,"printable_link":"\/print-game.html?whichgame=whichwordDefinitions","corner_icon":null,"img_class":"game-whichworddefinitions","description":"In WhichWord? Definitions, students are presented with a definition and then choose the correct word from their spelling and vocabulary lists.","file_name":"html5\/whichWordDefinitions_v2_0_2\/index.html","seq":35,"game_type":"vocab","printable":1,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"whichWordDefinitions","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true},{"id":26,"premium":1,"title":"TTS Sentence Writing","title_img":null,"display_title":"","url":null,"sample_url":"\/Games\/sentence-writing-practice.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":null,"description":"TTS Feature for Sentence Writing Practice","file_name":null,"seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":0,"uid":null,"app_compatible":0,"assignable":0,"show_on_games_page":0,"group_id":null,"subject":null,"width":null,"height":null,"is_html5":0,"pass":true},{"id":27,"premium":1,"title":"TTS Paragraph Writing","title_img":null,"display_title":"","url":null,"sample_url":"\/Games\/paragraph-writing-practice.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":null,"description":"TTS Feature for Paragraph Writing Practice","file_name":null,"seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":0,"uid":null,"app_compatible":0,"assignable":0,"show_on_games_page":0,"group_id":null,"subject":null,"width":null,"height":null,"is_html5":0,"pass":true},{"id":28,"premium":1,"title":"WordFind","title_img":"\/images\/games\/txt_wordfind.gif","display_title":"WordFind","url":"\/wordfind-spelling-game.html","sample_url":"\/wordfind.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-wordfind","description":"WordFind challenges students to see how many words they can find in a group of mixed-up letters, including a word from a list that uses all the letters.","file_name":"html5\/wordFind_v2_0_1\/index.html","seq":0,"game_type":"spelling","printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"anagrams","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":32,"premium":1,"title":"Vocabulary Test Practice","title_img":"\/images\/games\/txt_VocabularyTestMe.gif","display_title":"Practice Vocabulary Test","url":"\/taking-a-vocabulary-test.html?p=1","sample_url":null,"min_words":4,"printable_link":null,"corner_icon":null,"img_class":null,"description":"Practice Vocabulary Test provides students with the opportunity to practice taking a matching vocabulary test independently and receive immediate feedback without the score being included in their overall average.","file_name":"html5\/vocabPracticeTest_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"vocabPracticeTest","app_compatible":1,"assignable":1,"show_on_games_page":0,"group_id":1,"subject":"Tests","width":750,"height":600,"is_html5":1,"pass":true},{"id":33,"premium":1,"title":"Aim 2 Spell","title_img":"\/images\/games\/txt_shootnspell.gif","display_title":"Aim 2 Spell","url":"\/aim2spell-spelling-game.html","sample_url":"\/aim-2-spell.html","min_words":4,"printable_link":null,"corner_icon":null,"img_class":"game-aim2spell","description":"In Aim 2 Spell, students select one letter at a time to correctly spell each word from their list.","file_name":"html5\/aim2Spell_v2_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"shootnspell","app_compatible":0,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":34,"premium":1,"title":"SillyBulls","title_img":"\/images\/games\/txt_sillybulls.png","display_title":"SillyBulls","url":"\/syllables-with-silly-bulls-game.html","sample_url":"\/syllables-with-silly-bulls.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-sillybulls","description":"In SillyBulls, students listen and sort words according to the number of syllables in the word.","file_name":"html5\/sillyBulls_v2_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"sillybulls","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":35,"premium":1,"title":"Splat-N-Spell","title_img":"\/images\/games\/txt_splatnspell.gif","display_title":"Splat-N-Spell","url":"\/splatnspell-spelling-game.html","sample_url":"\/splat-n-spell.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-splatnspell","description":"In Splat-N-Spell, students spell each word by choosing and dragging the letters to correctly spell the word.","file_name":"html5\/splatNSpell_v2_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"splatnspell","app_compatible":0,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":36,"premium":1,"title":"Alphabetize with Jojo","title_img":"\/images\/games\/txt_alphabetizewjojo.gif","display_title":"Alphabetize with Jojo","url":"\/alphabetizejojo-spelling-game.html","sample_url":"\/alphabetize-with-jojo.html","min_words":3,"printable_link":null,"corner_icon":null,"img_class":"game-alphabetizewjojo","description":"Alphabetize with Jojo provides students with the opportunity to arrange spelling and vocabulary words in alphabetical order in an interactive format.","file_name":"html5\/alphabetize_v2_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"alphabetizejojo","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":6,"subject":"Language Arts","width":750,"height":600,"is_html5":1,"pass":true},{"id":37,"premium":1,"title":"Word Videos","title_img":"\/images\/games\/txt_wordvideos.gif","display_title":"Word Videos","url":"\/wordvideos-spelling-game.html","sample_url":"\/word-videos.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-wordvideos","description":"In Word Videos, students choose from a variety of options to create their own word video for their spelling and vocabulary words.","file_name":"html5\/wordVideos_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"wordvideos","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":6,"subject":"Language Arts","width":750,"height":600,"is_html5":1,"pass":true},{"id":38,"premium":1,"title":"Word-O-Pillar","title_img":"\/images\/games\/txt_wordopillar.gif","display_title":"Word-O-Pillar","url":"\/wordopillar-spelling-game.html","sample_url":"\/word-o-pillar.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-wordopillar","description":"In Word-O-Pillar, students unscramble the letters for each word and arrange them in the correct order.","file_name":"html5\/wordUnscramble_v2_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"wordopillar","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":5,"subject":"Spelling","width":750,"height":600,"is_html5":1,"pass":true},{"id":39,"premium":1,"title":"TeachMe More","title_img":"\/images\/games\/txt_teacmemore.png","display_title":"TeachMe More","url":"\/teach-me-more-game.html","sample_url":"\/teach-me-more.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-teachmemore","description":"In TeachMe More, students explore spelling, syllables, sounds, context in a sentence, definition and the part of speech.","file_name":"teach_me_more_v1_2\/game.swf","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"teachmemore","app_compatible":1,"assignable":0,"show_on_games_page":0,"group_id":null,"subject":null,"width":750,"height":600,"is_html5":0,"pass":true},{"id":40,"premium":1,"title":"Initial Sound Speller","title_img":"\/images\/games\/txt_initialsoundspeller.png","display_title":"Initial Sound Speller","url":"\/initial-sound-speller-game.html","sample_url":"\/initial-sound-speller.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-initialsoundspeller","description":"In Initial Sound Speller, students choose the missing initial sound that correctly spells each word.","file_name":"html5\/initialSoundSpeller_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"initialsoundspeller","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":41,"premium":1,"title":"Final Sound Speller","title_img":"\/images\/games\/txt_finalsoundspeller.png","display_title":"Final Sound Speller","url":"\/final-sound-speller-game.html","sample_url":"\/final-sound-speller.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":"game-finalsoundspeller","description":"In Final Sound Speller, students choose the missing final sound that correctly spells each word.","file_name":"html5\/finalSoundSpeller_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"finalsoundspeller","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":42,"premium":1,"title":"Which Initial Sound","title_img":"\/images\/games\/txt_whichinitialsound.png","display_title":"Which Initial Sound?","url":"\/which-initial-sound-game.html","sample_url":"\/which-initial-sound.html","min_words":1,"printable_link":null,"corner_icon":"1","img_class":"game-whichinitialsound","description":"In Which Initial Sound?, students match the initial sound from their word to the picture of the object whose name begins with the same initial sound.","file_name":"html5\/whichInitialSound_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"whichinitialsound","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":43,"premium":1,"title":"Which Final Sound","title_img":"\/images\/games\/txt_whichfinalsound.png","display_title":"Which Final Sound?","url":"\/which-final-sound-game.html","sample_url":"\/which-final-sound.html","min_words":1,"printable_link":null,"corner_icon":"1","img_class":"game-whichfinalsound","description":"In Which Final Sound?, students match the final sound from their word to the picture of the object whose name ends with the same sound.","file_name":"html5\/whichFinalSound_v2_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"whichfinalsound","app_compatible":1,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":44,"premium":1,"title":"Sound It Out!","title_img":null,"display_title":"Sound It Out!","url":"\/sound-it-out-game.html","sample_url":"\/sound-it-out.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":null,"description":"Sound It Out! lets beginning readers practice phoneme (letter sound) and grapheme (sound spelling) relationships by clicking the sound blocks in the right order to spell a word correctly. Students can choose from two game themes.","file_name":"html5\/soundItOut_v1_0_0\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"sounditout","app_compatible":0,"assignable":1,"show_on_games_page":1,"group_id":7,"subject":"Phonics","width":750,"height":600,"is_html5":1,"pass":true},{"id":46,"premium":1,"title":"WordStudy","title_img":null,"display_title":"WordStudy","url":"\/word-study-game.html","sample_url":"\/word-study.html","min_words":1,"printable_link":null,"corner_icon":null,"img_class":null,"description":"Word Study allows students to select the elements they want to include in their word study session, including images, letter sounds, parts of speech, syllables, synonyms, antonyms and the words read in contextual sentences.","file_name":"html5\/wordStudy_v1_0_1\/index.html","seq":0,"game_type":null,"printable":0,"printable_text_override":null,"supplemental_element":null,"published":1,"uid":"wordstudy","app_compatible":0,"assignable":1,"show_on_games_page":1,"group_id":3,"subject":"Vocabulary","width":750,"height":600,"is_html5":1,"pass":true}]</script>
+  <script type="text/javascript">window.onActivityPage = true;</script>
+
+  <script type="text/javascript" language="javascript">
+    var pos_map = {"1":{"pos_name":"Verb","abbreviation":"V"},"2":{"pos_name":"Noun","abbreviation":"N"},"3":{"pos_name":"Adjective","abbreviation":"Adj"},"4":{"pos_name":"Adverb","abbreviation":"Adv"},"5":{"pos_name":"Pronoun","abbreviation":"Pron"},"6":{"pos_name":"Preposition","abbreviation":"Prep"},"7":{"pos_name":"Conjunction","abbreviation":"Conj"},"8":{"pos_name":"Interjection","abbreviation":"Interj"},"9":{"pos_name":"Article","abbreviation":"Art"},"10":{"pos_name":"Contraction","abbreviation":"Contr"},"11":{"pos_name":"Abbreviation","abbreviation":"Abbr"},"12":{"pos_name":"Possessive Noun","abbreviation":"Poss"},"13":{"pos_name":"Prefix","abbreviation":"Pfx"},"14":{"pos_name":"Suffix","abbreviation":"Sfx"},"15":{"pos_name":"Text","abbreviation":"Txt"},"16":{"pos_name":"Slang","abbreviation":"Slg"},"17":{"pos_name":"Informal","abbreviation":"Inf"},"18":{"pos_name":"Phrase","abbreviation":"Phr"}};
+
+    jQuery(function($) {
+      $(document).ready(function() {
+
+        //fixes back button issue since buttons simply modify form fields
+        //see: https://www.pivotaltracker.com/story/show/85806694
+        $('#userAction').val('test');
+
+        validateWords();
+        $(document).ajaxStart(function() {
+          ajaxCallsDone = false;
+        }).ajaxStop(function() {
+          ajaxCallsDone = true;
+        });
+
+        $('#toggleDescriptionField').on('click', function() {
+          $('#listDescriptionField').toggle();
+        });
+
+      });
+    });
+  </script>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top">
+      <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td>
+
+            <div class="moduletablegettingstartedbottom">
+              <div class="moduletablegettingstarted">
+                <div class="mod_placeheregettingstarted" id="mod_placeheregettingstarted">
+                  &nbsp;
+                </div>
+              </div>
+
+              <form id="formWordListEntry" method="post">
+                <input type="hidden" value="27567451" id="listId" name="listId" />
+                <input type="hidden" value="29" id="numberOfWords" name="numberOfWords">
+
+                <div class="wordListBackground">
+                  <div class="word-list-inner-bg">
+                    <h1>Lesson 30</h1>
+
+                                          <h2>Grade Level: Kindergarten</h2>
+                                        <div class="wordlistButtonsTop">
+                      <div style="width: 100%; max-width: 300px; height: 100px; position: relative; margin: 10px 0 10px 0">
+
+  <div style="background: url('/images/free_activities_gradient.png') repeat-x #ccf1ca; width: 50%; float: left; height:33px; text-align: center">
+    <p style="font-size: 12px;margin: 10px;font-weight: bold;">Free Activities</p>
+    <div class="clear"></div>
+  </div>
+
+
+  <div style="background: url('/images/premium_activities_gradient.png') repeat-x #fbe5d8; background-position-y: -1px; width: 50%; float: left; height: 33px; text-align: center">
+    <p style="font-size: 12px;margin: 10px;font-weight: bold;">Premium Activities</p>
+    <div class="clear"></div>
+  </div>
+
+  <div style="background-color: #ccf1ca; width: 50%; float: left; height: 68px">
+    <div class="clear"></div>
+  </div>
+
+  <div style="background-color: #fbe5d8; width: 50%; float: left; height: 68px">
+    <div class="clear"></div>
+  </div>
+
+  <ul class="action-btns wordListActionButtonsSmall" style="display: block;position: absolute;top: 40px;left: 2px;margin: 0;">
+    <li>
+      <a href="javascript:void(0);" class="testMeButton " title="Click this button to take a spelling test!">Spelling Test</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="teachMeButton " data-is-top="true"  title="Teach Me these words!">Teach Me</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="playGameButton "  title="Click this button to play a game with these words!">Play a Game</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="flashCardsButton pm-check " activity="21"   data-is-top="true"   title="Click this button to study flashcards!">Flashcards</a>
+    </li>
+
+     <li>
+      <a href="javascript:void(0);" class="vocabTestMeButton pm-check   " activity="19" title="Click this button to take a vocabulary test!">Vocabulary Test</a>
+    </li>
+
+  </ul>
+  <div class="clear"></div>
+</div>
+<script>
+  // do not wrap in a dom ready, we need this bound before the pm-check/block event handlers in order to stop bubbling.
+  $('.action-btns').show(0, function() {
+    $(this).find('li a').click(function(e) {
+      processListActionButtons(e,this,true);
+    });
+  });
+</script>
+                    </div>
+
+                    <div class="list-actionlinks">
+                      <a href="javascript:void(0)" onclick="showPrintOptions(); return false;">Handwriting Worksheets</a>
+                      | <a target="_blank" href="/print-spelling-list.html?listId=27567451">Print List</a>
+                                              | <a class="import" href="/import-spelling-list.html?listId=27567451" data-list-id="27567451">Import</a>
+                                            <br />
+                      <a href="/teaching-spelling-skills.html?listId=27567451&classic=1">TeachMe Word-by-Word</a>
+                    </div>
+
+                    <div id="worksheetPrint" class="wordlist-popout-form">
+                      <fieldset>
+  <legend>Font</legend>
+  <input name="printType" id="printTypePrint" type="radio" value="print" checked>
+  <label for="printTypePrint">Print</label>
+
+  <input name="printType" id="printTypeDN" type="radio" value="dn">
+  <label for="printTypeDN">D'Nealian</label>
+
+  <input name="printType" id="printTypeCursive" type="radio" value="cursive">
+  <label for="printTypeCursive">Cursive</label>
+
+  <input name="printType" id="printTypeSign" type="radio" value="sign">
+  <label for="printTypeSign">Sign</label>
+</fieldset>
+
+<fieldset>
+  <legend>Arrows</legend>
+  <input name="arrows" id="arrowsOff" type="radio" value="off" checked>
+  <label for="arrowsOff">Arrows Off</label>
+
+  <input name="arrows" id="arrowsOn" type="radio" value="on">
+  <label for="arrowsOn">On</label>
+</fieldset>
+
+<fieldset>
+  <legend>Case</legend>
+  <input name="case" id="caseLower" type="radio" value="lower" checked>
+  <label for="caseLower">Lower</label>
+
+  <input name="case" id="caseUpper" type="radio" value="upper">
+  <label for="caseUpper">Upper Case</label>
+</fieldset>
+
+<fieldset>
+  <legend>Size</legend>
+  <input name="size" id="sizeSmall" type="radio" value="small">
+  <label for="sizeSmall">Small</label>
+
+  <input name="size" id="sizeMedium" type="radio" value="medium" checked>
+  <label for="sizeMedium">Medium</label>
+
+  <input name="size" id="sizeLarge" type="radio" value="large">
+  <label for="sizeLarge">Large Type</label>
+</fieldset>
+
+<fieldset>
+  <legend>Alignment</legend>
+  <input name="align" id="alignLeft" type="radio" value="left" checked>
+  <label for="alignLeft">Align Left</label>
+
+  <input name="align" id="alignRight" type="radio" value="right">
+  <label for="alignRight">Align Right</label>
+</fieldset>
+                      <br />
+                                            <a href="/print-handwriting-practice.html?listId=27567451" target="_blank" onClick="printList2(this);">Print Worksheet</a>
+                    </div>
+
+                    <div id="teachme-notice">
+                      <a name="teachme-notice"></a>
+                      <strong>TeachMe</strong> is now integrated <strong>into</strong> this list page. <br> Click on each word! <a href="javascript:void(0);" class="dismiss">dismiss</a>
+                    </div>
+
+                  </div>
+
+                  <br />
+
+                  <table class="wordListTable" id="wordListTable">
+                                          <tr>
+                        <td class="numberCellNormal">1.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe0" style="display: none;">
+                            <span id="spellItOut0" class="wordToSpell_teachme wordwrap teachme-inline-cell">do</span>
+                          </div>
+
+                          <div id="spelledWordCell0" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">do</a></span>
+                            <div id="spelledWordCellLoading0" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">2.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe1" style="display: none;">
+                            <span id="spellItOut1" class="wordToSpell_teachme wordwrap teachme-inline-cell">down</span>
+                          </div>
+
+                          <div id="spelledWordCell1" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">down</a></span>
+                            <div id="spelledWordCellLoading1" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">3.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe2" style="display: none;">
+                            <span id="spellItOut2" class="wordToSpell_teachme wordwrap teachme-inline-cell">have</span>
+                          </div>
+
+                          <div id="spelledWordCell2" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">have</a></span>
+                            <div id="spelledWordCellLoading2" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">4.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe3" style="display: none;">
+                            <span id="spellItOut3" class="wordToSpell_teachme wordwrap teachme-inline-cell">help</span>
+                          </div>
+
+                          <div id="spelledWordCell3" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">help</a></span>
+                            <div id="spelledWordCellLoading3" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">5.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe4" style="display: none;">
+                            <span id="spellItOut4" class="wordToSpell_teachme wordwrap teachme-inline-cell">went</span>
+                          </div>
+
+                          <div id="spelledWordCell4" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">went</a></span>
+                            <div id="spelledWordCellLoading4" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">6.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe5" style="display: none;">
+                            <span id="spellItOut5" class="wordToSpell_teachme wordwrap teachme-inline-cell">only</span>
+                          </div>
+
+                          <div id="spelledWordCell5" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">only</a></span>
+                            <div id="spelledWordCellLoading5" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">7.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe6" style="display: none;">
+                            <span id="spellItOut6" class="wordToSpell_teachme wordwrap teachme-inline-cell">little</span>
+                          </div>
+
+                          <div id="spelledWordCell6" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">little</a></span>
+                            <div id="spelledWordCellLoading6" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">8.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe7" style="display: none;">
+                            <span id="spellItOut7" class="wordToSpell_teachme wordwrap teachme-inline-cell">just</span>
+                          </div>
+
+                          <div id="spelledWordCell7" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">just</a></span>
+                            <div id="spelledWordCellLoading7" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">9.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe8" style="display: none;">
+                            <span id="spellItOut8" class="wordToSpell_teachme wordwrap teachme-inline-cell">one</span>
+                          </div>
+
+                          <div id="spelledWordCell8" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">one</a></span>
+                            <div id="spelledWordCellLoading8" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">10.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe9" style="display: none;">
+                            <span id="spellItOut9" class="wordToSpell_teachme wordwrap teachme-inline-cell">every</span>
+                          </div>
+
+                          <div id="spelledWordCell9" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">every</a></span>
+                            <div id="spelledWordCellLoading9" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">11.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe10" style="display: none;">
+                            <span id="spellItOut10" class="wordToSpell_teachme wordwrap teachme-inline-cell">ask</span>
+                          </div>
+
+                          <div id="spelledWordCell10" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">ask</a></span>
+                            <div id="spelledWordCellLoading10" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">12.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe11" style="display: none;">
+                            <span id="spellItOut11" class="wordToSpell_teachme wordwrap teachme-inline-cell">walk</span>
+                          </div>
+
+                          <div id="spelledWordCell11" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">walk</a></span>
+                            <div id="spelledWordCellLoading11" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">13.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe12" style="display: none;">
+                            <span id="spellItOut12" class="wordToSpell_teachme wordwrap teachme-inline-cell">look</span>
+                          </div>
+
+                          <div id="spelledWordCell12" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">look</a></span>
+                            <div id="spelledWordCellLoading12" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">14.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe13" style="display: none;">
+                            <span id="spellItOut13" class="wordToSpell_teachme wordwrap teachme-inline-cell">out</span>
+                          </div>
+
+                          <div id="spelledWordCell13" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">out</a></span>
+                            <div id="spelledWordCellLoading13" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">15.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe14" style="display: none;">
+                            <span id="spellItOut14" class="wordToSpell_teachme wordwrap teachme-inline-cell">off</span>
+                          </div>
+
+                          <div id="spelledWordCell14" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">off</a></span>
+                            <div id="spelledWordCellLoading14" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">16.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe15" style="display: none;">
+                            <span id="spellItOut15" class="wordToSpell_teachme wordwrap teachme-inline-cell">take</span>
+                          </div>
+
+                          <div id="spelledWordCell15" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">take</a></span>
+                            <div id="spelledWordCellLoading15" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">17.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe16" style="display: none;">
+                            <span id="spellItOut16" class="wordToSpell_teachme wordwrap teachme-inline-cell">very</span>
+                          </div>
+
+                          <div id="spelledWordCell16" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">very</a></span>
+                            <div id="spelledWordCellLoading16" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">18.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe17" style="display: none;">
+                            <span id="spellItOut17" class="wordToSpell_teachme wordwrap teachme-inline-cell">their</span>
+                          </div>
+
+                          <div id="spelledWordCell17" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">their</a></span>
+                            <div id="spelledWordCellLoading17" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">19.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe18" style="display: none;">
+                            <span id="spellItOut18" class="wordToSpell_teachme wordwrap teachme-inline-cell">saw</span>
+                          </div>
+
+                          <div id="spelledWordCell18" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">saw</a></span>
+                            <div id="spelledWordCellLoading18" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">20.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe19" style="display: none;">
+                            <span id="spellItOut19" class="wordToSpell_teachme wordwrap teachme-inline-cell">put</span>
+                          </div>
+
+                          <div id="spelledWordCell19" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">put</a></span>
+                            <div id="spelledWordCellLoading19" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">21.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe20" style="display: none;">
+                            <span id="spellItOut20" class="wordToSpell_teachme wordwrap teachme-inline-cell">our</span>
+                          </div>
+
+                          <div id="spelledWordCell20" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">our</a></span>
+                            <div id="spelledWordCellLoading20" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">22.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe21" style="display: none;">
+                            <span id="spellItOut21" class="wordToSpell_teachme wordwrap teachme-inline-cell">day</span>
+                          </div>
+
+                          <div id="spelledWordCell21" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">day</a></span>
+                            <div id="spelledWordCellLoading21" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">23.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe22" style="display: none;">
+                            <span id="spellItOut22" class="wordToSpell_teachme wordwrap teachme-inline-cell">too</span>
+                          </div>
+
+                          <div id="spelledWordCell22" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">too</a></span>
+                            <div id="spelledWordCellLoading22" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">24.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe23" style="display: none;">
+                            <span id="spellItOut23" class="wordToSpell_teachme wordwrap teachme-inline-cell">show</span>
+                          </div>
+
+                          <div id="spelledWordCell23" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">show</a></span>
+                            <div id="spelledWordCellLoading23" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">25.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe24" style="display: none;">
+                            <span id="spellItOut24" class="wordToSpell_teachme wordwrap teachme-inline-cell">in</span>
+                          </div>
+
+                          <div id="spelledWordCell24" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">in</a></span>
+                            <div id="spelledWordCellLoading24" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">26.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe25" style="display: none;">
+                            <span id="spellItOut25" class="wordToSpell_teachme wordwrap teachme-inline-cell">on</span>
+                          </div>
+
+                          <div id="spelledWordCell25" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">on</a></span>
+                            <div id="spelledWordCellLoading25" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">27.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe26" style="display: none;">
+                            <span id="spellItOut26" class="wordToSpell_teachme wordwrap teachme-inline-cell">out</span>
+                          </div>
+
+                          <div id="spelledWordCell26" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">out</a></span>
+                            <div id="spelledWordCellLoading26" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">28.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe27" style="display: none;">
+                            <span id="spellItOut27" class="wordToSpell_teachme wordwrap teachme-inline-cell">off</span>
+                          </div>
+
+                          <div id="spelledWordCell27" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">off</a></span>
+                            <div id="spelledWordCellLoading27" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                            <tr>
+                        <td class="numberCellNormal">29.</td>
+
+                                                <td class="spelledWordCell">
+                          <div id="spelledWordCellTeachMe28" style="display: none;">
+                            <span id="spellItOut28" class="wordToSpell_teachme wordwrap teachme-inline-cell">by</span>
+                          </div>
+
+                          <div id="spelledWordCell28" class="spelled-word-cell teachme-inline-cell">
+                            <span class="spelledWord"><a href="javascript:void(0)" class="vsctip" title="Click on the word to get a quick lesson!">by</a></span>
+                            <div id="spelledWordCellLoading28" class="teachme-inline-loading">
+                              <p>Loading Sounds...</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <img data-cfsrc="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" data-cfstyle="display:none;" class="completion-check" style="display:none;visibility:hidden;"><noscript><img src="/images/greencheckmark_t.png" title="Activity completed" alt="Activity completed" style="display:none;" class="completion-check"></noscript>
+                        <td>
+                      </tr>
+                                        </table>
+
+                  <div style="width: 100%; max-width: 300px; height: 100px; position: relative; margin: 10px 0 10px 0">
+
+  <div style="background: url('/images/free_activities_gradient.png') repeat-x #ccf1ca; width: 50%; float: left; height:33px; text-align: center">
+    <p style="font-size: 12px;margin: 10px;font-weight: bold;">Free Activities</p>
+    <div class="clear"></div>
+  </div>
+
+
+  <div style="background: url('/images/premium_activities_gradient.png') repeat-x #fbe5d8; background-position-y: -1px; width: 50%; float: left; height: 33px; text-align: center">
+    <p style="font-size: 12px;margin: 10px;font-weight: bold;">Premium Activities</p>
+    <div class="clear"></div>
+  </div>
+
+  <div style="background-color: #ccf1ca; width: 50%; float: left; height: 68px">
+    <div class="clear"></div>
+  </div>
+
+  <div style="background-color: #fbe5d8; width: 50%; float: left; height: 68px">
+    <div class="clear"></div>
+  </div>
+
+  <ul class="action-btns wordListActionButtonsSmall" style="display: block;position: absolute;top: 40px;left: 2px;margin: 0;">
+    <li>
+      <a href="javascript:void(0);" class="testMeButton " title="Click this button to take a spelling test!">Spelling Test</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="teachMeButton " data-is-top=""  title="Teach Me these words!">Teach Me</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="playGameButton "  title="Click this button to play a game with these words!">Play a Game</a>
+    </li>
+
+    <li>
+      <a href="javascript:void(0);" class="flashCardsButton pm-check " activity="21"   data-is-top=""   title="Click this button to study flashcards!">Flashcards</a>
+    </li>
+
+     <li>
+      <a href="javascript:void(0);" class="vocabTestMeButton pm-check   " activity="19" title="Click this button to take a vocabulary test!">Vocabulary Test</a>
+    </li>
+
+  </ul>
+  <div class="clear"></div>
+</div>
+<script>
+  // do not wrap in a dom ready, we need this bound before the pm-check/block event handlers in order to stop bubbling.
+  $('.action-btns').show(0, function() {
+    $(this).find('li a').click(function(e) {
+      processListActionButtons(e,this,true);
+    });
+  });
+</script>
+                  <!--[if !IE 7]><!-->
+                  <p style="height: 5px;"></p>
+                  <!--<![endif]-->
+                  <! IF
+                  <div class="clear"></div>
+                </div>
+              </form>
+
+                          </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding-top:10px">
+            <div class="mySchoolTab" style="width:289px;"><p>Teacher Information</p><h2><a href="/HMJourneys/">Spelling City</a></h2><div class="name" id="schoolHref"><h3><a href="/publisher-lists-fl.html">Publisher Lists</a></h3></div><div class="address"></div><div class="suburb"><a href="index.php?option=com_spellcity&controller=find_school&task=schoolFinderCity&country=usa&state=fl&city="></a><a href="florida-schools.html">Fl</a>  </div><div class="country"><a href="schools-in-usa.html">US</a></div></div>          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td style="width:300px" valign="top">
+        <div id="300a"><script type="text/javascript"> googletag.cmd.push(function() { googletag.display("300a"); }); </script></div><div id="300b"><script type="text/javascript"> googletag.cmd.push(function() { googletag.display("300b"); }); </script></div>    </td>
+  </tr>
+</table>
+
+<br />
+
+<div id="728b"><script type="text/javascript"> googletag.cmd.push(function() { googletag.display("728b"); }); </script></div>
+<script language="javascript" type="text/javascript">
+  soundManager.url = '/assets_v2/4m4hxn7c1hiv/';
+
+  $(document).ready(function() {
+    window.VSC = window.VSC || {};
+
+    window.VSC.soundManagerHelper = new window.VSC.SoundManagerHelper({
+      sounds: {"do0":"\/sounds\/d\/do.mp3","sentencedo0":"\/sentenceSounds\/d\/do_435785.mp3","definitiondo0":"\/definitionSounds\/d\/do_50cb3ac82b57c.mp3","down1":"\/sounds\/d\/down.mp3","sentencedown1":"\/sentenceSounds\/d\/down_433351.mp3","definitiondown1":"\/definitionSounds\/d\/down_50cb3bf315a93.mp3","have2":"\/sounds\/h\/have.mp3","sentencehave2":"\/sentenceSounds\/h\/have_434599.mp3","definitionhave2":"\/definitionSounds\/h\/have_50cb3962c600b.mp3","help3":"\/sounds\/h\/help.mp3","sentencehelp3":"\/sentenceSounds\/h\/help_434648.mp3","definitionhelp3":"\/definitionSounds\/h\/help_50cb3ec800db4.mp3","went4":"\/sounds\/w\/went.mp3","sentencewent4":"\/sentenceSounds\/w\/went_445800.mp3","definitionwent4":"\/definitionSounds\/w\/went_50cb38359ce4f.mp3","only5":"\/sounds\/o\/only.mp3","sentenceonly5":"\/sentenceSounds\/o\/only1_s.mp3","definitiononly5":"\/definitionSounds\/o\/only_50cb396a329ec.mp3","little6":"\/sounds\/l\/little.mp3","sentencelittle6":"\/sentenceSounds\/l\/little1_s.mp3","definitionlittle6":"\/definitionSounds\/l\/little_50cb3bbbd4d43.mp3","just7":"\/sounds\/j\/just.mp3","sentencejust7":"\/sentenceSounds\/j\/just_439370.mp3","definitionjust7":"\/definitionSounds\/j\/just_50cb3ac27ebcc.mp3","one8":"\/sounds\/o\/one.mp3","sentenceone8":"\/sentenceSounds\/o\/one_s.mp3","definitionone8":"\/definitionSounds\/o\/one_50cb38d9681c4.mp3","every9":"\/sounds\/e\/every.mp3","sentenceevery9":"\/sentenceSounds\/e\/every_434118.mp3","definitionevery9":"\/definitionSounds\/e\/every_50cb3a7dd9852.mp3","ask10":"\/sounds\/a\/ask.mp3","sentenceask10":"\/sentenceSounds\/a\/ask_434653.mp3","definitionask10":"\/definitionSounds\/a\/ask_50cb3a9220ddb.mp3","walk11":"\/sounds\/w\/walk.mp3","sentencewalk11":"\/sentenceSounds\/w\/walk_1062266.mp3","definitionwalk11":"\/definitionSounds\/w\/walk_50cb39ca8614d.mp3","look12":"\/sounds\/l\/look.mp3","sentencelook12":"\/sentenceSounds\/l\/look_1055967.mp3","definitionlook12":"\/definitionSounds\/l\/look_50cb38e07af08.mp3","out13":"\/sounds\/o\/out.mp3","sentenceout13":"\/sentenceSounds\/o\/out_1055965.mp3","definitionout13":"\/definitionSounds\/o\/out_50cb3ac2e1c9a.mp3","off14":"\/sounds\/o\/off.mp3","sentenceoff14":"\/sentenceSounds\/o\/off_434843.mp3","definitionoff14":"\/definitionSounds\/o\/off_50cb3a1cf285d.mp3","take15":"\/sounds\/t\/take.mp3","sentencetake15":"\/sentenceSounds\/t\/take_130977.mp3","definitiontake15":"\/definitionSounds\/t\/take_50cb3aa5b801a.mp3","very16":"\/sounds\/v\/very.mp3","sentencevery16":"\/sentenceSounds\/v\/very_434588.mp3","definitionvery16":"\/definitionSounds\/v\/very_50cb3b4951cc8.mp3","their17":"\/sounds\/t\/their.mp3","sentencetheir17":"\/sentenceSounds\/t\/their_434752.mp3","definitiontheir17":"\/definitionSounds\/t\/their_50cb387b52d26.mp3","saw18":"\/sounds\/s\/saw.mp3","sentencesaw18":"\/sentenceSounds\/s\/saw_1056022.mp3","definitionsaw18":"\/definitionSounds\/s\/saw_50cb3af767c6c.mp3","put19":"\/sounds\/p\/put.mp3","sentenceput19":"\/sentenceSounds\/p\/put_s.mp3","definitionput19":"\/definitionSounds\/p\/put_50cb3b02b58af.mp3","our20":"\/sounds\/o\/our.mp3","sentenceour20":"\/sentenceSounds\/o\/our_433959.mp3","definitionour20":"\/definitionSounds\/o\/our_50cb3bbba5744.mp3","day21":"\/sounds\/d\/day.mp3","sentenceday21":"\/sentenceSounds\/d\/day_1056048.mp3","definitionday21":"\/definitionSounds\/d\/day_50cb46f236e60.mp3","too22":"\/sounds\/t\/too.mp3","sentencetoo22":"\/sentenceSounds\/t\/too_431451.mp3","definitiontoo22":"\/definitionSounds\/t\/too_50cb3fe98a02a.mp3","show23":"\/sounds\/s\/show.mp3","sentenceshow23":"\/sentenceSounds\/s\/show_434115.mp3","definitionshow23":"\/definitionSounds\/s\/show_50cce3a552a17.mp3","in24":"\/heteronymSounds\/in_845.mp3","sentencein24":"\/sentenceSounds\/i\/in_434142.mp3","definitionin24":"\/definitionSounds\/i\/in_50cb3b34d41b3.mp3","on25":"\/sounds\/o\/on.mp3","sentenceon25":"\/sentenceSounds\/o\/on_436521.mp3","definitionon25":"\/definitionSounds\/o\/on_50cb3a8c7c459.mp3","out26":"\/sounds\/o\/out.mp3","sentenceout26":"\/sentenceSounds\/o\/out_1055965.mp3","definitionout26":"\/definitionSounds\/o\/out_50cb3ac2e1c9a.mp3","off27":"\/sounds\/o\/off.mp3","sentenceoff27":"\/sentenceSounds\/o\/off_434843.mp3","definitionoff27":"\/definitionSounds\/o\/off_50cb3a1cf285d.mp3","by28":"\/sounds\/b\/by.mp3","sentenceby28":"\/sentenceSounds\/b\/by_434042.mp3","definitionby28":"\/definitionSounds\/b\/by_50cb3abab2d22.mp3"}    });
+
+    window.VSC.teachMeNotepadActivityView = new window.VSC.TeachMeNotepadActivityView({
+      initialize: false,
+      words: ["do","down","have","help","went","only","little","just","one","every","ask","walk","look","out","off","take","very","their","saw","put","our","day","too","show","in","on","out","off","by"],
+      list_id: 27567451,
+      user_id: 1648733,
+      student_id: 0,
+      a_act_id: 0,
+      start_time: 1500530985,
+      el: '#wordListTable'
+    });
+
+    soundManager.onready(function() {
+      window.VSC.teachMeNotepadActivityView.init();
+    });
+  });
+</script>
+  <div class="clear"></div>
+</div>
+
+<footer id="wp-footer">
+  <div class="container">
+    <div class="footer-top col-lg-8">
+      <div class="row">
+        <div class=" col-xs-12 col-sm-3 col-lg-3">
+          <div id="nav_menu-2" class="widget widget_nav_menu">
+            <h4 class="widget-title">Tools</h4>
+            <div class="menu-tools-menu-container">
+              <ul id="menu-tools-menu" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/teacher-resources.html">Teaching Resources</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/faqs.html">Videos / FAQs</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/spelling-games-vocabulary-games.html">Games</a></li>
+                <li><strong>Search</strong>
+                  <ul>
+                    <li class="pad=left">
+                      &#8226; &nbsp;<a href="/spelling-list-search.html"> Word Lists</a>
+                    </li>
+                    <li class="pad=left">
+                      &#8226; &nbsp;<a href="/teacher-search.html"> Teachers/Parents</a>
+                    </li>
+                    <li class="pad=left">
+                      &#8226; &nbsp;<a href="/school-search.html"> Schools</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-lg-3">
+          <div id="nav_menu-3" class="widget widget_nav_menu">
+            <h4 class="widget-title">Info</h4>
+            <div class="menu-info-menu-container">
+              <ul id="menu-info-menu" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/parent-spelling-resources.html">Parents</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/homeschool-vocabulary.html">Homeschool</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/teachers-overview.html">Teachers</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/schools-and-districts.html">Schools / Principals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-lg-3">
+          <div id="nav_menu-4" class="widget widget_nav_menu">
+            <h4 class="widget-title">Company</h4>
+            <div class="menu-company-menu-1-container">
+              <ul id="menu-company-menu-1" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us.html">About Us</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/careers.html">VocabularySpellingCity Careers</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/advertising.html">Advertising</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/link-to-us.html">Link to Us</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/blog/">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-lg-3">
+          <div id="nav_menu-5" class="widget widget_nav_menu">
+            <h4 class="widget-title">&nbsp;</h4>
+            <div class="menu-company-menu-2-container">
+              <ul id="menu-company-menu-2" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/privacy-policy.html">Privacy Policy</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/terms-of-service.html">Terms of Service</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/copyright.html">Copyright</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/Contact-Us/SpellingCity.com.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <ul>
+        <li><a href="http://facebook.com/spellingcity" target="_blank"><img data-cfsrc="/wp-content/themes/sc/images/icon-facebook.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="/wp-content/themes/sc/images/icon-facebook.png" alt=""></noscript></a> </li>
+        <li><a href="http://twitter.com/spellingcity" target="_blank"><img data-cfsrc="/wp-content/themes/sc/images/icon-twitter.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="/wp-content/themes/sc/images/icon-twitter.png" alt=""></noscript></a> </li>
+        <li><a href="http://www.pinterest.com/spellingcity/" target="_blank"><img data-cfsrc="/wp-content/themes/sc/images/icon-pinterest.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="/wp-content/themes/sc/images/icon-pinterest.png" alt=""></noscript></a></li>
+        <li><a href="http://plus.google.com/+SpellingCity/posts" target="_blank"><img data-cfsrc="/wp-content/themes/sc/images/icon-googleplus.png" alt="" style="display:none;visibility:hidden;"><noscript><img src="/wp-content/themes/sc/images/icon-googleplus.png" alt=""></noscript></a></li>
+      </ul>
+      <div id="trademark" align="center">VocabularySpellingCity&#174; is a registered trademark.</div>
+    </div>
+  </div>
+
+</footer>
+
+<div style="display:none;">
+  <div id="pm-upsell"></div>
+
+  <div id="pm-upsell-src">
+    <table>
+      <tr>
+        <td valign="middle" style="text-align: center; background:url(/images/games/bg_gradient_red.gif);">
+          <img data-cfsrc="/images/games/premium-activity-header-text.png" width="144" height="27" alt="Premium Activities" data-cfstyle="margin-top: 2px" style="display:none;visibility:hidden;"><noscript><img src="/images/games/premium-activity-header-text.png" width="144" height="27" alt="Premium Activities" style="margin-top: 2px"></noscript>
+        </td>
+      </tr>
+
+      <tr>
+        <td><h1 style="text-align: center; margin: 9px 0px 0 0; font-size: 16px;">Sorry, this activity is available to Premium Members only.</h1></td>
+      </tr>
+
+      <tr>
+        <td>
+          <div style="position:relative;height:180px;">
+            <p style="padding:10px 170px 10px 15px; font-size:13px;">If you are a Premium Member, click <a
+                href="/index.php?option=com_comprofiler&lang=en&task=login">here</a> to log in to your account.
+
+            <div class="clear"></div>
+            </p>
+            <div id="penquinImg"></div>
+            <p style="padding-right:80px; padding-left:15px; width:190px; font-size:13px;">Want to know about Premium
+              Membership? Just $34.95/yr for a family or $59.95/yr for a classroom. <a
+                href="/pm-overview.html">Learn more</a></p>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <a class="fancybox" id="show-pm-upsell" href="#pm-upsell"></a>
+</div>
+
+<div style="display:none;">
+  <div id="pm-upsell-feature"></div>
+  <div id="pm-upsell-feature-src">
+    <div class="pm-upsell-message">Sorry. This feature is available<br/> to Premium Members only.</div>
+    <div style="position:relative;height:220px;">
+            <p style="padding:20px 0 0 215px;font-size: 1.2em;">Click <a href="/index.php?option=com_route&route=orderhistory">here</a> to upgrade to a Premium Membership<div class="clear"></div></p>
+      <div id="catImg"></div>
+      <p style="padding-right:80px;position:absolute;bottom:5px;left:13px; width:200px;font-size: 13px;">
+        <a href="/index.php?option=com_content&id=1559&lang=en&view=article">Learn more</a> about this and other Premium features available to teachers
+        at $59.95/yr per classroom or to families at $34.95/year</p>
+      <div id="mouseImg"></div>
+    </div>
+  </div>
+  <a class="fancybox" id="show-pm-upsell-feature" href="#pm-upsell-feature"></a>
+</div>
+
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/libs/ResponsiveNavigationMenuActiveLinkAssigner.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/bundles/commons.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/bundles/GlobalModuleFactory.js" ></script>
+<script type="text/javascript" src="/assets_v2/4m4hxn7c1hiv/js/bundles/TeacherUiFactory.js" ></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d50b44a2fd","applicationID":"195729","transactionName":"NFJQZUVTWUoEU0JcVw0YcURERlhUSmZldmQnWF9QXlxrahVVWllRDVB+WERGa3wdVVVATAJVXlRrZF5cEmNGUFQPXlxWe1tETSBIU1ZNF1ZQXVI=","queueTime":0,"applicationTime":68,"atts":"GBVTEw1JSkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

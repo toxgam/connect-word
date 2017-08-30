@@ -1,0 +1,7 @@
+hear
+eyes
+ears
+smell
+nose
+taste
+touch

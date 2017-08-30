@@ -1,0 +1,10 @@
+minus
+below
+value
+behind
+zero
+sum
+difference
+add
+compare
+above

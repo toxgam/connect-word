@@ -1,0 +1,9 @@
+number
+alphabetical
+label
+letter
+lowercase
+uppercase
+sight word
+capitalize
+text
